@@ -1,0 +1,460 @@
+/******************************************************************************
+ ********************************  ATTENTION  *********************************
+         DO NOT MODIFY THIS FILE, IT WILL NOT BE PRESERVED ON UPDATES!
+ ******************************************************************************
+  If you want to add some own screen CSS, have a look at the README of this
+  template and "/user/screen.css". You have been warned!
+ *****************************************************************************/
+
+/* Notes about how the template CSS works:
+
+   - This template includes 3rd party CSS files:
+     1) CSS from the "default" DokuWiki template by Andreas Gohr (brings
+        important and basic styling for syntax and core features)
+     2) CSS from the original "monobook" skin for MediaWiki (brings the basic
+        layout and overwrites some "default" styling)
+     These files will be included BEFORE this specific CSS file. In this file,
+     I just overwrite non fitting MediaWiki "monobook" and DokuWiki "default"
+     CSS + add some CSS for some exclusive objects of this template
+   - Why I am doing this? Well, read <http://j.mp/jIyE2>. I followed the main
+     principle described there and simply apply it to the two sources ("default"
+     template and "monobook" skin).
+   - This way also ensures a painless update, if there are new versions of
+     MediaWiki monobook or DokuWiki CSS files. Cause these 3rd party components
+     were not edited or partially copied, I do not have to track their changes
+     in detail.
+
+   Explanation of the different sections in here:
+   - "Styles/corrections for the template itself"
+     General CSS targeting the template structure. This section overwrites non
+     fitting CSS of the "monobook" MediaWiki skin and "default" DokuWiki
+     template. Read the notes above and <http://j.mp/jIyE2> if you do not know
+     why I am doing it this way.
+   - "Browser Hacks and corrections"
+     Section containing bigger hacks for browser specific problems.
+*/
+
+
+/******************************************************************************
+ ************** Styles/corrections for the template itself ********************
+ ******************************************************************************/
+/* --------------- general styling --------------- */
+/* special pages background: discussion */
+.ns-1 #content,
+.ns-1 #p-cactions li,
+.ns-1 #p-cactions li a {
+   background: #f8fcff;
+}
+
+/* special pages background: media/cite etc. */
+.ns-2 #content,
+.ns-2 #p-cactions li,
+.ns-2 #p-cactions li a,
+.ns-2 #media__manager_table {
+   background: #f3f3ff;
+}
+
+/* bold tabs */
+#p-cactions .selected,
+#ca-edit { /* edit tab should be always bold */
+  font-weight: bold;
+}
+
+/* take care about hiding the bottom border when tab is selected */
+#p-cactions .selected,
+#p-cactions .selected a,
+#p-cactions .selected span {
+  z-index: 3;
+  padding-bottom: 0.17em; /* fix for <= IE7 */
+}
+.ns-0 #p-cactions .selected,
+.ns-0 #p-cactions .selected a,
+.ns-0 #p-cactions .selected span {
+  background-color: __background__;
+}
+
+
+/* missing page red: common */
+a.wikilink2:link,
+a.wikilink2:visited,
+a.wikilink2:hover {
+  color: __missing__;
+}
+
+/* missing page red: tabs */
+#p-cactions li a.wikilink2 {
+  color: __missing__;
+}
+
+/* external link */
+div.dokuwiki a.urlextern {
+  background: transparent url(static/3rd/monobook/external.png) center right no-repeat;
+  padding: 1px 13px 1px 0px;
+  color: #436976;
+  text-decoration: none;
+}
+
+/* windows share */
+div.dokuwiki a.windows {
+  background: transparent url(static/3rd/dokuwiki/windows.gif) 0px 1px no-repeat;
+}
+
+/* email link */
+div.dokuwiki a.mail {
+  background: transparent url(static/3rd/dokuwiki/mail_icon.gif) 0px 1px no-repeat;
+}
+
+/* headlines */
+div#content .dokuwiki h1,
+div#content .dokuwiki h2,
+div#content .dokuwiki h3,
+div#content .dokuwiki h4,
+div#content .dokuwiki h5,
+div#content .dokuwiki h6 {
+  border-bottom: 1px solid #aaa;
+  color: __text__;
+  margin: 0;
+  padding-bottom: 0.17em;
+  padding-top: 0.5em;
+}
+div#content .dokuwiki h1,
+div#content .dokuwiki h2 {
+  margin-bottom:0.6em;
+  font-weight: normal;
+}
+div#content .dokuwiki h3,
+div#content .dokuwiki h4,
+div#content .dokuwiki h5,
+div#content .dokuwiki h6 {
+  font-weight: bold;
+  border-bottom: none;
+  margin-bottom: 0.3em;
+}
+div#content .dokuwiki h3 {
+  font-size: 132%;
+}
+div#content .dokuwiki h4 {
+  font-size: 116%;
+}
+div#content .dokuwiki h5 {
+  font-size: 100%;
+}
+div#content .dokuwiki h6 {
+  font-size: 80%;
+}
+
+/* remove indent from different sections */
+div#content .dokuwiki div.level1,
+div#content .dokuwiki div.level2,
+div#content .dokuwiki div.level3,
+div#content .dokuwiki div.level4,
+div#content .dokuwiki div.level5 {
+  margin-left: 0;
+}
+
+/* lists */
+div#content .dokuwiki ul {
+  list-style-image: url(static/3rd/monobook/bullet.gif) !important;
+  list-style-type: square;
+}
+
+/* quotes */
+div#content .dokuwiki blockquote {
+  border-left: 2px solid __border__;
+  padding-left: 3px;
+  margin-left: 0.2em;
+}
+
+/* preformatted stuff, source code */
+div#content .dokuwiki code,
+div#content .dokuwiki pre,
+div#content .dokuwiki pre.code,
+div#content .dokuwiki pre.file {
+  font-size: 110%;
+  line-height: 1.4em;
+}
+div#content .dokuwiki pre,
+div#content .dokuwiki pre.code,
+div#content .dokuwiki pre.file {
+  line-height: 1.2em;
+  background-color: __background_other__;
+}
+div#content .dokuwiki dl.file,
+div#content .dokuwiki dl.file dd {
+  margin-left: 0;
+}
+div#content .dokuwiki dl.file dt {
+  background-color: __background_other__;
+  border-bottom: 2px solid __background_other__;
+}
+
+/* "you are here" and "breadcrumbs" */
+.catlinks {
+  margin-bottom: 0.5em;
+}
+.catlinks p {
+  margin: 0.3em 0 !important;
+}
+
+/* different stuff */
+#p-cactions #ca-addsection a {
+  adding-left: .4em;
+  padding-right: .4em;
+}
+
+/* customize ajax "matching pagename" searchbox */
+#qsearch__in {
+  width: 10.9em;
+  margin: 0;
+  font-size: 95%;
+}
+#qsearch__out {
+  background-color: __background_other__;
+  border: 1px solid __border__;
+  display: none;
+  font-size: 80%;
+  line-height: 1.2em;
+  opacity: 0.9;
+  padding: 4px;
+  text-align: left;
+  position: absolute;
+  left: 150px;
+  z-index: 30000;
+  margin-top: -60px;
+}
+div.dokuwiki div.ajax_qsearch {
+  position: absolute;
+  width: 200px;
+  opacity: 0.9;
+  display: none;
+  font-size: 80%;
+  line-height: 1.2em;
+  border: 1px solid #8cacbb;
+  background-color: #f7f9fa;
+  text-align: left;
+  padding: 4px;
+}
+
+/* offsets to distinguish the tab groups */
+li#ca-talk {
+    margin-right: 1.6em;
+}
+li#ca-watch, li#ca-unwatch, li#ca-varlang-0, li#ca-print {
+    margin-left: 1.6em;
+}
+
+/* section edit buttons */
+div.secedit input.button{
+  border: 0 none !important;
+  text-transform: lowercase;
+  color: blue !important;
+  background: none 0 !important;
+  vertical-align: middle;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  font-size: 10px;
+  cursor: pointer;
+  height: 15px !important;
+  max-height: 15px !important;
+  min-height: 15px !important;
+  float:right;
+  display: inline;
+}
+div.secedit2 {
+  text-align: right;
+}
+div.secedit2 a {
+  border: 0px;
+  text-transform: lowercase;
+  color: blue;
+  background-color: transparent;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+/* personal tools */
+div#column-one #p-personal.portlet .pBody ul {
+  background: transparent none 0 0;
+  line-height: 1.4em !important;
+  list-style-image: none !important;
+  list-style-position: outside;
+  list-style-type: none !important;
+  margin: 0 !important;
+  padding: 0 2em 0 3em !important;
+  text-align: right;
+}
+
+/* insitu-footnotes */
+div.insitu-footnote {
+  font-size: 100% !important;
+  z-index: 3 !important; /* z-index needed, otherwise the footnotes will be rendered below
+                            the main content area of monobook */
+}
+
+
+/* --------------- sidebar --------------- */
+div#column-one .portlet .pBody ul {
+  font-size: 95%;
+  line-height: 1.5em;
+  list-style-image: url(static/3rd/monobook/bullet.gif);
+  list-style-type: square;
+  margin: 0.3em 0 0 1.5em;
+  padding: 0;
+}
+div#column-one .portlet .pBody a {
+  background: transparent none no-repeat scroll 0 0;
+  color: #002bb8;
+  text-decoration: none;
+  border-bottom: 0 none !important;
+}
+div#column-one .portlet .pBody a:visited {
+  color: #5a3696;
+}
+div#column-one .portlet .pBody a:hover {
+  text-decoration: underline !important;
+}
+/* translation plugin by Anreas Gohr */
+div#column-one .pBody .dokuwiki .plugin_translation span {
+  display: none;
+}
+div#column-one .pBody .dokuwiki .plugin_translation {
+  padding-right: 0 !important;
+}
+div#column-one .pBody .dokuwiki .plugin_translation,
+div#column-one .pBody .dokuwiki .plugin_translation ul,
+div#column-one .pBody .dokuwiki .plugin_translation li {
+  float: none;
+  margin: 0;
+  padding-right: 0;
+  line-height: 1.5em;
+  font-size: 100%;
+}
+div#column-one .pBody .dokuwiki .plugin_translation ul {
+  list-style-image: url(static/3rd/monobook/bullet.gif);
+  list-style-type: square !important;
+  margin: 0.3em 0 0 1.5em;
+  padding: 0;
+}
+div#column-one .pBody .dokuwiki .plugin_translation ul li a.wikilink1:link,
+div#column-one .pBody .dokuwiki .plugin_translation ul li a.wikilink1:hover,
+div#column-one .pBody .dokuwiki .plugin_translation ul li a.wikilink1:active,
+div#column-one .pBody .dokuwiki .plugin_translation ul li a.wikilink1:visited,
+div#column-one .pBody .dokuwiki .plugin_translation ul li a.wikilink2:link,
+div#column-one .pBody .dokuwiki .plugin_translation ul li a.wikilink2:hover,
+div#column-one .pBody .dokuwiki .plugin_translation ul li a.wikilink2:active,
+div#column-one .pBody .dokuwiki .plugin_translation ul li a.wikilink2:visited {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+div#column-one .pBody .dokuwiki .plugin_translation ul li a.wikilink1:before,
+div#column-one .pBody .dokuwiki .plugin_translation ul li a.wikilink2:before {
+  content: attr(title) " (";
+}
+div#column-one .pBody .dokuwiki .plugin_translation ul li a.wikilink1:after,
+div#column-one .pBody .dokuwiki .plugin_translation ul li a.wikilink2:after {
+  content: ") ";
+}
+div#column-one .pBody .dokuwiki .plugin_translation ul li a.wikilink1 {
+  color: __existing__ !important;
+}
+div#column-one .pBody .dokuwiki .plugin_translation ul li a.wikilink2 {
+  color: __missing__ !important;
+}
+div#column-one .pBody .dokuwiki .plugin_translation ul li a.wikilink1:hover {
+  text-decoration: underline;
+}
+div#column-one .pBody .dokuwiki .plugin_translation ul li a.wikilink2:hover {
+  text-decoration: underline !important;
+}
+div#column-one .pBody .dokuwiki .plugin_translation select {
+  width: 90%;
+  margin: auto !important;
+  text-align: left;
+}
+div#column-one .pBody .dokuwiki .plugin_translation option,
+div#column-one .pBody .dokuwiki .plugin_translation option.wikilink1,
+div#column-one .pBody .dokuwiki .plugin_translation option.wikilink2 {
+  padding: auto 5px !important;
+  text-align: left;
+}
+
+
+/* --------------- Table of contents (TOC) --------------- */
+div#content .dokuwiki ul.toc li {
+  list-style-image: none;
+  list-style-type: none;
+  background: transparent url(static/3rd/dokuwiki/tocdot2.gif) 0 0.6em no-repeat;
+}
+
+
+/* --------------- admin menu --------------- */
+/* "remember me" checkbox, login */
+div.dokuwiki form#dw__login label.simple {
+  text-align: center;
+  padding-bottom: 0.4em;
+}
+.dokuwiki ul.admin_tasks li {
+  background: transparent none no-repeat scroll 0 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+
+/* --------------- media manager --------------- */
+#media__left,
+#media__right {
+  position: relative !important;
+  min-height: 550px;
+}
+#media__right {
+  padding-left: 0.2em;
+  width: 98%;
+}
+/* make a "non-embedded"/fullpage manager possible trough hiding some stuff */
+body.mmanagernotembedded #column-one,
+body.mmanagernotembedded #footer,
+body.mmanagernotembedded .catlinks {
+  display: none !important;
+}
+body.mmanagernotembedded #content {
+  margin: 0 !important;
+}
+
+
+/* --------------- footer --------------- */
+/* default copyright notice layout */
+div#footer li#copyright .license {
+  font-size: 100%;
+  padding: 0;
+}
+div#footer li#copyright .license a.urlextern {
+  margin-left: 0.4em;
+}
+
+
+
+
+/******************************************************************************
+ ********************* Browser Hacks and corrections **************************
+ ******************************************************************************/
+/* MSIE: fix textarea in admin menu (incl. jumping bug MSIE8) */
+textarea,
+.dokuwiki #dw__editform textarea.edit {
+  /* fix scrollbar flickers in IE8 standards mode, see
+     http://j.mp/bHExde and http://j.mp/ad7Abj for details */
+  width: 450px\9;
+  max-width: 100%\9;
+  min-width: 100%\9;
+  /* overwrite original monobook with fixes for IE6/7 */
+  #width: 100% !important;
+  border: auto;
+}
+/* admin menu icons: MSIE 6/7 */
+.dokuwiki ul.admin_tasks li div.li {
+   #font-weight: bold;
+   #border-left: 1px dashed __background__; /* invisible border triggers IE to render the stuff */
+}

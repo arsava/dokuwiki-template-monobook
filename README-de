@@ -1,0 +1,133 @@
+Titel: LiesMich des monobook-Templates für DokuWiki
+Erstellungsdatum: 2010-01-08
+Letzte Änderung: 2010-06-26
+Autor: Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+Web: <http://andreas-haerter.com/projects/dokuwiki-template-monobook>
+     <http://www.dokuwiki.org/template:monobook>
+
+
+
+ACHTUNG: Diese Datei stellt eine AUSZUGSWEISE Übersetzung der wichtigsten Teile
+         der englischsprachigen README dar. Für den vollständigen Text bitte die
+         Datei "README" in diesem Verzeichnis einsehen.
+
+
+
+I. Das Template benutzen/installieren
+  "monobook" zu nutzen ist einfach und funktioniert genau wie unter
+  <http://www.dokuwiki.org/template> beschrieben: Entpacken Sie das
+  heruntergeladene Archiv in das "lib/tpl/"-Verzeichnis Ihrer DokuWiki. Wählen
+  Sie es dann einfach im Config Manager über die "template"-Option aus. Fertig.
+  :-)
+
+  Falls Sie eine bestehende monobook-Installation aktualisieren wollen, werfen
+  Sie bitte einen Blick auf <http://www.dokuwiki.org/template:monobook>. Dort
+  sollten Sie alle benötigten Informationen finden.
+
+  HINWEIS: Falls alles unformatiert angezeigt wird, ist Ihre PHP-Umgebung ggf.
+           vom PHP bug Nr. 49692 betroffen (s. entsprechender Bugreport unter
+           <http://bugs.php.net/bug.php?id=49692>). Sie finden evtl. Einträge
+           wie "syntax error, unexpected '/' in ../../lib/tpl/monobook/style.ini
+           on line XX" in Ihren PHP-Logs falls dies der Fall sein sollte.
+           monobook bietet einen Workaround für  diesen Fehler an, löschen Sie
+           einfach monobooks "style.ini" um das Template dazu zu bewegen,
+           selbigen zu nutzen.
+
+
+
+II. Das Template anpassen
+  Um Aktualisierungen/Updates des installierten "monobook"-Templates einfach zu
+  gestalten, halten Sie sich bitte an die folgenden Hinweise um das Template
+  anzupassen:
+
+  - Eigene Dateien in "monobook/user" ablegen
+    Der Ort für *alle* benutzerdefinierten, angepassten Dinge/Dateien ist
+    "monobook/user".
+    Grund: dieses Verzeichnis wird bei Aktualisierungen nicht angerührt. Daher
+    können Sie einfach alles außer "monobook/user" löschen und alle neuen
+    Dateien nach "monobook/" kopieren um das Template zu aktualisieren, ohne
+    Ihre Änderungen zu verlieren. Vergessen Sie nicht Ihren Browser-Cache
+    anschließend zu leeren.
+
+  - Eigenes Logo
+    Falls Sie das Standard-Logo, welches in der linken oberen Ecke angezeigt
+    wird, austauschen wollen, legen Sie einfach eine "logo.[png|gif|jpg]"-Datei
+    im "monobook/user"-Ordner an. Das Template erkennt die Datei automatisch und
+    wird sie anstelle des Standard-Logos verwenden. Vergessen Sie nicht Ihren
+    Browser-Cache anschließend zu leeren.
+
+  - Eigenes Favicon
+    Falls Sie das Standard-favicon austauschen wollen, legen Sie einfach eine
+    "favicon.ico"-Datei im "monobook/user"-Ordner an. Das Template erkennt die
+    Datei automatisch und wird sie anstelle des Standard-Favicons verwenden.
+    Vergessen Sie nicht Ihren Browser-Cache anschließend zu leeren. By the way:
+    Vielleicht finden Sie das folgende Online-Werkzeug nützlich:
+    <http://tools.dynamicdrive.com/favicon/>
+    Hinweis: "favicon.png" ist ebenfalls möglich, wird aber nicht empfohlen (da
+             es von den meisten MSIE-Versionen nicht unterstützt wird).
+
+  - Eigene CSS
+    Um eigene CSS-Regeln anzuwenden, editieren Sie einfach
+    "monobook/user/screen.css" (beeinflusst das normale Erscheinungsbild)
+    und/oder "monobook/user/print.css" (beeinflusst das Druck-Erscheinungsbild)
+    und/oder "monobook/user/rtl.css" (beeinflusst "rechts-nach-links"-Sprachen
+    wie Hebräisch). Diese Dateien werden automatisch eingebunden (als letzte
+    für das relevante Ausgabemedium, daher können Sie auch existierende Styles
+    überschreiben). Vergessen Sie nicht Ihren Browser-Cache anschließend zu
+    leeren.
+
+  - Eigenes JavaScript
+    Um zusätzliches JavaScript zu laden, editieren Sie einfach
+    "monobook/user/user.js". Vergessen Sie nicht Ihren Browser-Cache
+    anschließend zu leeren.
+    ACHTUNG: Vergessen Sie nicht die Template-Option "monobook_loaduserjs"
+             (->"Datei 'monobook/user/user.js' laden?") im DokuWiki Config
+             Manager zu aktivieren!
+
+  - Eigene CSS, sprachspezifisch
+    Um eigene CSS-Regeln nur für eine bestimmte Sprache anzuwenden,
+    editieren/erstellen Sie einfach "monobook/lang/<ihre-sprache>/style.css".
+    Diese Datei wird automatisch eingebunden, sobald DokuWiki in der Sprache der
+    Wahl betrieben wird/eine Seite anzeigt (als letzte, daher können Sie auch
+    existierende Styles überschreiben). Vergessen Sie nicht Ihren Browser-Cache
+    anschließend zu leeren.
+
+  - Eigene Tabs
+    Um eigene Tabs anzuzeigen, editieren Sie einfach "monobook/user/tabs.php".
+    Kein Sorge: Sie finden dort einige Beispiele wie eigene Tabs definiert
+    werden. Falls Sie nach dem ausprobieren der Beispiele immernoch Fragen
+    haben, durchsuchen Sie am besten <http://dokuwiki.org/template:monobook>
+    und/oder das DokuWiki-Forum unter <http://forum.dokuwiki.org> und/oder
+    fragen Sie die dortige Gemeinschaft falls Sie die Probleme beim
+    Konfigurieren der eigenen Tabs nicht selbst lösen können.
+    Falls "monobook/user/tabs.php" nicht existiert, kopieren Sie die Datei
+    einfach aus dem aktuellen Installationsarchiv.
+
+  - Eigene Fußleisten-Buttons (Footer)
+    Um eigene Buttons/Grafiken in der Fußleiste anzuzeigen (-> die kleinen
+    80x15 Bildchen), editieren Sie einfach "monobook/user/buttons.php".
+    Kein Sorge: Sie finden dort einige Beispiele wie eigene Buttons definiert
+    werden. Falls Sie nach dem ausprobieren der Beispiele immernoch Fragen
+    haben, durchsuchen Sie am besten <http://dokuwiki.org/template:monobook>
+    und/oder das DokuWiki-Forum unter <http://forum.dokuwiki.org> und/oder
+    fragen Sie die dortige Gemeinschaft falls Sie die Probleme beim
+    Konfigurieren der eigenen Buttons nicht selbst lösen können.
+    Falls "monobook/user/buttons.php" nicht existiert, kopieren Sie die Datei
+    einfach aus dem aktuellen Installationsarchiv.
+
+  - Eigene Boxen
+    Um eigene Boxen in der linken Spalte anzuzeigen, editieren Sie einfach
+    "monobook/user/boxes.php". Kein Sorge: Sie finden dort einige Beispiele wie
+    eigene Boxen definiert werden. Falls Sie nach dem ausprobieren der
+    Beispiele immernoch Fragen haben, durchsuchen Sie am besten
+    <http://dokuwiki.org/template:monobook> und/oder das DokuWiki-Forum unter
+    <http://forum.dokuwiki.org> und/oder fragen Sie die dortige Gemeinschaft
+    falls Sie die Probleme beim Konfigurieren der eigenen Buttons nicht selbst
+    lösen können.
+    Falls "monobook/user/boxes.php" nicht existiert, kopieren Sie die Datei
+    einfach aus dem aktuellen Installationsarchiv.
+
+
+[...Ende der AUSZUGSWEISEN Übersetzung der englischsprachigen README. Für den
+vollständigen Text bitte die Datei "README" in diesem Verzeichnis einsehen.]
+

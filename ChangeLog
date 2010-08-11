@@ -1,0 +1,265 @@
+Title: Development Changelog of the monobook template for DokuWiki
+Creation Date: 2010-01-09
+Last Update: 2010-06-29
+Author: Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+Web: <http://andreas-haerter.com/projects/dokuwiki-template-monobook>
+     <http://www.dokuwiki.org/template:monobook>
+
+
+
+PLEASE NOTE: I am NO native English speaker. If you find any errors please let
+             me know (e.g. by mail). Otherwise, my English is not getting better
+             (as desired by myself). Thank you! -- Andreas Haerter
+
+
+2010-06-29 Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * Small IE6 compatibility fixes.
+
+
+2010-06-28 Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * New config option: closed wiki
+    If active, most tabs/boxes will be hidden until user is logged in.
+
+  * Template respects $conf['disableactions']
+    Links to disabled functions should be hidden now.
+
+  * Completely changed the way CSS was handled
+    See <http://j.mp/jIyE2> why I am do this.
+
+  * Better/new implementation of Andreas Gohr's "translation" plugin integration
+    Translations are now linked within the sidebar. The language name will be
+    taken from the title attribute (-> introduced in newer plugin versions), so
+    you may have to update the plugin. See
+    <http://www.dokuwiki.org/plugin:translation> to get the newest version.
+
+  * MANY minor improvements
+
+
+2010-06-26  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * New config option: user pages
+    You can (de)activate user pages now + choose a custom namespace for them.
+
+  * Support for PNG favicons
+    I do NOT recommend PNG for favicons (cause it is not supported by
+    all browsers), but some users requested this feature. See README for
+    details.
+
+  * I replaced all "wl(getID())" with "wl(cleanID(getID())".
+    Additionally, all "auth_quickaclcheck(trim($id, ":))" where replaced with
+    "auth_quickaclcheck(cleanID($id))". See comment on
+    <http://bugs.splitbrain.org/index.php?do=details&task_id=1983> for details.
+
+
+2010-06-05 Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * Some PHP DocBlock Updates
+
+  * Minor CSS improvements
+
+
+2010-06-02 Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * Added workaround for the "Jumping textarea" MSIE8 bug
+
+  * Added Spanish language files
+    Thanks to Jacobo María Pantoja Checa :-) (see CREDITS for details).
+
+
+2010-05-30 Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * Fixed wrong array keys in "/lang/it/settings.php"
+
+
+2010-05-29  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * Added Dutch language files
+    Thanks to Theo Klein :-) (see CREDITS for details).
+
+  * Added Brazilian Portuguese language files
+    Thanks to Sérgio Evandro Motta :-) (see CREDITS for details).
+
+  * Addes some more examples to /user/boxes.php
+
+
+2010-05-28  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * Configurable: Table of contents
+    You are now be able to choose: show the TOC placed at the left column or
+    embedded within the article (which is the default/normal behavior). See the
+    config option "monobook_toc_position" for details.
+    Thanks to Kai Raven <http://blog.kairaven.de/> for this suggestion.
+
+  * Removed "access denied" messages for included pages
+    If a client is not able to access an included wikipage, an "access denied"
+    message was shown instead of the rendered page content. Many users were
+    wishing another behaviour at least for the navigation - I will follow them
+    and therefore simply nothing will be shown now if an included page is not
+    accessible.
+
+  * Added link to recent changes link to the default toolbox.
+
+  * "/static/css/screen.css": changed the background color for <file> tags form
+    __background_alt__ to __background_other__. the get the old color back,
+    insert the following into "/user/screen.css":
+    div.dokuwiki pre.file {
+      background-color: #dee7ec;
+    }
+    div.dokuwiki dl.file dt {
+      background-color: #dee7ec;
+      border-bottom: 1px solid #dee7ec;
+    }
+
+  * Removed rev="nofollow" for backlinks-link in default toolbox
+
+  * Fixed wrong path of toolbar button background in "/static/css/screen.css"
+
+  * Some minor improvements + fixed reported bugs
+
+  * Renamed "/static/3rd/style.css" into "/static/3rd/index.html"
+    Argh. I created these "index.html" files in all subdirs of the template to
+    prevent directory browsing on misconfigured webservers but did not noticed
+    this file naming error until today. :-/ If you upgrade, you may delete
+    "/static/3rd/style.css" (to be on the safe side: check if the file contains
+    HTML instead of CSS. If yes, it is the correct one to delete.). But this is
+    just a cosmetic action, so if you do not know what I am talking about here,
+    just do not touch anything. ;-)
+
+
+2010-01-22  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * Fixed "id"-Bug in _monobook_renderBoxes()
+
+  * Addes some more examples to /user/tabs.php and /user/boxes.php
+
+
+2010-01-21  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * Small updates to /user/tabs.php
+
+  * Removed quotes from style.ini
+    Some environments seem to have trouble with INI-entries like
+    > foobar="screen"
+    Replaced them trough entries like
+    > foobar=screen
+
+
+2010-01-20  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * Added Norwegian language files
+    Thanks to Henrik Karlstrøm :-) (see CREDITS for details).
+
+  * Updated Japanese language files (fixed errors)
+    Thanks to Yoshitaka Kunikane :-) (see CREDITS for details).
+
+  * Added "/bug49642.php"
+    This file provides a workaround for PHP bug #49642. For details, see the
+    bugreport at <http://bugs.php.net/bug.php?id=49692>. If you see errors like
+    "syntax error, unexpected '/' in ../../lib/tpl/monobook/style.ini on line
+    XX" in your logs, simply delete monobook's style.ini to trigger the usage
+    of the workaround. Thanks to Marc and virk for reporting this.
+
+
+2010-01-19  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * Updated French language files (fixed errors)
+    Thanks to Tamara Göbes :-) (see CREDITS for details).
+
+  * Updated Japanese language files
+    Thanks to Yoshitaka Kunikane :-) (see CREDITS for details).
+
+  * Fixed some typos, minor improvements
+
+
+2010-01-17  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * Added box examples in /user/boxes.php
+
+  * Updated README regarding the usage of user defined boxes for the left column
+
+  * Added comments in all .htaccess files (regarding file security)
+    Commented the files to make sure that these additional Apache rules are not
+    necessary to use monobook in a safe way. Additionally, some rules were
+    updated to match newly created files in the /user directory.
+
+
+2010-01-16  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * Created /user/boxes.php, /conf/boxes.php
+    Left-column boxes are now configurable. See README for details.
+
+  * Added new option $conf["monobook_mediamanager_embedded"]
+    If enabled (=default), the mediamanager will be shown in the content area
+    like a normal article (including navigation and stuff). If disabled, tabs,
+    navigation and footer will be hidden to get a non-embedded, full-width
+    media manager like it is known by the default DokuWiki template.
+
+  * Added Japanese language files
+    Thanks to Yoshitaka Kunikane :-) (see CREDITS for details).
+
+  * Updated French language files
+    Thanks to Tamara Göbes :-) (see CREDITS for details).
+
+  * Created /VERSION
+    Text file to make it easier for users to determine which version of the
+    monobook-template is installed. Updated /.htaccess rules to protect the
+    file.
+
+  * Fixed some IE only CSS-issues (no selected tabs, no icons in admin area)
+    Thanks to Casper for reporting the bugs.
+
+  * Added DokuWiki environment check in several files (e.g. language files)
+
+
+2010-01-13  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * Created /user/tabs.php
+    Own tabs should be defined at /user/tabs.php from now on to make updates
+    easy going. See README for details.
+
+  * Created /user/buttons.php, /conf/buttons.php
+    Footer buttons/links are now configurable. See README for details.
+
+  * Added Italian language files
+    Thanks to Luigi Micco :-) (see CREDITS for details).
+
+  * Removed second call of html_msgarea()
+    Some people where confused when messages are showed both on top and bottom
+    of the page. Thanks to Luis Machuca <gulix.cl> for reporting this.
+
+  * Added "Export PDF" tab for the html2pdf plugin
+    Thanks to Luigi Micco for submitting this (see the following for plugin
+    info: <http://www.dokuwiki.org/plugin:html2pdf>).
+
+  * Optional site notice was rendered outside the main content divs
+    Therefore needed CSS classes were not applied to the rendered content of
+    the class. Solution: moved deeper into the XHTML structure, inside
+    <div id="bodyContent"><div class="dokuwiki">. Thanks to Luigi Micco for
+    reporting this bug.
+
+  * Added some CSS to mark missing "edit summary" input in the admin menu
+
+  * Removed PHP code for Terence J. Grant's Google Analytics for DokuWiki
+    The main.php took care about Terence J. Grant's Google Analytics for
+    DokuWiki (see <http://www.dokuwiki.org/plugin:googleanalytics>), but I saw
+    today, that this is simply not needed anymore (-> quote 2009-05-25: "Plugin
+    is now an action plugin that requires no additional PHP code modification.
+    Thanks to Mikhail I. Izmestev for this fix.)
+
+
+2010-01-12  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * Using wl() instead of DOKU_BASE/DOKU_SCRIPT for link creation
+
+  * Added French language files
+    Thanks to Tamara Göbes :-) (see CREDITS for details).
+
+
+2010-01-11  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * Renamed the template from "monodoku" to "monobook"
+    Michael (known as "chimeric", <chimeric.de>) contacted me on 2010-01-10
+    because he talked to Terence J. Grant <http://tjgrant.com/> to maintain
+    the template in the future (Terence does not have enough time to do this any
+    longer). After some investigation, he though about a rewrite... something I
+    already done with the release of "monodoku" ;-). After talking a bit, we
+    decided it is the best way to rename "monodoku" into "monobook" and provide
+    an upgrade path for the people who are using the no-longer-maintained
+    "Monobook for DokuWiki" by Terence J. Grant to get the things working
+    smoothly.
+
+  * Rewriting CSS rules
+    All new DokuWiki features are supported right now (e.g Link Wizard,
+    downloadable code blocks...).
+
+  * Fixed permanent link issue
+
+
+2010-01-09  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * Initial release.
+
