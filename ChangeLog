@@ -1,6 +1,6 @@
 Title: Development Changelog of the monobook template for DokuWiki
 Creation Date: 2010-01-09
-Last Update: 2010-06-29
+Last Update: 2010-08-17
 Author: Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
 Web: <http://andreas-haerter.com/projects/dokuwiki-template-monobook>
      <http://www.dokuwiki.org/template:monobook>
@@ -12,11 +12,36 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
              (as desired by myself). Thank you! -- Andreas Haerter
 
 
-2010-06-29 Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+
+2010-08-17  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * Added /user/tracker.php to make web analytics software integration easier
+    See README for details.
+
+  * Fixed bug: Pull down menus/pickers are invisible (editor toolbar)
+    If editing any page, the pull down menu of "Select Headline", "Smileys" and
+    "Special Chars" buttons didn't show up cause of an z-index issue. This is
+    fixed now.
+
+
+2010-08-16  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * Changed list styles (<ul>, <ol> -> list-style-image and indentation/margin)
+    They are finally looking like the ones of the MediaWiki vector. If you want
+    the previous indentation back, put the following into your /user/screen.css:
+      div#content .dokuwiki ul {
+        margin: 0 0 0.8em 3.5em !important;
+      }
+
+  * CSS-fix: Wrong font-site for <code> and <pre> @ insitu-footnotes
+
+  * Changed Table of contents (TOC) styles
+    Now it looks as usual (compared with the default tamplate)
+
+
+2010-06-29  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
   * Small IE6 compatibility fixes.
 
 
-2010-06-28 Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-06-28  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
   * New config option: closed wiki
     If active, most tabs/boxes will be hidden until user is logged in.
 
@@ -50,7 +75,7 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
     <http://bugs.splitbrain.org/index.php?do=details&task_id=1983> for details.
 
 
-2010-06-05 Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-06-05  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
   * Some PHP DocBlock Updates
 
   * Minor CSS improvements
@@ -63,7 +88,7 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
     Thanks to Jacobo María Pantoja Checa :-) (see CREDITS for details).
 
 
-2010-05-30 Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-05-30  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
   * Fixed wrong array keys in "/lang/it/settings.php"
 
 

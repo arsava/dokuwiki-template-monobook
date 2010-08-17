@@ -1,6 +1,6 @@
 Titel: LiesMich des monobook-Templates für DokuWiki
 Erstellungsdatum: 2010-01-08
-Letzte Änderung: 2010-06-26
+Letzte Änderung: 2010-08-17
 Autor: Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
 Web: <http://andreas-haerter.com/projects/dokuwiki-template-monobook>
      <http://www.dokuwiki.org/template:monobook>
@@ -126,6 +126,15 @@ II. Das Template anpassen
     lösen können.
     Falls "monobook/user/boxes.php" nicht existiert, kopieren Sie die Datei
     einfach aus dem aktuellen Installationsarchiv.
+
+  - Einbinden von Web-Analyse-Software (Piwik, Google Analytics etc.)
+    Tools wie Piwik und Google Analytics benötigen normalerweise einen kleinen
+    Code-Schnipsel ("tag"), welchen man auf der eigenen Website einbinden muss,
+    damit alles funktionieren kann. Sofern man solche Software mit diesem
+    Template einsetzen will, sollte man sich die Datei
+    "monobook/user/tracker.php" anschauen. Sie existiert, um die Integration
+    einfacher zu gestalten und man nicht überlegen muss, wo solche Codes
+    eingefügt werden müssen: dies ist der korrekte Platz dafür.
 
 
 [...Ende der AUSZUGSWEISEN Übersetzung der englischsprachigen README. Für den

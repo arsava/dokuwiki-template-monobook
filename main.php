@@ -788,6 +788,11 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
 <?php
 //provide DokuWiki housekeeping, required in all templates
 tpl_indexerWebBug();
+
+//include web analytics software
+if (file_exists(DOKU_TPLINC."/user/tracker.php")){
+   include DOKU_TPLINC."/user/tracker.php";
+}
 ?>
 </body>
 </html>
