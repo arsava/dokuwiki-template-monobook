@@ -143,7 +143,7 @@ if (file_exists(DOKU_TPLINC."/user/buttons.php")){
  *       the "Monobook for Dokuwiki" template by Terence J. Grant.
  *
  * @param array The tab data to render within the snippet. Each element
- *        is represented through an subarray:
+ *        is represented through a subarray:
  *        $array = array("tab1" => array("text"     => "hello world!",
  *                                       "href"     => "http://www.example.com"
  *                                       "nofollow" => true),
@@ -283,7 +283,7 @@ function _monobook_renderTabs($arr)
  *       the "Monobook for Dokuwiki" template by Terence J. Grant.
  *
  * @param array The box data to render within the snippet. Each box is
- *        represented through an subarray:
+ *        represented through a subarray:
  *        $array = array("box-id1" => array("headline" => "hello world!",
  *                                          "xhtml"    => "I am <i>here</i>."));
  *        Available keys within the subarrays:
@@ -364,7 +364,7 @@ function _monobook_renderBoxes($arr)
  * Helper to render the footer buttons (like a dynamic XHTML snippet)
  *
  * @param array The button data to render within the snippet. Each element
- *        is represented through an subarray:
+ *        is represented through a subarray:
  *        $array = array("btn1" => array("img"      => DOKU_TPL."static/img/button-monobook.png",
  *                                       "href"     => "http://andreas-haerter.com/projects/dokuwiki-template-monobook",
  *                                       "width"    => 80,
@@ -389,8 +389,6 @@ function _monobook_renderBoxes($arr)
  *        - "height" (optional)
  *          height="<value>" will be added to the image tag if both "height" and
  *          "width" are set (otherwise, this will be ignored).
- *        - "nofollow" (optional)
- *          If set to TRUE, rel="nofollow" will be added to the link.
  *        - "nofollow" (optional)
  *          If set to TRUE, rel="nofollow" will be added to the link.
  *        - "title" (optional)
@@ -748,7 +746,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
       <?php
       //copyright notice
       if (tpl_getConf("monobook_copyright")){
-          //show dokuwikis default notice?
+          //show dokuwiki's default notice?
           if (tpl_getConf("monobook_copyright_default")){
               echo "<li id=\"copyright\">\n        <div class=\"dokuwiki\">";
               tpl_license(false);
@@ -791,7 +789,7 @@ tpl_indexerWebBug();
 
 //include web analytics software
 if (file_exists(DOKU_TPLINC."/user/tracker.php")){
-   include DOKU_TPLINC."/user/tracker.php";
+    include DOKU_TPLINC."/user/tracker.php";
 }
 ?>
 </body>
