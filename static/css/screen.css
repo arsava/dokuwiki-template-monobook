@@ -446,6 +446,19 @@ div#content .dokuwiki dl.file dt {
   background-color: #f9f9f9;
   border-bottom: 2px solid #f9f9f9;
 }
+div#content .dokuwiki dl.file dt,
+div#content .dokuwiki dl.code dt {
+  border-top: 1px dashed __border__;
+  border-left: 1px dashed __border__;
+  border-right: 1px dashed __border__;
+  display: inline;
+  margin-left: 2em;
+  padding: 0.1em 1em;
+}
+div#content .dokuwiki dl.file dt a,
+div#content .dokuwiki dl.code dt a {
+  color: __text__;
+}
 
 /* "you are here" and "breadcrumbs" */
 .catlinks {
@@ -650,6 +663,7 @@ div#column-one .pBody .dokuwiki .plugin_translation span {
 }
 div#column-one .pBody .dokuwiki .plugin_translation {
   padding-right: 0 !important;
+  text-align: left;
 }
 div#column-one .pBody .dokuwiki .plugin_translation,
 div#column-one .pBody .dokuwiki .plugin_translation ul,
@@ -803,6 +817,8 @@ div.dokuwiki form#dw__login label.simple {
   background: transparent none no-repeat scroll 0 0;
   list-style-type: none;
   list-style-image: none;
+}
+.dokuwiki ul.admin_tasks li a {
   font-weight: bold;
 }
 .picker {
