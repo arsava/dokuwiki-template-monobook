@@ -78,6 +78,12 @@
   font-weight: normal;
 }
 
+/* internal link, existing */
+.dokuwiki a.wikilink1,
+.dokuwiki a.wikilink1:visited {
+  color: __existing__ !important;
+}
+
 /* missing page red: common */
 a.wikilink2:link,
 a.wikilink2:visited,
@@ -536,6 +542,9 @@ li#ca-watch, li#ca-unwatch, li#ca-varlang-0, li#ca-print {
 }
 
 /* section edit buttons */
+.dokuwiki .secedit {
+  margin-top: 0;
+}
 div.secedit input.button{
   border: 0 none !important;
   text-transform: lowercase;
@@ -551,7 +560,6 @@ div.secedit input.button{
   max-height: 15px !important;
   min-height: 15px !important;
   float:right;
-  display: inline;
 }
 div.secedit2 {
   text-align: right;
@@ -635,6 +643,12 @@ button.pickerbutton {
   cursor: pointer;
 }
 
+/* pagelist plugin compatibilty */
+div.dokuwiki table.pagelist tr,
+div.dokuwiki table.pagelist td {
+  border-left: 0 none;
+  border-right: 0 none;
+}
 
 /* --------------- sidebar --------------- */
 div#column-one .portlet .pBody ul {
