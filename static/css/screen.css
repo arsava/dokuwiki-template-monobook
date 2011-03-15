@@ -73,17 +73,200 @@
   background-color: __background__;
 }
 
+/* link to current page */
+.dokuwiki span.curid a {
+  font-weight: normal;
+}
 
 /* missing page red: common */
 a.wikilink2:link,
 a.wikilink2:visited,
 a.wikilink2:hover {
-  color: __missing__;
+  color: __missing__ !important;
 }
 
 /* missing page red: tabs */
 #p-cactions li a.wikilink2 {
   color: __missing__;
+}
+
+/* general tags */
+html {
+  background-color: #f9f9f9;
+}
+div.dokuwiki p,
+div.dokuwiki blockquote,
+div.dokuwiki table,
+div.dokuwiki pre {
+  margin: 0 0 1.0em 0;
+}
+div.dokuwiki caption {
+  font-family: sans-serif;
+}
+
+/* forms */
+div.dokuwiki textarea.edit {
+  font-family: monospace, serif;
+  /* second generic font fixes problem with font-size, see
+http://meyerweb.com/eric/thoughts/2010/02/12/fixed-monospace-sizing/ */
+  font-size: 14px;
+  color: __text__;
+  background-color: __background__;
+  border: 1px solid __border__;
+  padding: 0.3em 0 0 0.3em;
+  width: 100%;
+  line-height: 17px;
+}
+
+div.dokuwiki legend {
+  font-family: sans-serif;
+  font-weight: normal;
+  background-color: transparent;
+}
+
+/* nice alphatransparency background except for IE <7 */
+html>body div.dokuwiki textarea.edit {
+  background: __background__ url(static/3rd/dokuwiki/inputshadow.png) repeat-x top;
+}
+
+div.dokuwiki input.edit,
+div.dokuwiki select.edit {
+  font-size: 100%;
+  border: 1px solid __border__;
+  color: __text__;
+  background-color: __background__;
+  vertical-align: middle;
+  margin: 1px;
+  padding: 0.20em 0.3em;
+  display: inline;
+  font-weight: normal;
+}
+
+/* nice alphatransparency background except for IE <7 */
+html>body div.dokuwiki input.edit,
+html>body div.dokuwiki select.edit {
+  background: __background__ url(static/3rd/dokuwiki/inputshadow.png) repeat-x top;
+}
+
+div.dokuwiki select.edit {
+  padding: 0.1em 0;
+}
+
+div.dokuwiki input.missing {
+  font-size: 100%;
+  border: 1px solid __border__;
+  color: __text__;
+  background-color: #ffcccc;
+  vertical-align: middle;
+  margin: 1px;
+  padding: 0.20em 0.3em;
+  display: inline;
+}
+
+/* disabled style - not understood by IE */
+div.dokuwiki textarea.edit[disabled],
+div.dokuwiki textarea.edit[readonly],
+div.dokuwiki input.edit[disabled],
+div.dokuwiki input.edit[readonly],
+div.dokuwiki input.button[disabled],
+div.dokuwiki select.edit[disabled] {
+  background-color: __background_neu__!important;
+  color: __text_neu__!important;
+  font-weight: normal;
+}
+
+/* edit form */
+div.dokuwiki div.toolbar,
+div.dokuwiki div#wiki__editbar {
+   margin: 2px 0;
+   text-align: left;
+}
+div.dokuwiki div#size__ctl {
+   float: right;
+   width: 60px;
+   height: 2.7em;
+}
+div.dokuwiki #size__ctl img {
+   cursor: pointer;
+}
+div.dokuwiki div#wiki__editbar div.editButtons {
+   float: left;
+   padding: 0 1.0em 0.7em 0;
+}
+div.dokuwiki div#wiki__editbar div.summary {
+   float: left;
+}
+div.dokuwiki .nowrap {
+   white-space: nowrap;
+}
+div.dokuwiki div#draft__status {
+  float: right;
+  color: __text_alt__;
+}
+
+div.dokuwiki div.license {
+  padding: 0.5em;
+  font-size: 90%;
+  text-align: center;
+}
+
+div.dokuwiki form#dw__editform div.license {
+  clear: left;
+  font-size: 90%;
+}
+
+/* buttons */
+
+div.dokuwiki input.button,
+div.dokuwiki button.button {
+  border: 1px solid __border__;
+  color: __text__;
+  background-color: __background__;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 100%;
+  cursor: pointer;
+  margin: 1px;
+  padding: 0.125em 0.4em;
+  font-weight: normal;
+}
+
+/* nice alphatransparency background except for IE <7 */
+html>body div.dokuwiki input.button,
+html>body div.dokuwiki button.button {
+  background: __background__ url(static/3rd/dokuwiki/buttonshadow.png) repeat-x bottom;
+}
+
+* html div.dokuwiki input.button,
+* html div.dokuwiki button.button {
+  height: 1.8em;
+}
+
+div.dokuwiki div.secedit input.button {
+  border: 1px solid __border__;
+  color: __text__;
+  background-color: __background__;
+  vertical-align: middle;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  cursor: pointer;
+  float: right;
+  display: inline;
+}
+
+
+/* links */
+div.dokuwiki a:link,
+div.dokuwiki a:visited {
+  color: #436976;
+  text-decoration: none;
+}
+div.dokuwiki a:hover,
+div.dokuwiki a:active {
+  color: __text__;
+  text-decoration: underline;
 }
 
 /* external link */
@@ -93,18 +276,39 @@ div.dokuwiki a.urlextern {
   color: #436976;
   text-decoration: none;
 }
+div.dokuwiki a.urlextern:visited {
+  color: purple;
+}
+
+/* interwiki link */
+div.dokuwiki a.interwiki {
+  color: #436976;
+}
+div.dokuwiki a.interwiki:visited {
+  color: purple;
+}
 
 /* windows share */
 div.dokuwiki a.windows {
-  background: transparent url(static/3rd/dokuwiki/windows.gif) 0px 1px no-repeat;
+  background: transparent url(static/3rd/dokuwiki/windows.gif) center left no-repeat;
+  color: #436976;
 }
 
 /* email link */
 div.dokuwiki a.mail {
-  background: transparent url(static/3rd/dokuwiki/mail_icon.gif) 0px 1px no-repeat;
+  background: transparent url(static/3rd/dokuwiki/mail_icon.gif) center left no-repeat;
+  color: #436976;
 }
 
 /* headlines */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: sans-serif;
+}
 div#content .dokuwiki h1,
 div#content .dokuwiki h2,
 div#content .dokuwiki h3,
@@ -117,9 +321,20 @@ div#content .dokuwiki h6 {
   padding-bottom: 0.17em;
   padding-top: 0.5em;
 }
+div#content .dokuwiki h1 a,
+div#content .dokuwiki h2 a,
+div#content .dokuwiki h3 a,
+div#content .dokuwiki h4 a,
+div#content .dokuwiki h5 a,
+div#content .dokuwiki h6 a {
+  color: __text__;
+}
+div#content .dokuwiki h1 {
+  font-size: 160%;
+}
 div#content .dokuwiki h1,
 div#content .dokuwiki h2 {
-  margin-bottom:0.6em;
+  margin-bottom: 0.6em;
   font-weight: normal;
 }
 div#content .dokuwiki h3,
@@ -153,24 +368,56 @@ div#content .dokuwiki div.level5 {
 }
 
 /* lists */
-div#content .dokuwiki ul {
-  list-style-type: square;
-  margin-top: .3em;
-  margin-left: 1.5em;
+div.dokuwiki ul {
+  line-height: 1.5em;
   padding: 0;
+  list-style-type: square;
   list-style-image: url(static/3rd/monobook/bullet.gif) !important;
+  margin: 0.3em 0 1em 1.5em;
+  color: __text_alt__;
 }
-div#content .dokuwiki ol {
-  margin-top: .3em;
-  margin-left: 3.2em;
+
+div.dokuwiki ol {
+  line-height: 1.5em;
   padding: 0;
   list-style-image: none;
+  margin: 0.3em 0 1em 3.2em;
+  color: __text_alt__;
+  font-weight: bold;
+}
+
+div.dokuwiki li ul,
+div.dokuwiki li ol {
+  margin: 0 0 0 1.5em; /* no bottom gap in between and smaller left margin for nested lists */
+}
+
+div.dokuwiki .li {
+  color: __text__;  /* the list items overriding the ul/ol definition */
+  font-weight: normal;
+}
+
+div.dokuwiki ol { list-style-type: decimal; }
+div.dokuwiki ol ol { list-style-type: upper-roman; }
+div.dokuwiki ol ol ol { list-style-type: lower-alpha; }
+div.dokuwiki ol ol ol ol { list-style-type: lower-greek; }
+
+div.dokuwiki li.open {
+  list-style-image: url(static/3rd/dokuwiki/images/open.gif);
+}
+
+div.dokuwiki li.closed {
+  list-style-image: url(static/3rd/dokuwiki/closed.gif);
+}
+
+div.dokuwiki li {
+  margin-left: 0;
 }
 
 /* quotes */
 div#content .dokuwiki blockquote {
   border-left: 2px solid __border__;
   padding-left: 3px;
+  padding-right: 0;
   margin-left: 0.2em;
 }
 
@@ -181,20 +428,23 @@ div#content .dokuwiki pre.code,
 div#content .dokuwiki pre.file {
   font-size: 110%;
   line-height: 1.4em;
+  font-family: monospace;
+  background-color: #f9f9f9;
 }
 div#content .dokuwiki pre,
 div#content .dokuwiki pre.code,
 div#content .dokuwiki pre.file {
   line-height: 1.2em;
-  background-color: __background_other__;
+  padding: 0.5em;
+  border-style: dashed;
 }
 div#content .dokuwiki dl.file,
 div#content .dokuwiki dl.file dd {
   margin-left: 0;
 }
 div#content .dokuwiki dl.file dt {
-  background-color: __background_other__;
-  border-bottom: 2px solid __background_other__;
+  background-color: #f9f9f9;
+  border-bottom: 2px solid #f9f9f9;
 }
 
 /* "you are here" and "breadcrumbs" */
@@ -205,9 +455,29 @@ div#content .dokuwiki dl.file dt {
   margin: 0.3em 0 !important;
 }
 
+/* tables */
+td[align="right"],
+th[align="right"] {
+  text-align: right;
+}
+
+div.dokuwiki table.inline {
+  background-color: __background__;
+  min-width: 0;
+}
+
+div.dokuwiki table.inline th {
+  border-color: __border__;
+  background-color: __background_alt__;
+}
+
+div.dokuwiki table.inline td {
+  border-color: __border__;
+}
+
 /* different stuff */
 #p-cactions #ca-addsection a {
-  adding-left: .4em;
+  padding-left: .4em;
   padding-right: .4em;
 }
 
@@ -218,7 +488,7 @@ div#content .dokuwiki dl.file dt {
   font-size: 95%;
 }
 #qsearch__out {
-  background-color: __background_other__;
+  background-color: #f9f9f9;
   border: 1px solid __border__;
   display: none;
   font-size: 80%;
@@ -296,11 +566,60 @@ div#column-one #p-personal.portlet .pBody ul {
   text-align: right;
 }
 
+/* footnotes */
+div.dokuwiki div.fn {
+  font-size: 90%;
+}
+
+/* link to footnote inside the text */
+.dokuwiki sup a.fn_top {
+  color: #436976;
+}
+
+/* link to text from footnote */
+.dokuwiki sup a.fn_bot {
+  color: #436976;
+}
+
 /* insitu-footnotes */
 div.insitu-footnote {
   font-size: 100% !important;
+  padding: 4px;
   z-index: 3 !important; /* z-index needed, otherwise the footnotes will be rendered below
                             the main content area of monobook */
+}
+
+/* Toolbar */
+button.toolbutton {
+  background-color: __background__;
+  padding: 0px;
+  margin: 0 1px 0 0;
+  border: 1px solid __border__;
+  cursor: pointer;
+}
+
+/* nice alphatransparency background except for IE <7 */
+html>body button.toolbutton {
+  background: __background__ url(static/3rd/dokuwiki/buttonshadow.png) repeat-x bottom;
+}
+
+div.picker {
+  width: 250px;
+  border: 1px solid __border__;
+  background-color: __background_alt__;
+}
+
+div.pk_hl {
+  width: 125px;
+}
+
+button.pickerbutton {
+  padding: 0px;
+  margin: 0 1px 1px 0;
+  border: 0;
+  background-color: transparent;
+  font-size: 80%;
+  cursor: pointer;
 }
 
 
@@ -320,7 +639,7 @@ div#column-one .portlet .pBody a {
   border-bottom: 0 none !important;
 }
 div#column-one .portlet .pBody a:visited {
-  color: #5a3696;
+  color: #002bb8;
 }
 div#column-one .portlet .pBody a:hover {
   text-decoration: underline !important;
@@ -392,12 +711,86 @@ div#column-one .pBody .dokuwiki .plugin_translation option.wikilink2 {
 }
 
 
-/* --------------- Table of contents (TOC) --------------- */
-div#content .dokuwiki ul.toc li {
+/* --------------- Table of contents (TOC) ---------------  */
+div.dokuwiki div.toc {
+  margin: 1.2em 0 0 2em;
+  float: right;
+  width: 200px;
+  font-size: 80%;
+  clear: both;
+}
+
+div.dokuwiki div.tocheader {
+  border: 1px solid __border__;
+  background-color: __background_alt__;
+  text-align: left;
+  font-weight: bold;
+  padding: 3px;
+  margin-bottom: 2px;
+}
+
+div.dokuwiki span.toc_open,
+div.dokuwiki span.toc_close {
+  border: 0.4em solid __background_alt__;
+  float: right;
+  display: block;
+  margin: 0.4em 3px 0 0;
+}
+
+div.dokuwiki span.toc_open span,
+div.dokuwiki span.toc_close span {
+  display: none;
+}
+
+div.dokuwiki span.toc_open {
+  margin-top: 0.4em;
+  border-top: 0.4em solid __text__;
+}
+
+div.dokuwiki span.toc_close {
+  margin-top: 0;
+  border-bottom: 0.4em solid __text__;
+}
+
+div.dokuwiki #toc__inside {
+  border: 1px solid __border__;
+  background-color: __background__;
+  text-align: left;
+  padding: 0.5em 0 0.7em 0;
+}
+
+div.dokuwiki ul.toc {
+  list-style-type: none;
+  list-style-image: none;
+  line-height: 1.2em;
+  padding: 0 !important;
+  margin: 0.3em 0 0 1.5em !important;
+}
+
+div.dokuwiki ul.toc li {
   list-style-image: none;
   list-style-type: none;
   background: transparent url(static/3rd/dokuwiki/tocdot2.gif) 0 0.6em no-repeat;
+  padding-left: 0.4em !important;
+  margin-bottom: 0.1em !important;
 }
+
+div.dokuwiki ul.toc li.clear {
+  background-image: none;
+  padding-left: 0.4em;
+}
+
+div.dokuwiki a.toc:link,
+div.dokuwiki a.toc:visited {
+  color: #436976;
+}
+
+div.dokuwiki a.toc:hover,
+div.dokuwiki a.toc:active {
+  color: __text__;
+}
+
+
 
 
 /* --------------- admin menu --------------- */
@@ -410,10 +803,16 @@ div.dokuwiki form#dw__login label.simple {
   background: transparent none no-repeat scroll 0 0;
   list-style-type: none;
   list-style-image: none;
+  font-weight: bold;
 }
 .picker {
   z-index: 3; /* z-index needed, otherwise the pull-down menus will be rendered
                  below the main content area of monobook */
+}
+/* acl tree */
+#acl__tree li {
+  list-style-image: none;
+  list-style-type: none;
 }
 
 
@@ -448,6 +847,80 @@ div#footer li#copyright .license a.urlextern {
   margin-left: 0.4em;
 }
 
+
+/* --------------- search result formating --------------- */
+div.dokuwiki .search_result {
+  margin-bottom: 6px;
+  padding: 0 10px 0 30px;
+}
+
+div.dokuwiki .search_snippet {
+  color: __text_other__;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+div.dokuwiki .search_sep {
+  color: __text__;
+}
+
+div.dokuwiki .search_hit {
+  color: __text__;
+  background-color: __highlight__;
+}
+div.dokuwiki strong.search_hit {
+  font-weight: normal;
+}
+
+div.dokuwiki div.search_quickresult {
+  margin: 0 0 15px 30px;
+  padding: 0 10px 10px 0;
+  border-bottom: 1px dashed __border__;
+}
+div.dokuwiki div.search_quickresult h3 {
+  margin: 0 0 1.0em 0;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+div.dokuwiki ul.search_quickhits {
+  margin: 0 0 0.5em 1.0em;
+}
+
+div.dokuwiki ul.search_quickhits li {
+  margin: 0 1.0em 0 1.0em;
+  float: left;
+  width: 30%;
+}
+
+div.dokuwiki .section_highlight {
+  background-color: __background_alt__ !important;
+}
+
+/* --------------- image details ----------------- */
+div.dokuwiki div.img_big {
+  float: left;
+  margin-right: 0.5em;
+}
+
+div.dokuwiki dl.img_tags dt {
+  font-weight: bold;
+  background-color: __background_alt__;
+}
+div.dokuwiki dl.img_tags dd {
+  background-color: __background_neu__;
+}
+
+div.dokuwiki div.imagemeta {
+  color: __text_neu__;
+  font-size: 70%;
+  line-height: 95%;
+}
+
+div.dokuwiki div.imagemeta img.thumb {
+  float: left;
+  margin-right: 0.1em;
+}
 
 
 
