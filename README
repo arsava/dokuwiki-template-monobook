@@ -1,7 +1,7 @@
 Title: README of the monobook template for DokuWiki
 Creation date: 2010-01-05
 Last Update: 2011-03-15
-Author: Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+Author: Andreas Haerter <development [ät] andreas-haerter.com>
 Web: <http://andreas-haerter.com/projects/dokuwiki-template-monobook>
      <http://www.dokuwiki.org/template:monobook>
 
@@ -137,7 +137,8 @@ III. Some notes about the dirs of this template
   * "monobook/static/3rd"
     Static files originally taken from a third party.
   * "monobook/static/3rd/dokuwiki"
-    Static files originally taken from the DokuWiki "default" template.
+    Static files originally taken from the DokuWiki "default" or "starter"
+    template.
   * "monobook/static/3rd/monobook"
     Static files originally taken from the MediaWiki "monobook" template.
   * "monobook/static/3rd/wikipedia"
@@ -306,7 +307,7 @@ VI. Creation transcript
       * /monobook/monobook/rtl.css
       * /monobook/monobook/user.gif
     - The following files were copied from Andreas Gohr's "default" template:
-      * /default/*.css (see <http://j.mp/jIyE2> why I do this)
+      * /default/*.css (see <http://j.mp/eq8zSo> why I do this)
       * /default/images/closed.gif
       * /default/images/favicon.ico
       * /default/images/link_icon.gif

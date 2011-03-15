@@ -1,7 +1,7 @@
 Title: Development Changelog of the monobook template for DokuWiki
 Creation Date: 2010-01-09
-Last Update: 2010-08-17
-Author: Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+Last Update: 2011-03-16
+Author: Andreas Haerter <development [ät] andreas-haerter.com>
 Web: <http://andreas-haerter.com/projects/dokuwiki-template-monobook>
      <http://www.dokuwiki.org/template:monobook>
 
@@ -12,8 +12,26 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
              (as desired by myself). Thank you! -- Andreas Haerter
 
 
+ATTENTION: I will not update this file anymore. Have a look at
+           <https://github.com/andreashaerter/dokuwiki-template-monobook/>
+           if you want to know what changed under the hood.
 
-2010-08-17  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+
+
+2011-03-16  Andreas Haerter <development [ät] andreas-haerter.com>
+  * Switched CSS base from switch css base from 'default' to 'starter' template.
+    See <http://j.mp/f7V4ES> and <http://j.mp/eq8zSo> for background
+    information.
+
+  * DokuWiki 2010-11-07 compatibility fixes and smaller improvements.
+
+  * This will be the last manual changelog update.
+    We are living in times of useful OSS development platforms. Have a look at
+    <https://github.com/andreashaerter/dokuwiki-template-monobook/> if you want
+    to know what changed.
+
+
+2010-08-17  Andreas Haerter <development [ät] andreas-haerter.com>
   * Added /user/tracker.php to make web analytics software integration easier
     See README for details.
 
@@ -23,7 +41,7 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
     fixed now.
 
 
-2010-08-16  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-08-16  Andreas Haerter <development [ät] andreas-haerter.com>
   * Changed list styles (<ul>, <ol> -> list-style-image and indentation/margin)
     They are finally looking like the ones of the MediaWiki vector. If you want
     the previous indentation back, put the following into your /user/screen.css:
@@ -37,11 +55,11 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
     Now it looks as usual (compared with the default tamplate)
 
 
-2010-06-29  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-06-29  Andreas Haerter <development [ät] andreas-haerter.com>
   * Small IE6 compatibility fixes.
 
 
-2010-06-28  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-06-28  Andreas Haerter <development [ät] andreas-haerter.com>
   * New config option: closed wiki
     If active, most tabs/boxes will be hidden until user is logged in.
 
@@ -49,7 +67,7 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
     Links to disabled functions should be hidden now.
 
   * Completely changed the way CSS was handled
-    See <http://j.mp/jIyE2> why I am do this.
+    See <http://j.mp/eq8zSo> why I am do this.
 
   * Better/new implementation of Andreas Gohr's "translation" plugin integration
     Translations are now linked within the sidebar. The language name will be
@@ -60,7 +78,7 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
   * MANY minor improvements
 
 
-2010-06-26  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-06-26  Andreas Haerter <development [ät] andreas-haerter.com>
   * New config option: user pages
     You can (de)activate user pages now + choose a custom namespace for them.
 
@@ -75,24 +93,24 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
     <http://bugs.splitbrain.org/index.php?do=details&task_id=1983> for details.
 
 
-2010-06-05  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-06-05  Andreas Haerter <development [ät] andreas-haerter.com>
   * Some PHP DocBlock Updates
 
   * Minor CSS improvements
 
 
-2010-06-02 Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-06-02 Andreas Haerter <development [ät] andreas-haerter.com>
   * Added workaround for the "Jumping textarea" MSIE8 bug
 
   * Added Spanish language files
     Thanks to Jacobo María Pantoja Checa :-) (see CREDITS for details).
 
 
-2010-05-30  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-05-30  Andreas Haerter <development [ät] andreas-haerter.com>
   * Fixed wrong array keys in "/lang/it/settings.php"
 
 
-2010-05-29  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-05-29  Andreas Haerter <development [ät] andreas-haerter.com>
   * Added Dutch language files
     Thanks to Theo Klein :-) (see CREDITS for details).
 
@@ -102,7 +120,7 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
   * Addes some more examples to /user/boxes.php
 
 
-2010-05-28  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-05-28  Andreas Haerter <development [ät] andreas-haerter.com>
   * Configurable: Table of contents
     You are now be able to choose: show the TOC placed at the left column or
     embedded within the article (which is the default/normal behavior). See the
@@ -145,13 +163,13 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
     just do not touch anything. ;-)
 
 
-2010-01-22  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-01-22  Andreas Haerter <development [ät] andreas-haerter.com>
   * Fixed "id"-Bug in _monobook_renderBoxes()
 
   * Addes some more examples to /user/tabs.php and /user/boxes.php
 
 
-2010-01-21  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-01-21  Andreas Haerter <development [ät] andreas-haerter.com>
   * Small updates to /user/tabs.php
 
   * Removed quotes from style.ini
@@ -161,7 +179,7 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
     > foobar=screen
 
 
-2010-01-20  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-01-20  Andreas Haerter <development [ät] andreas-haerter.com>
   * Added Norwegian language files
     Thanks to Henrik Karlstrøm :-) (see CREDITS for details).
 
@@ -176,7 +194,7 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
     of the workaround. Thanks to Marc and virk for reporting this.
 
 
-2010-01-19  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-01-19  Andreas Haerter <development [ät] andreas-haerter.com>
   * Updated French language files (fixed errors)
     Thanks to Tamara Göbes :-) (see CREDITS for details).
 
@@ -186,7 +204,7 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
   * Fixed some typos, minor improvements
 
 
-2010-01-17  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-01-17  Andreas Haerter <development [ät] andreas-haerter.com>
   * Added box examples in /user/boxes.php
 
   * Updated README regarding the usage of user defined boxes for the left column
@@ -197,7 +215,7 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
     updated to match newly created files in the /user directory.
 
 
-2010-01-16  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-01-16  Andreas Haerter <development [ät] andreas-haerter.com>
   * Created /user/boxes.php, /conf/boxes.php
     Left-column boxes are now configurable. See README for details.
 
@@ -224,7 +242,7 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
   * Added DokuWiki environment check in several files (e.g. language files)
 
 
-2010-01-13  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-01-13  Andreas Haerter <development [ät] andreas-haerter.com>
   * Created /user/tabs.php
     Own tabs should be defined at /user/tabs.php from now on to make updates
     easy going. See README for details.
@@ -259,14 +277,14 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
     Thanks to Mikhail I. Izmestev for this fix.)
 
 
-2010-01-12  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-01-12  Andreas Haerter <development [ät] andreas-haerter.com>
   * Using wl() instead of DOKU_BASE/DOKU_SCRIPT for link creation
 
   * Added French language files
     Thanks to Tamara Göbes :-) (see CREDITS for details).
 
 
-2010-01-11  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-01-11  Andreas Haerter <development [ät] andreas-haerter.com>
   * Renamed the template from "monodoku" to "monobook"
     Michael (known as "chimeric", <chimeric.de>) contacted me on 2010-01-10
     because he talked to Terence J. Grant <http://tjgrant.com/> to maintain
@@ -285,6 +303,6 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
   * Fixed permanent link issue
 
 
-2010-01-09  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-01-09  Andreas Haerter <development [ät] andreas-haerter.com>
   * Initial release.
 

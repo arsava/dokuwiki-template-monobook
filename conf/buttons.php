@@ -9,7 +9,7 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <andreas.haerter@dev.mail-node.com>
+ * @author Andreas Haerter <development@andreas-haerter.com>
  * @link http://andreas-haerter.com/projects/dokuwiki-template-monobook
  * @link http://www.dokuwiki.org/template:monobook
  * @link http://www.dokuwiki.org/devel:configuration
@@ -63,6 +63,7 @@ if (tpl_getConf("monobook_donate")){
 
 
 //"monobook for DokuWiki" button
+//Note: You are NOT allowed to remove this button. Please respect this!
 $_monobook_btns["mbfdw"]["img"]      = DOKU_TPL."static/img/button-monobook.png";
 $_monobook_btns["mbfdw"]["href"]     = "http://andreas-haerter.com/projects/dokuwiki-template-monobook";
 $_monobook_btns["mbfdw"]["width"]    = 80;

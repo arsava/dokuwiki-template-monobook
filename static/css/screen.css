@@ -16,7 +16,7 @@
      These files will be included BEFORE this specific CSS file. In this file,
      I just overwrite non fitting MediaWiki "monobook" and DokuWiki "starter"
      CSS + add some CSS for some exclusive objects of this template
-   - Why I am doing this? Well, read <http://j.mp/jIyE2>. I followed the main
+   - Why I am doing this? Well, read <http://j.mp/eq8zSo>. I followed the main
      principle described there and simply apply it to the two sources ("starter"
      template and "monobook" skin).
    - This way also ensures a painless update, if there are new versions of
@@ -28,7 +28,7 @@
    - "Styles/corrections for the template itself"
      General CSS targeting the template structure. This section overwrites non
      fitting CSS of the "monobook" MediaWiki skin and "starter" DokuWiki
-     template. Read the notes above and <http://j.mp/jIyE2> if you do not know
+     template. Read the notes above and <http://j.mp/eq8zSo> if you do not know
      why I am doing it this way.
    - "Browser Hacks and corrections"
      Section containing bigger hacks for browser specific problems.

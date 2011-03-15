@@ -9,7 +9,7 @@
  * - "/lib/tpl/monobook/lang/<your lang>/settings.php"
  * If they are not existing, copy and translate the English ones. And don't
  * forget to mail the translation to me,
- * Andreas Haerter <andreas.haerter@dev.mail-node.com>. Thanks :-D.
+ * Andreas Haerter <development@andreas-haerter.com>. Thanks :-D.
  *
  *
  * LICENSE: This file is open source software (OSS) and may be copied under
@@ -25,7 +25,7 @@
  * - "/lib/tpl/monobook/lang/<your lang>/settings.php"
  * Hvis de ikke fins, kopier og oversett de engelske versjonene. Og ikke glem
  * å sende oversettelsen til meg,
- * Andreas Haerter <andreas.haerter@dev.mail-node.com>. Takk:-D.
+ * Andreas Haerter <development@andreas-haerter.com>. Takk:-D.
  *
  *
  * LISENS: Denne fila er programvare med åpen kildekode og kan kopieres under

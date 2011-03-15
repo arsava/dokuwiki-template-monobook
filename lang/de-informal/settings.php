@@ -9,7 +9,7 @@
  * - "/lib/tpl/monobook/lang/<your lang>/settings.php"
  * If they are not existing, copy and translate the English ones. And don't
  * forget to mail the translation to me,
- * Andreas Haerter <andreas.haerter@dev.mail-node.com>. Thanks :-D.
+ * Andreas Haerter <development@andreas-haerter.com>. Thanks :-D.
  *
  *
  * LICENSE: This file is open source software (OSS) and may be copied under
@@ -17,7 +17,7 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <andreas.haerter@dev.mail-node.com>
+ * @author Andreas Haerter <development@andreas-haerter.com>
  * @link http://andreas-haerter.com/projects/dokuwiki-template-monobook
  * @link http://www.dokuwiki.org/template:monobook
  * @link http://www.dokuwiki.org/config:lang
@@ -69,7 +69,7 @@ $lang["monobook_donate_url"]      = "Falls nicht Standard-Spendenziel, folgende 
 $lang["monobook_toc_position"] = "Position des Inhaltsverzeichnisses";
 
 //other stuff
-$lang["monobook_mediamanager_embedded"] = "Mediamanager ins gewöhnliche Layout eingebetten anzeigen?";
+$lang["monobook_mediamanager_embedded"] = "Mediamanager eingebettet im gewöhnliche Layout anzeigen?";
 $lang["monobook_breadcrumbs_position"]  = "Position der breadcrumb-Navigation (sofern aktiviert):";
 $lang["monobook_youarehere_position"]   = "Position der 'Sie befinden sich hier'-Navigation (sofern aktiviert):";
 $lang["monobook_cite_author"]           = "Zu nutzender Autorenname in 'Artikel zitieren':";
