@@ -25,6 +25,9 @@ ATTENTION: I will not update this file anymore. Have a look at
 
   * DokuWiki 2010-11-07 compatibility fixes and smaller improvements.
 
+  * Added Slovak language files
+    Thanks to Martin Hanula :-) (see CREDITS for details).
+
   * This will be the last manual changelog update.
     We are living in times of useful OSS development platforms. Have a look at
     <https://github.com/andreashaerter/dokuwiki-template-monobook/> if you want
