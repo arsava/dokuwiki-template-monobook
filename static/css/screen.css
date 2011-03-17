@@ -335,6 +335,14 @@ div#content .dokuwiki h5 a,
 div#content .dokuwiki h6 a {
   color: __text__;
 }
+div#content .dokuwiki h1 a:hover,
+div#content .dokuwiki h2 a:hover,
+div#content .dokuwiki h3 a:hover,
+div#content .dokuwiki h4 a:hover,
+div#content .dokuwiki h5 a:hover,
+div#content .dokuwiki h6 a:hover {
+  text-decoration: none;
+}
 div#content .dokuwiki h1 {
   font-size: 160%;
 }
@@ -473,23 +481,28 @@ div#content .dokuwiki dl.code dt a {
 }
 
 /* tables */
+th,
+td {
+  border: 0;
+}
 td[align="right"],
 th[align="right"] {
   text-align: right;
 }
-
 div.dokuwiki table.inline {
   background-color: __background__;
   min-width: 0;
 }
-
+div.dokuwiki table.inline th,
+div.dokuwiki table.inline td {
+  border: 1px solid __border__;
+}
 div.dokuwiki table.inline th {
-  border-color: __border__;
   background-color: __background_alt__;
 }
-
-div.dokuwiki table.inline td {
-  border-color: __border__;
+div.dokuwiki table.inline tr:hover th,
+div.dokuwiki table.inline th:hover {
+  background-color: __background_alt__;
 }
 
 /* different stuff */
@@ -641,18 +654,12 @@ button.pickerbutton {
   cursor: pointer;
 }
 
-/* pagelist plugin compatibilty */
-div.dokuwiki table.pagelist tr,
-div.dokuwiki table.pagelist td {
-  border-left: 0 none;
-  border-right: 0 none;
-}
-
 /* gallery plugin compatibilty */
 div.dokuwiki .gallery table,
 div.dokuwiki .gallery td {
   border: 0 none;
 }
+
 
 /* --------------- sidebar --------------- */
 div#column-one .portlet .pBody ul {
@@ -831,6 +838,7 @@ div.dokuwiki form#dw__login label.simple {
   text-align: center;
   padding-bottom: 0.4em;
 }
+/* main menu */
 .dokuwiki ul.admin_tasks li {
   background: transparent none no-repeat scroll 0 0;
   list-style-type: none;
