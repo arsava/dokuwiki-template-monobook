@@ -448,12 +448,10 @@ div#content .dokuwiki dl.file,
 div#content .dokuwiki dl.file dd {
   margin-left: 0;
 }
-div#content .dokuwiki dl.file dt {
-  background-color: #f9f9f9;
-  border-bottom: 2px solid #f9f9f9;
-}
 div#content .dokuwiki dl.file dt,
 div#content .dokuwiki dl.code dt {
+  background-color: #f9f9f9;
+  border-bottom: 2px solid #f9f9f9;
   border-top: 1px dashed __border__;
   border-left: 1px dashed __border__;
   border-right: 1px dashed __border__;
@@ -648,6 +646,12 @@ div.dokuwiki table.pagelist tr,
 div.dokuwiki table.pagelist td {
   border-left: 0 none;
   border-right: 0 none;
+}
+
+/* gallery plugin compatibilty */
+div.dokuwiki .gallery table,
+div.dokuwiki .gallery td {
+  border: 0 none;
 }
 
 /* --------------- sidebar --------------- */
