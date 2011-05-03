@@ -66,7 +66,7 @@ $conf["monobook_toolbox_location"]      = ":wiki:toolbox"; //page/article used t
 //donation link/button
 $conf["monobook_donate"]          = true; //TRUE: use/show donation link/button
 $conf["monobook_donate_default"]  = true; //TRUE: use default donation link/button (if donation link is enabled at all)
-$conf["monobook_donate_url"]      = "http://andreas-haerter.com/donate/monobook/paypal"; //custom donation URL instead of the default one
+$conf["monobook_donate_url"]      = "http://andreas-haerter.com/donate/dokuwiki-template-monobook"; //custom donation URL instead of the default one
 
 //TOC
 $conf["monobook_toc_position"] = "article"; //article: show TOC embedded within the article; "sidebar": show TOC near the navigation, left column

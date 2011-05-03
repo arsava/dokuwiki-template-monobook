@@ -1,6 +1,6 @@
 Title: README of the monobook template for DokuWiki
 Creation date: 2010-01-05
-Last Update: 2011-04-25
+Last Update: 2011-05-03
 Author: Andreas Haerter <development [ät] andreas-haerter.com>
 Web: <http://andreas-haerter.com/projects/dokuwiki-template-monobook>
      <http://www.dokuwiki.org/template:monobook>
@@ -123,7 +123,7 @@ II. Customizing the template
 
 III. Some notes about the dirs of this template
   * "monobook/conf"
-    Contains configuration files:
+    Contains some configuration files (do NOT edit them!), especially
     default.php:  default settings, see
                   <http://www.dokuwiki.org/devel:configuration#default_settings>
     metadata.php: configuration metadata, see
@@ -157,8 +157,8 @@ III. Some notes about the dirs of this template
 
 IV. Other notes
   - Even if it is not required: If you like the template, think about a small
-    donation (see <http://andreas-haerter.com/donate/monobook>) and/or a link to
-    <http://andreas-haerter.com/projects/dokuwiki-template-monobook>.
+    donation (see <http://andreas-haerter.com/donate/dokuwiki-template-monobook>)
+    and/or a link to <http://andreas-haerter.com/projects/dokuwiki-template-monobook>.
     Thanks :-).
 
   - This template follows the DokuWiki coding style (see

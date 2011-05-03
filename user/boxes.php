@@ -60,7 +60,7 @@ $_monobook_boxes["example2"]["xhtml"] =  "<ul>\n"
 
 /*
 $_monobook_boxes["example3"]["headline"] = "Buttons";
-$_monobook_boxes["example3"]["xhtml"] = "<a href=\"http://andreas-haerter.com/donate/monobook/\" title=\"Donate\" target=\"_blank\"><img src=\"".DOKU_TPL."static/img/button-donate.gif\" width=\"80\" height=\"15\" alt=\"Donate\" border=\"0\" /></a>";
+$_monobook_boxes["example3"]["xhtml"] = "<a href=\"http://andreas-haerter.com/donate/dokuwiki-template-monobook\" title=\"Donate\" target=\"_blank\"><img src=\"".DOKU_TPL."static/img/button-donate.gif\" width=\"80\" height=\"15\" alt=\"Donate\" border=\"0\" /></a>";
 */
 
 
