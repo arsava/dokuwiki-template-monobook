@@ -595,6 +595,9 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
           }
           //show breadcrumps if enabled and positioned on top
           if ($conf["breadcrumbs"] == true &&
+              (empty($conf["useacl"]) || //are there any users?
+               $loginname !== "" || //user is logged in?
+               !tpl_getConf("monobook_closedwiki")) &&
               tpl_getConf("monobook_breadcrumbs_position") === "top"){
               echo "\n          <div class=\"catlinks noprint\"><p>\n            ";
               tpl_breadcrumbs();
@@ -602,6 +605,9 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
           }
           //show hierarchical breadcrumps if enabled and positioned on top
           if ($conf["youarehere"] == true &&
+              (empty($conf["useacl"]) || //are there any users?
+               $loginname !== "" || //user is logged in?
+               !tpl_getConf("monobook_closedwiki")) &&
               tpl_getConf("monobook_youarehere_position") === "top"){
               echo "\n          <div class=\"catlinks noprint\"><p>\n            ";
               tpl_youarehere();
@@ -643,6 +649,9 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
           <?php
           //show breadcrumps if enabled and positioned on bottom
           if ($conf["breadcrumbs"] == true &&
+              (empty($conf["useacl"]) || //are there any users?
+               $loginname !== "" || //user is logged in?
+               !tpl_getConf("monobook_closedwiki")) &&
               tpl_getConf("monobook_breadcrumbs_position") === "bottom"){
               echo "\n          <div class=\"catlinks noprint\"><p>\n            ";
               tpl_breadcrumbs();
@@ -651,6 +660,9 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
 
           //show hierarchical breadcrumps if enabled and positioned on bottom
           if ($conf["youarehere"] == true &&
+              (empty($conf["useacl"]) || //are there any users?
+               $loginname !== "" || //user is logged in?
+               !tpl_getConf("monobook_closedwiki")) &&
               tpl_getConf("monobook_youarehere_position") === "bottom"){
               echo "\n          <div class=\"catlinks noprint\"><p>\n            ";
               tpl_youarehere();
