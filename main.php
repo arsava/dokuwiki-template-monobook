@@ -595,6 +595,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
           }
           //show breadcrumps if enabled and positioned on top
           if ($conf["breadcrumbs"] == true &&
+              $monobook_action !== "mediamanager" &&
               (empty($conf["useacl"]) || //are there any users?
                $loginname !== "" || //user is logged in?
                !tpl_getConf("monobook_closedwiki")) &&
@@ -605,6 +606,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
           }
           //show hierarchical breadcrumps if enabled and positioned on top
           if ($conf["youarehere"] == true &&
+              $monobook_action !== "mediamanager" &&
               (empty($conf["useacl"]) || //are there any users?
                $loginname !== "" || //user is logged in?
                !tpl_getConf("monobook_closedwiki")) &&
@@ -649,6 +651,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
           <?php
           //show breadcrumps if enabled and positioned on bottom
           if ($conf["breadcrumbs"] == true &&
+              $monobook_action !== "mediamanager" &&
               (empty($conf["useacl"]) || //are there any users?
                $loginname !== "" || //user is logged in?
                !tpl_getConf("monobook_closedwiki")) &&
@@ -657,9 +660,9 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
               tpl_breadcrumbs();
               echo "\n          </p></div>\n";
           }
-
           //show hierarchical breadcrumps if enabled and positioned on bottom
           if ($conf["youarehere"] == true &&
+              $monobook_action !== "mediamanager" &&
               (empty($conf["useacl"]) || //are there any users?
                $loginname !== "" || //user is logged in?
                !tpl_getConf("monobook_closedwiki")) &&
