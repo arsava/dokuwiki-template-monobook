@@ -1,6 +1,6 @@
 Title: README of the monobook template for DokuWiki
 Creation date: 2010-01-05
-Last Update: 2011-05-03
+Last Update: 2011-05-10
 Author: Andreas Haerter <development [ät] andreas-haerter.com>
 Web: <http://andreas-haerter.com/projects/dokuwiki-template-monobook>
      <http://www.dokuwiki.org/template:monobook>
@@ -28,8 +28,8 @@ I. Using/Installing the template
         <http://bugs.php.net/bug.php?id=49692> for details). You may find errors
         like "syntax error, unexpected '/' in ../../lib/tpl/monobook/style.ini
         on line XX" in your PHP logs when this is the case. monobook provides
-        a workaround for this, simply delete the monobook's "style.ini" to
-        trigger the template to use it.
+        a workaround for this, simply delete monobook's "style.ini" to trigger
+        the template to use it.
 
 
 
