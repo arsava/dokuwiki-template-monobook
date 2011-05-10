@@ -128,6 +128,7 @@ div.dokuwiki legend {
   font-family: sans-serif;
   font-weight: normal;
   background-color: transparent;
+  text-align: left; /* needed for webkit browsers */
 }
 
 /* nice alphatransparency background except for IE <7 */
@@ -222,7 +223,6 @@ div.dokuwiki form#dw__editform div.license {
 }
 
 /* buttons */
-
 div.dokuwiki input.button,
 div.dokuwiki button.button {
   border: 1px solid __border__;
@@ -235,8 +235,17 @@ div.dokuwiki button.button {
   margin: 1px;
   padding: 0.125em 0.4em;
   font-weight: normal;
+  line-height: 1.333em;
+  #line-height: 1em; /* fix MSIE 6, 7 */
 }
-
+div.dokuwiki button.toolbutton {
+  height: 20px;
+  width: 24px;
+  padding: 1px 3px;
+  line-height: 16px;
+  text-align: center;
+  height: 22px\9; /* fix MSIE 6, 7, 8 */
+}
 /* nice alphatransparency background except for IE <7 */
 html>body div.dokuwiki input.button,
 html>body div.dokuwiki button.button {
