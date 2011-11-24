@@ -99,6 +99,7 @@ a.wikilink2:hover {
 /* general tags */
 html {
   background-color: #f9f9f9;
+  overflow-y: auto;
 }
 div.dokuwiki p,
 div.dokuwiki blockquote,
