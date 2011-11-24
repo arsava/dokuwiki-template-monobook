@@ -136,6 +136,14 @@ II. Das Template anpassen
     einfacher zu gestalten und man nicht überlegen muss, wo solche Codes
     eingefügt werden müssen: dies ist der korrekte Platz dafür.
 
+  - Eigenes Apple Touch Icon
+    Falls Sie das Standard-Apple-Touch-Icon austauschen wollen, legen Sie
+    einfach eine "apple-touch-icon.png"-Datei im "monobook/user"-Ordner an.
+    Das Template erkennt die Datei automatisch und wird sie anstelle des
+    Standard-Icons verwenden. Falls Sie mehr Information über das Touch Icon
+    benötigen finden Sie diese in der Apple Developer Datavase ("Configuring Web
+    Applications" <http://j.mp/sx3NMT>).
+
 
 [...Ende der AUSZUGSWEISEN Übersetzung der englischsprachigen README. Für den
 vollständigen Text bitte die Datei "README" in diesem Verzeichnis einsehen.]
