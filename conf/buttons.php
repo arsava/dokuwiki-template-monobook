@@ -46,6 +46,16 @@ $_monobook_btns["rss"]["title"]    = $lang["monobook_recentchanges"];
 $_monobook_btns["rss"]["nofollow"] = true;
 
 
+//"monobook for DokuWiki" button
+//Note: You are NOT allowed to remove this button. Please respect this!
+$_monobook_btns["mbfdw"]["img"]      = DOKU_TPL."static/img/button-monobook.png";
+$_monobook_btns["mbfdw"]["href"]     = "http://andreas-haerter.com/";
+$_monobook_btns["mbfdw"]["width"]    = 80;
+$_monobook_btns["mbfdw"]["height"]   = 15;
+$_monobook_btns["mbfdw"]["title"]    = $lang["monobook_mdtemplatefordw"];
+$_monobook_btns["mbfdw"]["nofollow"] = false;
+
+
 //donation button
 if (tpl_getConf("monobook_donate")){
     $_monobook_btns["donate"]["img"]      = DOKU_TPL."static/img/button-donate.gif";
@@ -60,16 +70,6 @@ if (tpl_getConf("monobook_donate")){
     $_monobook_btns["donate"]["title"]    = $lang["monobook_donate"];
     $_monobook_btns["donate"]["nofollow"] = true;
 }
-
-
-//"monobook for DokuWiki" button
-//Note: You are NOT allowed to remove this button. Please respect this!
-$_monobook_btns["mbfdw"]["img"]      = DOKU_TPL."static/img/button-monobook.png";
-$_monobook_btns["mbfdw"]["href"]     = "http://andreas-haerter.com/projects/dokuwiki-template-monobook";
-$_monobook_btns["mbfdw"]["width"]    = 80;
-$_monobook_btns["mbfdw"]["height"]   = 15;
-$_monobook_btns["mbfdw"]["title"]    = $lang["monobook_mdtemplatefordw"];
-$_monobook_btns["mbfdw"]["nofollow"] = false;
 
 
 //DokuWiki button
