@@ -53,7 +53,6 @@ $lang["monobook_btn_search"] = "Suche";
 
 //default toolbox
 $lang["monobook_toolbxdef_whatlinkshere"] = "Links auf diese Seite";
-$lang["monobook_toolbxdef_upload"] = "Hochladen";
 $lang["monobook_toolbxdef_siteindex"] = "Seitenindex";
 $lang["monobook_toolbxdef_print"] = "Druckversion";
 $lang["monobook_toolboxdef_permanent"] = "Permanentlink";

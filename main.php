@@ -32,8 +32,8 @@ if (!defined("DOKU_INC")){
  * template has to know, what we are doing right now - and that is what this
  * var is for.
  *
- * Please have a look at the "mediamanager.php" and "detail.php" file in the
- * same folder, they are also influencing the var's value.
+ * Please have a look at the "detail.php" file in the same folder, it is also
+ * influencing the var's value.
  *
  * @var string
  * @author Andreas Haerter <development@andreas-haerter.com>
@@ -55,7 +55,6 @@ if (!empty($monobook_action) &&
     $monobook_action !== "article" &&
     $monobook_action !== "print" &&
     $monobook_action !== "detail" &&
-    $monobook_action !== "mediamanager" &&
     $monobook_action !== "cite"){
     //ignore unknown values
     $monobook_action = "article";
@@ -465,7 +464,7 @@ if ($ACT === "edit" &&
 }
 
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo hsc($conf["lang"]); ?>" lang="<?php echo hsc($conf["lang"]); ?>" dir="<?php echo hsc($lang["direction"]); ?>">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -525,6 +524,7 @@ if ($monobook_action === "print"){
        ."<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."static/3rd/wikipedia/commonPrint.css\" />\n"
        ."<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."user/print.css\" />\n";
 }
+
 //load language specific css hacks?
 if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
   $interim = trim(file_get_contents(DOKU_TPLINC."lang/".$conf["lang"]."/style.css"));
@@ -543,8 +543,8 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
              switch (true){
                  //special: tech
                  case ($monobook_action === "detail"):
-                 case ($monobook_action === "mediamanager"):
                  case ($monobook_action === "cite"):
+                 case ($ACT === "media"): //var comes from DokuWiki
                  case ($ACT === "search"): //var comes from DokuWiki
                    echo "mediawiki ns-2 ltr";
                    break;
@@ -561,12 +561,6 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
                  default:
                    echo "mediawiki ns-0 ltr";
                    break;
-             }
-             //add additional CSS class to hide some elements when
-             //we have to show the (not) embedded mediamanager
-             if ($monobook_action === "mediamanager" &&
-                 !tpl_getConf("monobook_mediamanager_embedded")){
-                 echo " mmanagernotembedded";
              }
              ?>">
 <div id="globalWrapper">
@@ -605,7 +599,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
           }
           //show breadcrumps if enabled and positioned on top
           if ($conf["breadcrumbs"] == true &&
-              $monobook_action !== "mediamanager" &&
+              $ACT !== "media" && //var comes from DokuWiki
               (empty($conf["useacl"]) || //are there any users?
                $loginname !== "" || //user is logged in?
                !tpl_getConf("monobook_closedwiki")) &&
@@ -616,7 +610,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
           }
           //show hierarchical breadcrumps if enabled and positioned on top
           if ($conf["youarehere"] == true &&
-              $monobook_action !== "mediamanager" &&
+              $ACT !== "media" && //var comes from DokuWiki
               (empty($conf["useacl"]) || //are there any users?
                $loginname !== "" || //user is logged in?
                !tpl_getConf("monobook_closedwiki")) &&
@@ -641,10 +635,6 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
               case "detail":
                   include DOKU_TPLINC."inc_detail.php";
                   break;
-              //file browser/"mediamanager"
-              case "mediamanager":
-                  include DOKU_TPLINC."inc_mediamanager.php";
-                  break;
               //"cite this article"
               case "cite":
                   include DOKU_TPLINC."inc_cite.php";
@@ -661,7 +651,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
           <?php
           //show breadcrumps if enabled and positioned on bottom
           if ($conf["breadcrumbs"] == true &&
-              $monobook_action !== "mediamanager" &&
+              $ACT !== "media" && //var comes from DokuWiki
               (empty($conf["useacl"]) || //are there any users?
                $loginname !== "" || //user is logged in?
                !tpl_getConf("monobook_closedwiki")) &&
@@ -672,7 +662,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
           }
           //show hierarchical breadcrumps if enabled and positioned on bottom
           if ($conf["youarehere"] == true &&
-              $monobook_action !== "mediamanager" &&
+              $ACT !== "media" && //var comes from DokuWiki
               (empty($conf["useacl"]) || //are there any users?
                $loginname !== "" || //user is logged in?
                !tpl_getConf("monobook_closedwiki")) &&

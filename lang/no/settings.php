@@ -87,7 +87,6 @@ $lang["monobook_donate_url"]      = "Hvis ikke, bruk følgende lenke til donasjo
 
 //other stuff
 //annet
-$lang["monobook_mediamanager_embedded"] = "Display mediamanger embedded within the common layout?"; //@TODO
 $lang["monobook_breadcrumbs_position"]  = "Posisjonen til breadcrumb-navigering (hvis tillatt):";
 $lang["monobook_youarehere_position"]   = "Posisjonen til 'Du er her'-navigering (hvis tillatt):";
 $lang["monobook_cite_author"]           = "Forfatternavn i 'Sitér denne artikkelen':";

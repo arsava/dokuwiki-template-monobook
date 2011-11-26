@@ -69,7 +69,6 @@ $lang["monobook_donate_url"]      = "If not default, use following URL for donat
 $lang["monobook_toc_position"] = "Table of contents (TOC) position";
 
 //other stuff
-$lang["monobook_mediamanager_embedded"] = "Display mediamanger embedded within the common layout?";
 $lang["monobook_breadcrumbs_position"]  = "Position of breadcrumb navigation (if enabled):";
 $lang["monobook_youarehere_position"]   = "Position of 'You are here' navigation (if enabled):";
 $lang["monobook_cite_author"]           = "Author name in 'Cite this Article':";

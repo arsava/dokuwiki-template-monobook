@@ -115,7 +115,7 @@ if (empty($conf["useacl"]) || //are there any users?
             if (actionOK("recent")){ //check if action is disabled
                 $_monobook_boxes["p-tb"]["xhtml"] .= "          <li id=\"tb-recent\"><a href=\"".wl("", array("do" => "recent"))."\" rel=\"nofollow\">".hsc($lang["btn_recent"])."</a></li>\n"; //language comes from DokuWiki core
             }
-            $_monobook_boxes["p-tb"]["xhtml"] .= "          <li id=\"tb-upload\"><a href=\"".DOKU_BASE."lib/exe/mediamanager.php?ns=".getNS(getID())."\" rel=\"nofollow\">".hsc($lang["monobook_toolbxdef_upload"])."</a></li>\n";
+            $_monobook_boxes["p-tb"]["xhtml"] .= "          <li id=\"tb-upload\"><a href=\"".wl("", array("do" => "media"))."\" rel=\"nofollow\">".hsc($lang["btn_media"])."</a></li>\n"; //language comes from DokuWiki core
             if (actionOK("index")){ //check if action is disabled
                 $_monobook_boxes["p-tb"]["xhtml"] .= "          <li id=\"tb-special\"><a href=\"".wl("", array("do" => "index"))."\" rel=\"nofollow\">".hsc($lang["monobook_toolbxdef_siteindex"])."</a></li>\n";
             }

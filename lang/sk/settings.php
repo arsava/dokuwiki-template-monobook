@@ -69,7 +69,6 @@ $lang["monobook_donate_url"]           = "Ak nie štandardné, použiť nasledov
 $lang["monobook_toc_position"]         = "Pozícia Obsahu (Table of contents) stránky";                   // eng: "Table of contents (TOC) position";
 
 //other stuff; for navigation name (breadcrumb, youarehere) see /inc/lang/sk/lang.php
-$lang["monobook_mediamanager_embedded"]= "Zobraziť mediamanager vložený do všeobecného rozmiestnenia stránky?"; // eng: "Display mediamanger embedded within the common layout?";
 $lang["monobook_breadcrumbs_position"] = "Pozícia navigácie 'História' (ak je povolená)";                // eng: "Position of breadcrumb navigation (if enabled):";
 $lang["monobook_youarehere_position"]  = "Pozícia navigácie 'Nachádzate sa' (ak je povolená)";           // eng: "Position of 'You are here' navigation (if enabled):";
 $lang["monobook_cite_author"]          = "Meno autora v 'Citovať túto stránku'";                        // eng: "Author name in 'Cite this Article':";

@@ -54,7 +54,6 @@ $lang['monobook_btn_search'] = 'Serĉo';
 
 //default toolbox
 $lang["monobook_toolbxdef_whatlinkshere"] = "Ligoj tien";
-$lang["monobook_toolbxdef_upload"] = "Ŝarĝi dosieron";
 $lang["monobook_toolbxdef_siteindex"] = "Indekso";
 $lang["monobook_toolbxdef_print"] = "Printebla versio";
 $lang["monobook_toolboxdef_permanent"] = "Rekta ligo";

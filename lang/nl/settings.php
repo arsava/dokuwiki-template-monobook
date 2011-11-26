@@ -63,7 +63,6 @@ $lang["monobook_donate_default"]  = "Indien ja, gebruik de standaard donatie URL
 $lang["monobook_donate_url"]      = "Indien niet standaard, gebruik de volgende URL voor donaties:";
 
 //other stuff
-$lang["monobook_mediamanager_embedded"] = "Toon de mediamanger geintegreerd in de normale layout?";
 $lang["monobook_breadcrumbs_position"]  = "Positie van broodkruimel navigatie (indien ingeschakeld):";
 $lang["monobook_youarehere_position"]   = "Positie van 'U bent hier' navigatie (indien ingeschakeld):";
 $lang["monobook_cite_author"]           = "Naam van de auteur in 'Citeer dit artikel':";

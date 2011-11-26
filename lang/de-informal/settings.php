@@ -69,7 +69,6 @@ $lang["monobook_donate_url"]      = "Falls nicht Standard-Spendenziel, folgende 
 $lang["monobook_toc_position"] = "Position des Inhaltsverzeichnisses";
 
 //other stuff
-$lang["monobook_mediamanager_embedded"] = "Mediamanager eingebettet im gewöhnliche Layout anzeigen?";
 $lang["monobook_breadcrumbs_position"]  = "Position der breadcrumb-Navigation (sofern aktiviert):";
 $lang["monobook_youarehere_position"]   = "Position der 'Sie befinden sich hier'-Navigation (sofern aktiviert):";
 $lang["monobook_cite_author"]           = "Zu nutzender Autorenname in 'Artikel zitieren':";

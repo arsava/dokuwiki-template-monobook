@@ -73,7 +73,6 @@ $lang["monobook_btn_search"] = "Søk";
 //default toolbox
 //standard verktøykasse
 $lang["monobook_toolbxdef_whatlinkshere"] = "Hva lenker hit?";
-$lang["monobook_toolbxdef_upload"] = "Last opp fil";
 $lang["monobook_toolbxdef_siteindex"] = "Sideindeks";
 $lang["monobook_toolbxdef_print"] = "Utskriftvennlig versjon";
 $lang["monobook_toolboxdef_permanent"] = "Permanent lenke";

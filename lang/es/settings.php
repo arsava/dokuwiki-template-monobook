@@ -62,7 +62,6 @@ $lang["monobook_donate_default"]  = "En caso afirmativo, ¿usar la URL por defec
 $lang["monobook_donate_url"]      = "En caso contrario, usar la siguiente URL:";
 
 //other stuff
-$lang["monobook_mediamanager_embedded"] = "¿Mostrar 'Archivos Multimedia' embebido en la disposición normal?";
 $lang["monobook_breadcrumbs_position"]  = "&Position of breadcrumb navigation (if enabled):";
 $lang["monobook_youarehere_position"]   = "Posición de 'Estás aquí' (si está habilitado)";
 $lang["monobook_cite_author"]           = "Nombre de autor en 'Citar este artículo':";

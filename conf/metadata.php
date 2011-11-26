@@ -72,7 +72,6 @@ $meta["monobook_donate_url"]      = array("string", "_pattern" => "/^.{1,6}:\/{2
 $meta["monobook_toc_position"] = array("multichoice", "_choices" => array("article", "sidebar"));
 
 //other stuff
-$meta["monobook_mediamanager_embedded"] = array("onoff");
 $meta["monobook_breadcrumbs_position"]  = array("multichoice", "_choices" => array("top", "bottom"));
 $meta["monobook_youarehere_position"]   = array("multichoice", "_choices" => array("top", "bottom"));
 $meta["monobook_cite_author"]           = array("string");

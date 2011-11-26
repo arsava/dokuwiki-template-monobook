@@ -62,7 +62,6 @@ $lang["monobook_donate_default"]  = "Se sim, usar a URL padrão de doação?";
 $lang["monobook_donate_url"]      = "Se não, usar a seguinte URL para doações:";
 
 //other stuff
-$lang["monobook_mediamanager_embedded"] = "Mostrar gerenciador de media embutido no layout comum?";
 $lang["monobook_breadcrumbs_position"]  = "Posição das páginas visitadas (se habilitado):";
 $lang["monobook_youarehere_position"]   = "Posição do 'Você está aqui' (se habilitado):";
 $lang["monobook_cite_author"]           = "Nome do autor em 'Cite este artigo':";

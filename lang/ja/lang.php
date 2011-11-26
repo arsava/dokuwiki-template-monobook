@@ -53,7 +53,6 @@ $lang["monobook_btn_search"] = "検索";
 
 //default toolbox
 $lang["monobook_toolbxdef_whatlinkshere"] = "被リンク";
-$lang["monobook_toolbxdef_upload"] = "アップロード";
 $lang["monobook_toolbxdef_siteindex"] = "索引";
 $lang["monobook_toolbxdef_print"] = "印刷用";
 $lang["monobook_toolboxdef_permanent"] = "固定リンク";

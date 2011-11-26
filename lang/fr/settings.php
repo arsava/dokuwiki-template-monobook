@@ -62,7 +62,6 @@ $lang["monobook_donate_default"]  = "Si oui, utiliser le but de don standard?";
 $lang["monobook_donate_url"]      = "Sinon le but de don standard, utiliser la url suivante pour faire un don:";
 
 //other stuff
-$lang["monobook_mediamanager_embedded"] = "Affiché le média-manager encastré dans le mis en page commun?";
 $lang["monobook_breadcrumbs_position"]  = "Position de la navigation breadcrumb (si activé):";
 $lang["monobook_youarehere_position"]   = "Position de la navigation 'Vous-êtes ice' (si activé)";
 $lang["monobook_cite_author"]           = "Citer dans l'article le nom de l'auteur utilisé':";

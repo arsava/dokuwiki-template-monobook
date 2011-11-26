@@ -62,7 +62,6 @@ $lang["monobook_donate_default"]  = "Se si, usa l'indirizzo URL predefinito?";
 $lang["monobook_donate_url"]      = "Se non predefinito, usa il seguente indirizzo URL per le donazioni:";
 
 //other stuff
-$lang["monobook_mediamanager_embedded"] = "Visualizzare mediamanager incluso nello schema dello stile?";
 $lang["monobook_breadcrumbs_position"]  = "Posizione del pannello breadcrumb (se abilitato):";
 $lang["monobook_youarehere_position"]   = "Posizione del pannello 'Tu sei qui' (se abilitato):";
 $lang["monobook_cite_author"]           = "Nome autore in 'Cita questo articolo':";

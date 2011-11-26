@@ -72,7 +72,6 @@ $conf["monobook_donate_url"]      = "http://andreas-haerter.com/donate/dokuwiki-
 $conf["monobook_toc_position"] = "article"; //article: show TOC embedded within the article; "sidebar": show TOC near the navigation, left column
 
 //other stuff
-$conf["monobook_mediamanager_embedded"] =  true; //TRUE: Show media manager surrounded by the common navigation/tabs and stuff
 $conf["monobook_breadcrumbs_position"]  = "bottom"; //position of breadcrumbs navigation ("top" or "bottom")
 $conf["monobook_youarehere_position"]   = "top"; //position of "you are here" navigation ("top" or "bottom")
 if (!empty($_SERVER["HTTP_HOST"])){

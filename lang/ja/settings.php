@@ -62,7 +62,6 @@ $lang["monobook_donate_default"]  = "表示する場合、デフォルトのタ�
 $lang["monobook_donate_url"]      = "デフォルトを使用しない場合、下記のURLを指定する。";
 
 //other stuff
-$lang["monobook_mediamanager_embedded"] = "共通レイアウトの中にメディアマネージャーを埋め込んで表示する。";
 $lang["monobook_breadcrumbs_position"]  = "パンくずの表示位置（利用している場合のみ適用）:";
 $lang["monobook_youarehere_position"]   = "現在位置の表示位置（利用している場合のみ適用）:";
 $lang["monobook_cite_author"]           = "'項目を引用'に表示する作者の名前:";

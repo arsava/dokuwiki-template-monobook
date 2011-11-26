@@ -53,7 +53,6 @@ $lang["monobook_btn_search"]                 = "Hľadať";                      
 
 //default toolbox
 $lang["monobook_toolbxdef_whatlinkshere"]    = "Odkazy na túto stránku";         // eng: "What links here";
-$lang["monobook_toolbxdef_upload"]           = "Odovzdať súbor";                 // eng: "Upload file";
 $lang["monobook_toolbxdef_siteindex"]        = "Index sídla";                    // eng: "Site index";
 $lang["monobook_toolbxdef_print"]            = "Verzia na tlač";                 // eng: "Printable version";
 $lang["monobook_toolboxdef_permanent"]       = "Trvalý odkaz";                   // eng: "Permanent link";
