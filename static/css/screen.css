@@ -113,7 +113,9 @@ input[type=checkbox],
 input.check {
   padding: 0;
 }
-input[type=submit], input.button, button {
+input[type=submit],
+input.button,
+button {
   cursor: pointer;
 }
 input[disabled],
@@ -838,7 +840,7 @@ div.dokuwiki div.fn {
 /* insitu-footnotes */
 div.insitu-footnote {
   font-size: 100% !important;
-  padding: 4px;
+  padding: 4px 7px;
   z-index: 3 !important; /* z-index needed, otherwise the footnotes will be rendered below
                             the main content area of monobook */
 }

@@ -492,7 +492,7 @@ if (file_exists(DOKU_TPLINC."user/favicon.ico")){
     //user defined - you might find http://tools.dynamicdrive.com/favicon/
     //useful to generate one
     echo "\n<link rel=\"shortcut icon\" href=\"".DOKU_TPL."user/favicon.ico\" />\n";
-} elseif (file_exists(DOKU_TPLINC."user/favicon.png")) {
+}elseif (file_exists(DOKU_TPLINC."user/favicon.png")){
     //note: I do NOT recommend PNG for favicons (cause it is not supported by
     //all browsers), but some users requested this feature.
     echo "\n<link rel=\"shortcut icon\" href=\"".DOKU_TPL."user/favicon.png\" />\n";
@@ -503,7 +503,7 @@ if (file_exists(DOKU_TPLINC."user/favicon.ico")){
 
 //include default or userdefined Apple Touch Icon (see <http://j.mp/sx3NMT> for
 //details)
-if (file_exists(DOKU_TPLINC."user/apple-touch-icon.png")) {
+if (file_exists(DOKU_TPLINC."user/apple-touch-icon.png")){
     echo "<link rel=\"apple-touch-icon\" href=\"".DOKU_TPL."user/apple-touch-icon.png\" />\n";
 }else{
     //default
