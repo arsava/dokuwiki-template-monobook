@@ -148,7 +148,12 @@ if (empty($conf["useacl"]) || //are there any users?
                 $_monobook_boxes["p-tb"]["xhtml"] .= "          <li id=\"tb-recent\"><a href=\"".wl("", array("do" => "recent"))."\" rel=\"nofollow\">".hsc($lang["btn_recent"])."</a></li>\n"; //language comes from DokuWiki core
             }
             if (actionOK("media")){ //check if action is disabled
-                $_monobook_boxes["p-tb"]["xhtml"] .= "          <li id=\"tb-upload\"><a href=\"".wl("", array("do" => "media"))."\" rel=\"nofollow\">".hsc($lang["btn_media"])."</a></li>\n"; //language comes from DokuWiki core
+                if (function_exists("media_managerURL")) {
+                    //use new media manager (available on releases newer than 2011-05-25a "Rincewind" / since 2011-11-10 "Angua" RC1)
+                    $_monobook_boxes["p-tb"]["xhtml"] .= "          <li id=\"tb-upload\"><a href=\"".wl("", array("do" => "media"))."\" rel=\"nofollow\">".hsc($lang["btn_media"])."</a></li>\n"; //language comes from DokuWiki core
+                }else{
+                    $_monobook_boxes["p-tb"]["xhtml"] .= "          <li id=\"tb-upload\"><a href=\"".DOKU_BASE."lib/exe/mediamanager.php?ns=".getNS(getID())."\" rel=\"nofollow\">".hsc($lang["monobook_toolbxdef_upload"])."</a></li>\n";
+                }
             }
             if (actionOK("index")){ //check if action is disabled
                 $_monobook_boxes["p-tb"]["xhtml"] .= "          <li id=\"tb-special\"><a href=\"".wl("", array("do" => "index"))."\" rel=\"nofollow\">".hsc($lang["monobook_toolbxdef_siteindex"])."</a></li>\n";

@@ -54,6 +54,7 @@ $lang["monobook_btn_search"] = "Zoek";
 
 //default toolbox
 $lang["monobook_toolbxdef_whatlinkshere"] = "Links naar deze pagina";
+$lang["monobook_toolbxdef_upload"] = "Upload bestand";
 $lang["monobook_toolbxdef_siteindex"] = "Index pagina";
 $lang["monobook_toolbxdef_print"] = "Printversie";
 $lang["monobook_toolboxdef_permanent"] = "Permanente link";
