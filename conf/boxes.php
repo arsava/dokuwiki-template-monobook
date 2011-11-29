@@ -41,26 +41,58 @@ if (empty($conf["useacl"]) || //are there any users?
     $loginname !== "" || //user is logged in?
     !tpl_getConf("monobook_closedwiki")){
 
+    //Languages/translations provided via Andreas Gohr's translation plugin,
+    //see <http://www.dokuwiki.org/plugin:translation>. Create plugin object if
+    //needed.
+    if (file_exists(DOKU_PLUGIN."translation/syntax.php") &&
+        !plugin_isdisabled("translation")){
+        $transplugin = &plugin_load("syntax", "translation");
+    } else {
+        $transplugin = false;
+    }
 
     //navigation
     if (tpl_getConf("monobook_navigation")){
         //headline
         $_monobook_boxes["p-x-navigation"]["headline"] = $lang["monobook_bar_navigation"];
 
+        //detect wiki page to load as content
+        if (!empty($transplugin) &&
+            is_object($transplugin) &&
+            tpl_getConf("monobook_navigation_translate")){
+            //translated navigation?
+            $transplugin_langcur = $transplugin->hlp->getLangPart(cleanID(getId())); //current language part
+            $transplugin_langs   = explode(" ", trim($transplugin->getConf("translations"))); //available languages
+            if (empty($transplugin_langs) ||
+                empty($transplugin_langcur) ||
+                !is_array($transplugin_langs) ||
+                !in_array($transplugin_langcur, $transplugin_langs)) {
+                //current page is no translation or something is wrong, load default navigation
+                $nav_location = tpl_getConf("monobook_navigation_location");
+            } else {
+                //load language specific navigation
+                $nav_location = tpl_getConf("monobook_navigation_location")."_".$transplugin_langcur;
+            }
+        }else{
+            //default navigation, no translation
+            $nav_location = tpl_getConf("monobook_navigation_location");
+        }
+
         //content
         if (empty($conf["useacl"]) ||
-            auth_quickaclcheck(cleanID(tpl_getConf("monobook_navigation_location"))) >= AUTH_READ){ //current user got access?
+            auth_quickaclcheck(cleanID($nav_location)) >= AUTH_READ){ //current user got access?
             //get the rendered content of the defined wiki article to use as custom navigation
-            $interim = tpl_include_page(tpl_getConf("monobook_navigation_location"), false);
+            $interim = tpl_include_page($nav_location, false);
             if ($interim === "" ||
                 $interim === false){
                 //creation/edit link if the defined page got no content
-                $_monobook_boxes["p-x-navigation"]["xhtml"] = "[&#160;".html_wikilink(tpl_getConf("monobook_navigation_location"), hsc($lang["monobook_fillplaceholder"]." (".tpl_getConf("monobook_navigation_location").")"))."&#160;]<br />";
+                $_monobook_boxes["p-x-navigation"]["xhtml"] = "[&#160;".html_wikilink($nav_location, hsc($lang["monobook_fillplaceholder"]." (".$nav_location.")"))."&#160;]<br />";
             }else{
                 //the rendered page content
                 $_monobook_boxes["p-x-navigation"]["xhtml"] = $interim;
             }
         }
+        unset($nav_location);
     }
 
     //table of contents (TOC) - show outside the article? (this is a dirty hack but often requested)
@@ -157,11 +189,10 @@ if (empty($conf["useacl"]) || //are there any users?
 
     //Languages/translations provided via Andreas Gohr's translation plugin,
     //see <http://www.dokuwiki.org/plugin:translation>
-    if (file_exists(DOKU_PLUGIN."translation/syntax.php") &&
-        !plugin_isdisabled("translation")){
-        $translation = &plugin_load("syntax", "translation");
+    if (!empty($transplugin) &&
+        is_object($transplugin)){
         $_monobook_boxes["p-lang"]["headline"] = $lang["monobook_bar_inotherlanguages"];
-        $_monobook_boxes["p-lang"]["xhtml"]    = $translation->_showTranslations();
+        $_monobook_boxes["p-lang"]["xhtml"]    = $transplugin->_showTranslations();
     }
 
 }else{

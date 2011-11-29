@@ -46,8 +46,9 @@ $conf["monobook_sitenotice"]          = true; //TRUE: use/show sitenotice
 $conf["monobook_sitenotice_location"] = ":wiki:site_notice"; //page/article used to store the sitenotice
 
 //navigation
-$conf["monobook_navigation"]          = true; //TRUE: use/show navigation
-$conf["monobook_navigation_location"] = ":wiki:navigation"; //page/article used to store the navigation
+$conf["monobook_navigation"]           = true; //TRUE: use/show navigation
+$conf["monobook_navigation_location"]  = ":wiki:navigation"; //page/article used to store the navigation
+$conf["monobook_navigation_translate"] = true; //TRUE: load translated navigation if translation plugin is available (see <http://www.dokuwiki.org/plugin:translation>)
 
 //custom copyright notice
 $conf["monobook_copyright"]          = true; //TRUE: use/show copyright notice

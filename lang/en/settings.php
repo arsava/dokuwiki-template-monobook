@@ -43,8 +43,9 @@ $lang["monobook_sitenotice"]          = "Show site wide notice?";
 $lang["monobook_sitenotice_location"] = "If yes, use following wiki page for the site wide notice:";
 
 //navigation
-$lang["monobook_navigation"]          = "Show navigation?";
-$lang["monobook_navigation_location"] = "If yes, use following wiki page as navigation:";
+$lang["monobook_navigation"]           = "Show navigation?";
+$lang["monobook_navigation_location"]  = "If yes, use following wiki page as navigation:";
+$lang["monobook_navigation_translate"] = "If yes and <a href=\"http://www.dokuwiki.org/plugin:translation\">Translation plugin</a> available: load language specific navigation?<br />The wiki page of the translated navigation(s) is [value of 'monobook_navigation_location']_[iso lang code] (e.g. ':wiki:navigation_de').";
 
 //custom copyright notice
 $lang["monobook_copyright"]          = "Show copyright notice?";
