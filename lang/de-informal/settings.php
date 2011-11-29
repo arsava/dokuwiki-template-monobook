@@ -45,7 +45,7 @@ $lang["monobook_sitenotice_location"] = "Falls ja, folgende wiki-Seite als Hinwe
 //navigation
 $lang["monobook_navigation"]           = "Navigation anzeigen?";
 $lang["monobook_navigation_location"]  = "Falls ja, folgende wiki-Seite als Navigation verwenden:";
-$lang["monobook_navigation_translate"] = "Falls ja und <a href=\"http://www.dokuwiki.org/plugin:translation\">Translation-Plugin</a> verfügbar: sprachspezifische Navigation laden?<br />Die wiki-Seite der übersetzen Navigation(en) lautet [Wert von 'monobook_navigation_location']_[iso-sprach-code] (z.B. ':wiki:navigation_en').";
+$lang["monobook_navigation_translate"] = "Falls ja und <a href=\"http://www.dokuwiki.org/plugin:translation\">Translation-Plugin</a> verfügbar: sprachspezifische Navigation laden?<br />Die wiki-Seite der übersetzten Navigation(en) lautet [Wert von 'monobook_navigation_location']_[iso-sprach-code] (z.B. ':wiki:navigation_en').";
 
 //custom copyright notice
 $lang["monobook_copyright"]          = "Copyright-Hinweis einblenden?";
