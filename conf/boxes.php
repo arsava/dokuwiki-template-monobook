@@ -41,7 +41,7 @@ if (empty($conf["useacl"]) || //are there any users?
     $loginname !== "" || //user is logged in?
     !tpl_getConf("monobook_closedwiki")){
 
-    //Languages/translations provided via Andreas Gohr's translation plugin,
+    //Languages/translations provided by Andreas Gohr's translation plugin,
     //see <http://www.dokuwiki.org/plugin:translation>. Create plugin object if
     //needed.
     if (file_exists(DOKU_PLUGIN."translation/syntax.php") &&
@@ -187,7 +187,7 @@ if (empty($conf["useacl"]) || //are there any users?
         }
     }
 
-    //Languages/translations provided via Andreas Gohr's translation plugin,
+    //Languages/translations provided by Andreas Gohr's translation plugin,
     //see <http://www.dokuwiki.org/plugin:translation>
     if (!empty($transplugin) &&
         is_object($transplugin)){
