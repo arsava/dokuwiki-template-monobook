@@ -47,6 +47,12 @@ html {
   overflow-x: auto;
   overflow-y: auto;
 }
+hr {
+  border: 0 none;
+  text-align: center;
+  width: 100%;
+  clear: both;
+}
 pre,
 code,
 samp,
