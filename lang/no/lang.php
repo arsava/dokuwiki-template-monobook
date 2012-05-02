@@ -9,7 +9,7 @@
  * - "/lib/tpl/monobook/lang/<your lang>/settings.php"
  * If they are not existing, copy and translate the English ones. And don't
  * forget to mail the translation to me,
- * Andreas Haerter <development@andreas-haerter.com>. Thanks :-D.
+ * Andreas Haerter <ah@bitkollektiv.org>. Thanks :-D.
  *
  *
  * LICENSE: This file is open source software (OSS) and may be copied under
@@ -25,7 +25,7 @@
  * - "/lib/tpl/monobook/lang/<your lang>/settings.php"
  * Hvis de ikke fins, kopier og oversett de engelske versjonene. Og ikke glem
  * å sende oversettelsen til meg,
- * Andreas Haerter <development@andreas-haerter.com>. Takk:-D.
+ * Andreas Haerter <ah@bitkollektiv.org>. Takk:-D.
  *
  *
  * LISENS: Denne fila er programvare med åpen kildekode og kan kopieres under
@@ -34,7 +34,6 @@
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
  * @author Henrik Karlstrøm <henrik.karlstrom@ntnu.no>
- * @link http://andreas-haerter.com/projects/dokuwiki-template-monobook
  * @link http://www.dokuwiki.org/template:monobook
  * @link http://www.dokuwiki.org/config:lang
  * @link http://www.dokuwiki.org/devel:configuration

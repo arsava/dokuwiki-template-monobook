@@ -9,8 +9,7 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <development@andreas-haerter.com>
- * @link http://andreas-haerter.com/projects/dokuwiki-template-monobook
+ * @author Andreas Haerter <ah@bitkollektiv.org>
  * @link http://www.dokuwiki.org/template:monobook
  * @link http://www.dokuwiki.org/devel:configuration
  */
@@ -61,7 +60,7 @@ if (tpl_getConf("monobook_donate")){
     $_monobook_btns["donate"]["img"]      = DOKU_TPL."static/img/button-donate.gif";
     $_monobook_btns["donate"]["href"]     = DOKU_BASE."feed.php";
     if (tpl_getConf("monobook_donate_default")){
-        $_monobook_btns["donate"]["href"] = "http://andreas-haerter.com/donate/dokuwiki-template-monobook"; //default url
+        $_monobook_btns["donate"]["href"] = "http://bitkollektiv.org/donate/dokuwiki-template-monobook/"; //default url
     }else{
         $_monobook_btns["donate"]["href"] = tpl_getConf("monobook_donate_url"); //custom url
     }

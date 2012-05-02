@@ -20,7 +20,7 @@
     downloaded archive into your DokuWiki's "lib/tpl/" folder. Then select the
     template in the Config Manager by adjusting the template option.
 
-    See the monobook template website for instructions[2].
+    See the monobook template website for update instructions[2].
 
     NOTE: If everything will be displayed unformatted, your PHP environment is
           probably affected by PHP bug #49692[3]. You may find errors like
@@ -148,7 +148,7 @@
 
     Feel free to submit patches as GitHub pull requests (preferred) or by mail
     as well. However, please try to respect the DokuWiki coding style[3] as this
-    plugin follows its rules.
+    template follows its rules.
 
     [1] <https://github.com/bitkollektiv/dokuwiki-template-monobook/issues>
     [2] Andreas Haerter <ah@bitkollektiv.org>
@@ -217,7 +217,7 @@
 
     After some discussion and a quick release as "monodoku", this template was
     renamed to "monobook" to replace the existing "Monobook for DokuWiki" by
-    Terence J. Grant cause Terence got no more time for maintenance (BTW:
+    Terence J. Grant because Terence got no more time for maintenance (BTW:
     Terence, thank you for your work and your great(!) ideas I got from your
     "Monobook for DokuWiki"). To cut a long story short: you may call this
     template a rewrite/successor of Terence J. Grant's "Monobook for DokuWiki".
@@ -260,7 +260,7 @@
     official DokuWiki template structure guidelines.
     The downside of this desicion is, that if Wikipedia updates its styles,
     reverse engineering instead of simple file copying is needed if the new
-    rules should be applied. But I think this is not really dramatic cause
+    rules should be applied. But I think this is not really dramatic because
     not every pinch of change should be ported (and if Wikipedia would get a
     completely new layout, a new DokuWiki template should be created instead
     of forcing people to decide: a) not using updates or b) using a style the
@@ -340,27 +340,24 @@
 
     - Edited "monobook/static/3rd/monobook/main.css"
       - All url() rules were edited (-> "static/3rd/...").
-      - "#catlinks" was replaced with ".catlinks" cause the styles are needed
+      - "#catlinks" was replaced with ".catlinks" because the styles are needed
         for more than one element.
       To make this clear, a comment was added at the top of the files.
 
     - Edited "monobook/static/3rd/dokuwiki/design.css"
       All url() rules were edited (-> replaced "url(images/" through
       "url(static/3rd/dokuwiki/").
-      To make this clear, a comment was added at the top of the files:
-      /* ATTENTION: This file was edited for the "monobook template for DokuWiki".
-                    - All url() rules where changed.
-                     See README for details. */
+      To make this clear, a comment was added at the top of the files.
 
     - Edited "monobook/static/3rd/monobook/IE60Fixes.css"
-      - "#catlinks" was replaced with ".catlinks" cause the styles are needed
+      - "#catlinks" was replaced with ".catlinks" because the styles are needed
         for  more than one element. To make this clear, a comment was added at
         the top of the files.
 
     - Created
-     - "monobook/static/css/print.css"
-     - "monobook/static/css/rtl.css"
-     - "monobook/static/css/screen.css"
+      - "monobook/static/css/print.css"
+      - "monobook/static/css/rtl.css"
+      - "monobook/static/css/screen.css"
       All relevant information should be found within the inline comments.
 
     - Created the "main.php" for "monobook". Used the main.php of the "default"
