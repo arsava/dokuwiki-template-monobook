@@ -1,222 +1,242 @@
-Title: README of the monobook template for DokuWiki
-Creation date: 2010-01-05
-Last Update: 2011-11-24
-Author: Andreas Haerter <development [ät] andreas-haerter.com>
-Web: <http://andreas-haerter.com/projects/dokuwiki-template-monobook>
-     <http://www.dokuwiki.org/template:monobook>
+
+  I. About
+
+    "monobook"[1] is a template to offer the traditional MediaWiki/Wikipedia
+    Look&Feel for DokuWiki.
+
+    It was created by me (Andreas Haerter[2]) and is heavily inspired and
+    partially based on the great "Monobook for DokuWiki" template originally
+    maintained by Terence J. Grant[3] from 2006 until the end of 2009.
+
+    [1] <http://www.dokuwiki.org/template:monobook>
+    [2] <http://andreas-haerter.com/>
+    [3] <http://tjgrant.com/>
 
 
 
-PLEASE NOTE: I am NO native English speaker. If you find any errors please let
-             me know (e.g. by mail). Otherwise, my English is not getting better
-             (as desired by myself). Thank you! -- Andreas Haerter
+  II. Installation and update
+
+    The installation works as described[1] on DokuWiki.org. Extract the
+    downloaded archive into your DokuWiki's "lib/tpl/" folder. Then select the
+    template in the Config Manager by adjusting the template option.
+
+    See the monobook template website for instructions[2].
+
+    NOTE: If everything will be displayed unformatted, your PHP environment is
+          probably affected by PHP bug #49692[3]. You may find errors like
+          "syntax error, unexpected '/' in ../../lib/tpl/monobook/style.ini on
+          line XX" in your PHP logs when this is the case. monobook provides a
+          workaround for this, simply delete monobook's "style.ini" to trigger
+          the template to use it.
+
+    [1] <http://www.dokuwiki.org/template>
+    [2] <http://www.dokuwiki.org/template:monobook#update>
+    [3] <http://bugs.php.net/bug.php?id=49692>
 
 
 
-I. Using/Installing the template
-  Using "monobook" is simple and works just as described at
-  <http://www.dokuwiki.org/template>: extract the downloaded archive into
-  your DokuWiki's "lib/tpl/" folder. Then select the template in the Config
-  Manager by adjusting the template option. Done. :-)
+  III. Customizing the template
 
-  If you are updating an existing monobook-installation: please have a look at
-  <http://www.dokuwiki.org/template:monobook>, you should find all needed
-  information there.
+    In order to make updates of your installed "monobook" template easy, follow
+    these hints for customizing the template:
 
-  NOTE: If everything will be displayed unformatted, your PHP environment is
-        probably affected by PHP bug #49692 (see bugreport at
-        <http://bugs.php.net/bug.php?id=49692> for details). You may find errors
-        like "syntax error, unexpected '/' in ../../lib/tpl/monobook/style.ini
-        on line XX" in your PHP logs when this is the case. monobook provides
-        a workaround for this, simply delete monobook's "style.ini" to trigger
-        the template to use it.
+    - Place your files in "monobook/user"
+      The place for *all* userdefined, custom stuff is "monobook/user".
+      Reason: this folder will not be touched on updates. Therefore you may
+      delete everything except "monobook/user" and copy all new files into
+      "monobook/" to update without loosing your changes. Do not forget to
+      empty your browser's cache afterwards.
 
+    - Own logo
+      If you want to replace the default logo showed in the upper left, simply
+      create a "logo.[png|gif|jpg]" in "monobook/user". The template recognizes
+      the file automatically and will use it instead of the default text. Do not
+      forget to empty your browser's cache afterwards.
 
+    - Own favicon
+      If you want to replace the default favicon, simply create a "favicon.ico"
+      in "monobook/user". The template recognizes the file automatically and
+      will use it instead of the default one. Do not forget to empty your
+      browser's cache afterwards. By the way: you might find the online
+      FavIcon Generator[1] useful.
+      Note: "favicon.png" is also possible but not recommended (because it is
+            not supported by older MSIE versions).
 
-II. Customizing the template
-  In order to make updates of your installed "monobook" template easy, follow
-  these hints for customizing the template:
+    - Own CSS
+      To apply additional CSS rules, edit "monobook/user/screen.css"
+      (influences normal layout) and/or "monobook/user/print.css" (influences
+      print layout) and/or "monobook/user/rtl.css" (influences "right-to-left"
+      languages like Hebrew). These files will be included automatically (as the
+      last ones for the relevant media, therefore you are able to overrule
+      existing styles). Do not forget to empty your browser's cache afterwards.
 
-  - Place your files in "monobook/user"
-    The place for *all* userdefined, custom stuff is "monobook/user".
-    Reason: this folder will not be touched on updates. Therefore you may delete
-    everything except "monobook/user" and copy all new files into "monobook/" to
-    update without loosing your changes. Do not forget to empty your browser's
-    cache afterwards.
+    - Own JavaScript
+      To load additional JavaScript, edit "monobook/user/user.js". Do not
+      forget to empty your browser's cache afterwards.
+      ATTENTION: You have to activate the template option "monobook_loaduserjs"
+                 (->"Load 'monobook/user/user.js'?") in the DokuWiki Config
+                 Manager!
 
-  - Own logo
-    If you want to replace the default logo showed in the upper left, simply
-    create a "logo.[png|gif|jpg]" in "monobook/user". The template recognizes
-    the file automatically and will use it instead of the default logo.
-    Do not forget to empty your browser's cache afterwards.
+    - Own CSS, language specific
+      To apply additional CSS rules only for a specific language, edit/create
+      "monobook/lang/<your-language>/style.css". This file will be included
+      automatically if DokuWiki runs/shows a page in the language of choice (as
+      the last one, therefore you are able to overrule existing styles). Do
+      not forget to empty your browser's cache afterwards.
 
-  - Own favicon
-    If you want to replace the default favicon, simply create a "favicon.ico" in
-    "monobook/user". The template recognizes the file automatically and will use
-    it instead of the default one. Do not forget to empty your browser's cache
-    afterwards. By the way: you might find the following online tool useful:
-    <http://tools.dynamicdrive.com/favicon/>.
-    Note: "favicon.png" is also possible but not recommended (cause it is not
-          supported by most MSIE versions).
+    - Own tabs
+      To apply own tabs, have a look at "monobook/user/tabs.php". Don't worry:
+      you will find some examples how to define the tabs. If you still have
+      questions after playing with the examples, see "IV. Support" on how to get
+      help. If "monobook/user/tabs.php" does not exist, simply copy it out of
+      the current actual installation archive.
 
-  - Own CSS
-    To apply additional CSS rules, edit "monobook/user/screen.css" (influences
-    normal layout) and/or "monobook/user/print.css" (influences print layout)
-    and/or "monobook/user/rtl.css" (influences "right-to-left" languages like
-    hebrew). These files will be included automatically (as the last ones for
-    the relevant media, therefore you are able to overrule existing styles). Do
-    not forget to empty your browser's cache afterwards.
+    - Own footer buttons
+      To apply own buttons/graphics in the footer (-> these small 80x15 pics),
+      have a look at "monobook/user/buttons.php". Don't worry: you will find
+      some examples how to define the buttons. If you still have questions
+      after playing with the examples, see "IV. Support" on how to get help.
+      If "monobook/user/buttons.php" does not exist, simply copy it out of the
+      current actual installation archive.
 
-  - Own JavaScript
-    To load additional JavaScript, edit "monobook/user/user.js". Do not forget
-    to empty your browser's cache afterwards.
-    ATTENTION: Do not forget to activate the template option
-               "monobook_loaduserjs" (->"Load 'monobook/user/user.js'?") in the
-               DokuWiki Config Manager!
+    - Own boxes
+      To apply own boxes in the left column/sidebar, have a look at
+      "monobook/user/boxes.php". Don't worry: you will find some examples how to
+      define the boxes. If you still have questions after playing with the
+      examples, see "IV. Support" on how to get help.
+      If "monobook/user/boxes.php" does not exist, simply copy it out of the
+      current actual installation archive.
 
-  - Own CSS, language specific
-    To apply additional CSS rules only for a specific language, edit/create
-    "monobook/lang/<your-language>/style.css". This file will be included
-    automatically if DokuWiki runs/shows a page in the language of choice (as
-    the last one, therefore you are able to overrule existing styles). Do
-    not forget to empty your browser's cache afterwards.
+    - Web analytics software (Piwik, Google Analytics etc.)
+      Tools like Piwik and Google Analytics normally provide a small code
+      snippet ("tag") which you have to include at your website to make
+      everything work. If you want to use such software with this template, have
+      a look at "monobook/user/tracker.php". This file exists to make it easier
+      for you. You don't have to deliberate where you have to copy and paste the
+      code, simply do it there.
 
-  - Own tabs
-    To apply own tabs, have a look at "monobook/user/tabs.php". Don't worry:
-    you will find some examples how to define the tabs. If you still have
-    questions after playing with the examples, search
-    <http://dokuwiki.org/template:monobook> and/or the DokuWiki Forum at
-    <http://forum.dokuwiki.org> and/or ask the community if you can't get it
-    work.
-    If "monobook/user/tabs.php" does not exist, simply copy it out of the
-    current actual installation archive.
+    - Own Apple Touch Icon
+      If you want to replace the default Apple Touch Icon, simply create a
+      "apple-touch-icon.png" in "monobook/user". The template recognizes the
+      file automatically and will use it instead of the default one. Have a
+      look at Apple's developer database (cf. "Configuring Web Applications"[2])
+      if you need more information.
 
-  - Own footer buttons
-    To apply own buttons/graphics in the footer (-> these small 80x15 pics),
-    have a look at "monobook/user/buttons.php". Don't worry: you will find some
-    examples how to define the buttons. If you still have questions after
-    playing with the examples, search <http://dokuwiki.org/template:monobook>
-    and/or the DokuWiki Forum at <http://forum.dokuwiki.org> and/or ask the
-    community if you can't get it work.
-    If "monobook/user/buttons.php" does not exist, simply copy it out of the
-    current actual installation archive.
-
-  - Own boxes
-    To apply own boxes in the left column/sidebar, have a look at
-    "monobook/user/boxes.php". Don't worry: you will find some examples how to
-    define the boxes. If you still have questions after
-    playing with the examples, search <http://dokuwiki.org/template:monobook>
-    and/or the DokuWiki Forum at <http://forum.dokuwiki.org> and/or ask the
-    community if you can't get it work.
-    If "monobook/user/boxes.php" does not exist, simply copy it out of the
-    current actual installation archive.
-
-  - Web analytics software (Piwik, Google Analytics etc.)
-    Tools like Piwik and Google Analytics normally provide a small code snippet
-    ("tag") which you have to include at your website to make everything work.
-    If you want to use such software with this template, have a look at
-    "monobook/user/tracker.php". This file exists to make it easier for you.
-    You don't have to deliberate where you have to copy and paste the code,
-    simply do it there.
-
-  - Own Apple Touch Icon
-    If you want to replace the default Apple Touch Icon, simply create a
-    "apple-touch-icon.png" in "monobook/user". The template recognizes the file
-    automatically and will use it instead of the default one. Have a look at
-    Apple's developer database if you need more information ("Configuring Web
-    Applications" <http://j.mp/sx3NMT>).
+    [1] <http://tools.dynamicdrive.com/favicon/>
+    [2] <http://j.mp/sx3NMT>
 
 
 
-III. Some notes about the dirs of this template
-  * "monobook/conf"
-    Contains some configuration files (do NOT edit them!), especially
-    default.php:  default settings, see
-                  <http://www.dokuwiki.org/devel:configuration#default_settings>
-    metadata.php: configuration metadata, see
-                  <http://www.dokuwiki.org/devel:configuration#configuration_metadata>
-  * "monobook/lang"
-    Language files (subdir names = language code). You may copy the English
-    language files and translate them if your language is missing. Simply mail
-    me, Andreas Haerter, the translated files and I will include them in the
-    next release :-D.
-  * "monobook/static"
-    Static files (images, CSS, JavaScript). The interesting stuff is located
-    in subdirs (as described below).
-    - "3rd"
-      Static files originally taken from a third party like MediaWiki or
-      DokuWiki. The subdir "dokuwiki" contains files originally taken from the
-      DokuWiki "default" or "starter" template. The subdir "monobook" contains
-      files taken from the MediaWiki "monobook" skin.
-    - "css"
-      All non-3rd-party Cascading Style Sheets (CSS). See <http://j.mp/eq8zSo>
-      for more information about how the CSS is handled.
-    - "img"
-      All non-3rd-party images files.
-    - "js"
-      All non-3rd-party JavaScript files.
-  * "monobook/user"
-    Place for userdefined stuff. E.g. if you want to replace the default-logo,
-    simply copy a logo.[png|gif|jpg] in here. See "II. Customizing the template"
-    for details.
+  IV. Support
+
+    If you need help, check the FAQ[1] and try to find useful information by
+    using the DokuWiki Search page[2]. If you found nothing helpful, ask your
+    question at the DokuWiki forum[3] (preferred) or IRC channel[4].
+
+    [1] <http://www.dokuwiki.org/template:monobook#faq>
+    [2] <http://search.dokuwiki.org/>
+    [3] <http://forum.dokuwiki.org/>
+    [4] <http://www.dokuwiki.org/irc>
 
 
 
-IV. Other notes
-  - Even if it is not required: If you like the template, think about a small
-    donation (see <http://andreas-haerter.com/donate/dokuwiki-template-monobook>)
-    and/or a link to <http://andreas-haerter.com/projects/dokuwiki-template-monobook>.
-    Thanks :-).
+  V. Contact
 
-  - This template follows the DokuWiki coding style (see
-    <http://www.dokuwiki.org/devel:coding_style>). If you want to submit any
-    patches, please respect its rules (even if you don't like it - I also don't
-    love it but this simply does not matter).
+    If you think you found a bug or you got a useful idea (a.k.a. "feature
+    request"), create an issue[1] on GitHub (preferred), or contact me by
+    mail[2].
 
-  - Feel free to send patches or suggestions via mail (or post on
-    <http://www.dokuwiki.org/template:monobook>).
+    Feel free to submit patches as GitHub pull requests (preferred) or by mail
+    as well. However, please try to respect the DokuWiki coding style[3] as this
+    plugin follows its rules.
 
-  - Please don't delete the "index.html" and ".htaccess" files for security
-    reasons, even if you don't know why they are there. These files should
-    prevent others from listing directory contents (a built in feature of most
-    webservers) and providing additional access protection for some files. Even
-    if everything should be secure without, I prefer some additional
-    precautions.
+    [1] <https://github.com/bitkollektiv/dokuwiki-template-monobook/issues>
+    [2] Andreas Haerter <ah@bitkollektiv.org>
+    [3] <http://www.dokuwiki.org/devel:coding_style>
 
 
 
-V. About
-  "monobook" is a template to offer MediaWiki/Wikipedia Look&Feel to DokuWiki.
-  It is created by me, Andreas Haerter and heavily inspired and partially based
-  on the great "Monobook for DokuWiki" template originally maintained by
-  Terence J. Grant (<http://tjgrant.com/>) from 2006 until the end of 2009.
-  If you have any suggestions and/or bug reports, feel free to post on
-  <http://www.dokuwiki.org/template:monobook>, send me an email or have a look
-  at <http://andreas-haerter.com/contact>.
+  VI. Other notes
 
-  After some discussion and a quick release as "monodoku", this template was
-  renamed to "monobook" to replace the existing "Monobook for DokuWiki" by
-  Terence J. Grant cause Terence got no more time for maintenance (BTW: Terence,
-  thank you for your work and your great(!) ideas I got from your "Monobook for
-  DokuWiki"). To cut a long story short: you may call this template a
-  rewrite/successor of Terence J. Grant's "Monobook for DokuWiki".
+    If you like this free project, you might buy me a coffee[1], or get some
+    cool QR Code merchandise[2]. Thank you! :-)
 
-  There are some reasons for a complete rewrite (instead of improving/patching
-  Terence J. Grant's one), let me explain the initial situation:
-    * "monobook" is a wide-spread skin for the MediaWiki-Software. It is also
+    I am no native English speaker. If you find any errors please let me
+    know[3]. Otherwise, my English is not getting better (as desired by myself).
+
+    [1] <http://bitkollektiv.org/donate/dokuwiki-template-monobook/>
+    [2] <http://goqr.me/>
+    [3] Andreas Haerter <ah@bitkollektiv.org>
+
+
+
+  VII. Explanatory notes about the dirs of this template
+
+    - "monobook/conf"
+      Contains some configuration files (do NOT edit them!), especially
+        - default.php: default settings[1]
+        - metadata.php: configuration metadata[2]
+
+    - "monobook/lang"
+      Language files (subdir names = language code). You may copy the English
+      language files and translate them if your language is missing. Simply send
+      me the translated files (cf. "V. Contact") and I will include them in the
+      next release :-D.
+
+    - "monobook/static"
+      Static files (images, CSS, JavaScript). The interesting stuff is located
+      in subdirs (as described below).
+      - "3rd"
+        Static files originally taken from a third party like MediaWiki or
+        DokuWiki. The subdir "dokuwiki" contains files originally taken from the
+        DokuWiki "default" or "starter" template. The subdir "monobook" contains
+        files taken from the MediaWiki "monobook" skin.
+      - "css"
+        All non-3rd-party Cascading Style Sheets (CSS). See my tutorial[3] for
+        more information about how the CSS is handled.
+      - "img"
+        All non-3rd-party images files.
+      - "js"
+        All non-3rd-party JavaScript files.
+
+    - "monobook/user"
+      Place for userdefined stuff. E.g. if you want use an own logo, simply copy
+      a logo.[png|gif|jpg] in here. See "III. Customizing the template" for
+      details.
+
+    [1] <http://www.dokuwiki.org/devel:configuration#default_settings>
+    [2] <http://www.dokuwiki.org/devel:configuration#configuration_metadata>
+    [3] <http://j.mp/eq8zSo>
+
+
+
+  VIII. Creation transcript
+
+    Some developers may find this interesting. Additionally, I am very oblivious
+    :-P.
+
+    After some discussion and a quick release as "monodoku", this template was
+    renamed to "monobook" to replace the existing "Monobook for DokuWiki" by
+    Terence J. Grant cause Terence got no more time for maintenance (BTW:
+    Terence, thank you for your work and your great(!) ideas I got from your
+    "Monobook for DokuWiki"). To cut a long story short: you may call this
+    template a rewrite/successor of Terence J. Grant's "Monobook for DokuWiki".
+
+    There are some reasons for a complete rewrite (instead of improving/patching
+    Terence J. Grant's one), let me explain the initial situation:
+    - "monobook" is a wide-spread skin for the MediaWiki-Software. It is also
       used by Wikipedia right now (Jan 2010).
-    * Terence J. Grant (<http://tatewake.com/>) created "monobook for DokuWiki".
-      He emulated some missing MediaWiki features within the DokuWiki
-      environment with his template (e.g.: discussion pages) - he did a great
-      job! The styles themselfs are a relatively hard copy of the original
-      "monobook" css- and js-files from MediaWiki's "monobook" and the Wikipedia
-      website. IMHO Terence had quick updates in mind when doing this (means:
-      when Wikipedia is updating its styles, he might just want to copy the
-      static stuff, comment out some lines and the "porting" would be done). You
-      will find some information about his actions in the README of the replaced
-      "monobook for DokuWiki" by Terence J. Grant (still available at
-      <http://www.dokuwiki.org/template:monobook>).
-    * Terence J. Grant does not have enough time for maintenance (as he said on
+    - Terence J. Grant created "monobook for DokuWiki". He emulated some missing
+      MediaWiki features within the DokuWiki environment with his template
+      (e.g.: discussion pages) - he did a great job! The styles themselves are a
+      relatively hard copy of the original "monobook" css- and js-files from
+      MediaWiki's "monobook" and the Wikipedia website. IMHO Terence had quick
+      updates in mind when doing this (means: when Wikipedia is updating its
+      styles, he might just want to copy the static stuff, comment out some
+      lines and the "porting" would be done). You will find some information
+      about his actions in the README of the replaced "monobook for DokuWiki"
+      by Terence J. Grant.
+    - Terence J. Grant does not have enough time for maintenance (as he said on
       his website at the end of 2009). Additionally, the roughly wrapped
       Wikipedia/monobook-styles and the structure were makinging some trouble:
       - The styles were bloated (-> they are not designed for DokuWiki, most
@@ -231,147 +251,141 @@ V. About
         much more HTTP requests because some nice DokuWiki features were not
         used and/or "Monobook for DokuWiki" was not compatible to (-> "Compact
         CSS and javascript output").
-     * Terence J. Grant's template needed the "Display Wiki Page"-plugin (which
+     - Terence J. Grant's template needed the "Display Wiki Page"-plugin (which
        is/was developed by him, too). Right now, this is simply not needed
        anymore: DokuWiki got a core function named "tpl_include_page()" to do
        this.
-   That is why I decided to take the great ideas plus some lines of code of
-   Terence J. Grant's "monobook for DokuWiki" to rewrite it, following the
-   appreciated DokuWiki template structure guidelines
-   (-> <http://www.dokuwiki.org/devel:templates>).
-   The downside of this desicion is, that if Wikipedia updates its styles,
-   reverse engineering instead of simple file copying is needed if the new
-   rules should be applied. But I think this is not really dramatical cause
-   not every pinch of change should be ported (and if Wikipedia would get a
-   completely new layout, a new DokuWiki template should be created instead
-   of forcing people to decide: a) not using updates or b) using a style the
-   might not like). I want an optical, not a technical clone.
+    That is why I decided to take the great ideas plus some lines of code of
+    Terence J. Grant's "monobook for DokuWiki" to rewrite it, following the
+    official DokuWiki template structure guidelines.
+    The downside of this desicion is, that if Wikipedia updates its styles,
+    reverse engineering instead of simple file copying is needed if the new
+    rules should be applied. But I think this is not really dramatic cause
+    not every pinch of change should be ported (and if Wikipedia would get a
+    completely new layout, a new DokuWiki template should be created instead
+    of forcing people to decide: a) not using updates or b) using a style the
+    might not like). I want an optical, not a technical clone.
 
+    - Installed DokuWiki (Release "2009-12-25", "Lemming") + Terence J. Grant's
+      "monobook" template for testing purpose.
 
+    - Copied the default template from DokuWiki (Release "2009-12-25") as
+      mentioned at <http://www.dokuwiki.org/devel:templates> and renamed the
+      copy to "monobook". Afterwards, the following files/dirs where deleted:
+      - monobook/images
+      - monobook/_admin.css
+      - monobook/design.css
+      - monobook/footer.html
+      - monobook/layout.css
+      - monobook/_linkwiz.css
+      - monobook/media.css
+      - monobook/print.css
+      - monobook/rtl.css
 
-VI. Creation transcript
-  Some developers may find this interesting. Additionally, I am very oblivious
-  :-P.
+    - Created the dirs mentioned in "II. Some notes about the dirs of this
+      template".
 
-  - Installed DokuWiki (Release "2009-12-25", "Lemming") + Terence J. Grant's
-    "monobook" template for testing purpose.
+    - Created "index.html" files in all subdirs of the template to prevent
+      directory browsing. Plus "deny from all" .htaccess files in all relevant
+      template subdirs containing PHP (this is simply some ADDITIONAL security
+      precaution - everything should also be save without these files. But
+      better safe than sorry).
 
-  - Copied the default template from DokuWiki (Release "2009-12-25", "Lemming")
-    as mentioned at <http://www.dokuwiki.org/devel:templates> and renamed the
-    copy to "monobook". Afterwards, the following files/dirs where deleted:
-    * monobook/images
-    * monobook/_admin.css
-    * monobook/design.css
-    * monobook/footer.html
-    * monobook/layout.css
-    * monobook/_linkwiz.css
-    * monobook/media.css
-    * monobook/print.css
-    * monobook/rtl.css
+    - Configured DokuWiki to use Terence J. Grant's "monobook" template to
+      determine which styles/files copied from the MediaWiki monobook and/or
+      Wikipedia are really in use (after looking and understanding the template
+      itself, for sure).
+      The interesting folders (as mentioned in the README by Terence J. Grant):
+      - common is from mediawiki
+      - monobook is from mediawiki
+      - wikipedia is from wikipedia
+      After this, I looked at "monobook/lang/*" and "monobook/conf*" (from
+      Terence J. Grant's "monobook") to take some ideas.
 
-  - Created the dirs mentioned in "II. Some notes about the dirs of this
-    template".
+    - After investigation, some files were copied into the provided places
+      within "/monobook/static/3rd":
 
-  - Created "index.html" files in all subdirs of the template to prevent
-    directory browsing. Plus "deny from all" .htaccess files in all relevant
-    template subdirs containing PHP (this is simply some ADDITIONAL security
-    precaution - everything should also be save without these files. But better
-    safe than sorry).
+      - The following 3rd-party styles and files were used/are needed for
+        further development and therefore were copied from Terence J. Grant's
+        "monobook" template:
+        - /monobook/monobook/buttonshadow.png
+        - /monobook/monobook/bullet.gif
+        - /monobook/monobook/discussionitem_icon.gif
+        - /monobook/monobook/external.png
+        - /monobook/monobook/file_icon.gif
+        - /monobook/monobook/headbg.jpg
+        - /monobook/monobook/IE50Fixes.css
+        - /monobook/monobook/IE55Fixes.css
+        - /monobook/monobook/IE60Fixes.css
+        - /monobook/monobook/IE70Fixes.css
+        - /monobook/monobook/IEMacFixes.css
+        - /monobook/monobook/lock_icon.gif
+        - /monobook/monobook/mail_icon.gif
+        - /monobook/monobook/main.css
+        - /monobook/monobook/news_icon.gif
+        - /monobook/monobook/rtl.css
+        - /monobook/monobook/user.gif
+      - The following files were copied from Andreas Gohr's "default" template:
+        - /default/*.css (see <http://j.mp/eq8zSo> why I did that)
+        - /default/images/closed.gif
+        - /default/images/favicon.ico
+        - /default/images/link_icon.gif
+        - /default/images/mail_icon.gif
+        - /default/images/open.gif
+        - /default/images/tocdot2.gif
+        - /default/images/windows.gif
+      - The following files were downloaded from Wikipedia
+        - http://de.wikipedia.org/skins-1.5/common/IEFixes.js
+        - http://de.wikipedia.org/skins-1.5/common/commonPrint.css
 
-  - Configured DokuWiki to use Terence J. Grant's "monobook" template to
-    determine which styles/files copied from the MediaWiki monobook and/or
-    Wikipedia are really in use (after looking and understanding the template
-    itself, for sure).
-    The interessting folders (as mentioned in the README by Terence J. Grant):
-    * common is from mediawiki
-    * monobook is from mediawiki
-    * wikipedia is from wikipedia
-    After this, I looked at "monobook/lang/*" and "monobook/conf*" (from
-    Terence J. Grant's "monobook") to take some ideas.
+    - Edited "monobook/static/3rd/monobook/main.css"
+      - All url() rules were edited (-> "static/3rd/...").
+      - "#catlinks" was replaced with ".catlinks" cause the styles are needed
+        for more than one element.
+      To make this clear, a comment was added at the top of the files.
 
-  - After investigation, some files were copied into the provided places within
-    "/monobook/static/3rd".
-    - The following 3rd-party styles and files were used/are needed for further
-      development and therefore were copied from Terence J. Grant's "monobook"
-      template:
-      * /monobook/monobook/buttonshadow.png
-      * /monobook/monobook/bullet.gif
-      * /monobook/monobook/discussionitem_icon.gif
-      * /monobook/monobook/external.png
-      * /monobook/monobook/file_icon.gif
-      * /monobook/monobook/headbg.jpg
-      * /monobook/monobook/IE50Fixes.css
-      * /monobook/monobook/IE55Fixes.css
-      * /monobook/monobook/IE60Fixes.css
-      * /monobook/monobook/IE70Fixes.css
-      * /monobook/monobook/IEMacFixes.css
-      * /monobook/monobook/lock_icon.gif
-      * /monobook/monobook/mail_icon.gif
-      * /monobook/monobook/main.css
-      * /monobook/monobook/news_icon.gif
-      * /monobook/monobook/rtl.css
-      * /monobook/monobook/user.gif
-    - The following files were copied from Andreas Gohr's "default" template:
-      * /default/*.css (see <http://j.mp/eq8zSo> why I did that)
-      * /default/images/closed.gif
-      * /default/images/favicon.ico
-      * /default/images/link_icon.gif
-      * /default/images/mail_icon.gif
-      * /default/images/open.gif
-      * /default/images/tocdot2.gif
-      * /default/images/windows.gif
-    - The following files were downloaded from Wikipedia
-      * http://de.wikipedia.org/skins-1.5/common/IEFixes.js
-      * http://de.wikipedia.org/skins-1.5/common/commonPrint.css
+    - Edited "monobook/static/3rd/dokuwiki/design.css"
+      All url() rules were edited (-> replaced "url(images/" through
+      "url(static/3rd/dokuwiki/").
+      To make this clear, a comment was added at the top of the files:
+      /* ATTENTION: This file was edited for the "monobook template for DokuWiki".
+                    - All url() rules where changed.
+                     See README for details. */
 
-  - Edited "monobook/static/3rd/monobook/main.css"
-    - All url() rules were edited (-> "static/3rd/...").
-    - "#catlinks" was replaced with ".catlinks" cause the styles are needed for
-      more than one element.
-    To make this clear, a comment was added at the top of the files.
+    - Edited "monobook/static/3rd/monobook/IE60Fixes.css"
+      - "#catlinks" was replaced with ".catlinks" cause the styles are needed
+        for  more than one element. To make this clear, a comment was added at
+        the top of the files.
 
-  - Edited "monobook/static/3rd/dokuwiki/design.css"
-    All url() rules were edited (-> replaced "url(images/" through
-    "url(static/3rd/dokuwiki/").
-    To make this clear, a comment was added at the top of the files:
-    /* ATTENTION: This file was edited for the "monobook template for DokuWiki".
-                  - All url() rules where changed.
-                   See README for details. */
+    - Created
+     - "monobook/static/css/print.css"
+     - "monobook/static/css/rtl.css"
+     - "monobook/static/css/screen.css"
+      All relevant information should be found within the inline comments.
 
-  - Edited "monobook/static/3rd/monobook/IE60Fixes.css"
-    - "#catlinks" was replaced with ".catlinks" cause the styles are needed for
-      more than one element.
-    To make this clear, a comment was added at the top of the files.
+    - Created the "main.php" for "monobook". Used the main.php of the "default"
+      template as base (as mentioned on the DokuWiki template developer sites),
+      and doing some cherry picking on the Terence J. Grant's "monobook"
+      main.php. After few hours and some coffees later, work was done.
 
-  - Created
-    * "monobook/static/css/print.css"
-    * "monobook/static/css/rtl.css"
-    * "monobook/static/css/screen.css"
-    All relevant information should be found within the inline comments.
+    - Placed the obligatory 80x15 buttons in "/static/img". I copied them
+      from the "default" DokuWiki template (exept "button-monobook.png", for
+      sure). Added the needed markup in the "main.php".
 
-  - Created the "main.php" for "monobook". Used the main.php of the "default"
-    template as base (as mentioned on the DokuWiki template developer sites),
-    and doing some cherry picking on the Terence J. Grant's "monobook" main.php.
-    After few hours and some coffees later, work was done.
+    - Took Andreas Gohr's original "mediamanager.php" and "detail.php" out of
+      the "default" template. After working a little bit, I found a way to
+      prevent additional work and/or redundant code to realize the output of
+      these files. Everything is described through the PHP comments in the
+      files... look at them if needed. I mainly choose the same way like
+      Terence J. Grant.
 
-  - Placed the obligatory 80x15 buttons in "/static/img". I copied them
-    from the "default" DokuWiki template (exept "button-monobook.png", for
-    sure). Added the needed markup in the "main.php".
+    - Copied the "do_cite.php" from Terence J. Grant's "monobook", renamed it to
+      "inc_cite.php", and edited everything until it was useful for my template.
 
-  - Took Andreas Gohr's original "mediamanager.php" and "detail.php" out of the
-    "default" template. After working a little bit, I found a way to prevent
-    additional work and/or redundant code to realize the output of these files.
-    Everything is described through the PHP comments in the files... look at
-    them if needed. I mainly choose the same way like Terence J. Grant.
+    - Worked worked worked.... and done! :-P
 
-  - Copied the "do_cite.php" from Terence J. Grant's "monobook", renamed it to
-    "inc_cite.php", and edited everything until it was useful for my template.
-
-  - Worked worked worked.... and done! :-P
-
-  - After ~1 year, I switched the CSS base from DokuWiki's default template
-    to <http://www.dokuwiki.org/template:starter>. See
-    <http://www.freelists.org/post/dokuwiki/Core-devs-I-need-some-info-to-keep-my-templates-maintainable>
-    for more information about this. I edited some files, see 
-    "monobook/static/3rd/dokuwiki/00_starter-tmpl-notes.txt" for details.
+    - After ~1 year, I switched the CSS base from DokuWiki's default template
+      to <http://www.dokuwiki.org/template:starter>. See <http://j.mp/f7V4ES>
+      for more information about this. I edited some files, see
+      "monobook/static/3rd/dokuwiki/00_starter-tmpl-notes.txt" for details.
 
