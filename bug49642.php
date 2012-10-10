@@ -100,8 +100,7 @@ $interim =  trim(file_get_contents("./static/3rd/dokuwiki/_imgdetail.css"))."\n"
            .trim(file_get_contents("./user/screen.css"))."\n";
 if (!empty($_GET["langdir"]) &&
     $_GET["langdir"] === "rtl"){
-    $interim .=  trim(file_get_contents("./static/3rd/dokuwiki/print.css"))."\n"
-                .trim(file_get_contents("./static/3rd/monobook/rtl.css"))."\n"
+    $interim .=  trim(file_get_contents("./static/3rd/monobook/rtl.css"))."\n"
                 .trim(file_get_contents("./user/rtl.css"))."\n";
 }
 //replace the placeholders with the corresponding values and send the needed CSS

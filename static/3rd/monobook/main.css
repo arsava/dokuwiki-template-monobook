@@ -590,7 +590,7 @@ span.diffchange {
 }
 #bodyContent a[href ^="mailto:"],
 .link-mailto {
-	background: url(static/3rd/monobook/mail_icon.gif) center right no-repeat;
+	background: url(static/3rd/monobook/email.png) center right no-repeat;
 	padding-right: 18px;
 }
 #bodyContent a[href ^="news://"] {

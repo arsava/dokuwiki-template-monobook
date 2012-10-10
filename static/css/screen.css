@@ -497,13 +497,13 @@ div.dokuwiki a.interwiki:visited {
 
 /* windows share */
 div.dokuwiki a.windows {
-  background: transparent url(static/3rd/dokuwiki/windows.gif) center left no-repeat;
+  background: transparent url(static/3rd/dokuwiki/unc.png) center left no-repeat;
   color: #436976;
 }
 
 /* email link */
 div.dokuwiki a.mail {
-  background: transparent url(static/3rd/dokuwiki/mail_icon.gif) center left no-repeat;
+  background: transparent url(static/3rd/dokuwiki/email.png) center left no-repeat;
   color: #436976;
 }
 
