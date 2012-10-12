@@ -38,8 +38,9 @@ $lang["monobook_discuss"]    = "Diskussions-Tabs/Seiten benutzen?";
 $lang["monobook_discuss_ns"] = "Falls ja, folgenden ':namensraum:' als Wurzel für Diskussionen nutzen:";
 
 //site notice
-$lang["monobook_sitenotice"]          = "Seitenübergreifenden Hinweis einblenden?";
-$lang["monobook_sitenotice_location"] = "Falls ja, folgende wiki-Seite als Hinweis verwenden:";
+$lang["monobook_sitenotice"]           = "Seitenübergreifenden Hinweis einblenden?";
+$lang["monobook_sitenotice_location"]  = "Falls ja, folgende wiki-Seite als Hinweis verwenden:";
+$lang["monobook_sitenotice_translate"] = "Falls ja und <a href=\"http://www.dokuwiki.org/plugin:translation\">Translation-Plugin</a> verfügbar: sprachspezifische Seiten-Hinweis(e) laden?<br />Die wiki-Seite des/der übersetzten Seiten-Hinweis(e) lautet [Wert von 'monobook_sitenotice_location']_[iso-sprach-code] (z.B. ':wiki:site_notice_en').";
 
 //navigation
 $lang["monobook_navigation"]           = "Navigation anzeigen?";
@@ -47,9 +48,10 @@ $lang["monobook_navigation_location"]  = "Falls ja, folgende wiki-Seite als Navi
 $lang["monobook_navigation_translate"] = "Falls ja und <a href=\"http://www.dokuwiki.org/plugin:translation\">Translation-Plugin</a> verfügbar: sprachspezifische Navigation laden?<br />Die wiki-Seite der übersetzten Navigation(en) lautet [Wert von 'monobook_navigation_location']_[iso-sprach-code] (z.B. ':wiki:navigation_en').";
 
 //custom copyright notice
-$lang["monobook_copyright"]          = "Copyright-Hinweis einblenden?";
-$lang["monobook_copyright_default"]  = "Falls ja, Standard-Copyright-Hinweis nutzen?";
-$lang["monobook_copyright_location"] = "Falls nicht den Standard-Copyright-Hinweis, folgende wiki-Seite als Copyright-Hinweis verwenden:";
+$lang["monobook_copyright"]           = "Copyright-Hinweis einblenden?";
+$lang["monobook_copyright_default"]   = "Falls ja, Standard-Copyright-Hinweis nutzen?";
+$lang["monobook_copyright_location"]  = "Falls nicht den Standard-Copyright-Hinweis, folgende wiki-Seite als Copyright-Hinweis verwenden:";
+$lang["monobook_copyright_translate"] = "Falls ja und <a href=\"http://www.dokuwiki.org/plugin:translation\">Translation-Plugin</a> verfügbar: sprachspezifische Copyright-Hinweis(e) laden?<br />Die wiki-Seite des/der übersetzten Copyright-Hinweis(e) lautet [Wert von 'monobook_copyright_location']_[iso-sprach-code] (z.B. ':wiki:copyright_en').";
 
 //search form
 $lang["monobook_search"] = "Suchformular anzeigen?";

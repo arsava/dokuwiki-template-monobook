@@ -41,8 +41,9 @@ $conf["monobook_discuss"]    = true; //TRUE: use/show discussion pages
 $conf["monobook_discuss_ns"] = ":talk:"; //namespace to use for discussion page storage
 
 //site notice
-$conf["monobook_sitenotice"]          = true; //TRUE: use/show sitenotice
-$conf["monobook_sitenotice_location"] = ":wiki:site_notice"; //page/article used to store the sitenotice
+$conf["monobook_sitenotice"]           = true; //TRUE: use/show sitenotice
+$conf["monobook_sitenotice_location"]  = ":wiki:site_notice"; //page/article used to store the sitenotice
+$conf["monobook_sitenotice_translate"] = true; //TRUE: load translated sitenotice if translation plugin is available (see <http://www.dokuwiki.org/plugin:translation>)
 
 //navigation
 $conf["monobook_navigation"]           = true; //TRUE: use/show navigation
@@ -50,9 +51,10 @@ $conf["monobook_navigation_location"]  = ":wiki:navigation"; //page/article used
 $conf["monobook_navigation_translate"] = true; //TRUE: load translated navigation if translation plugin is available (see <http://www.dokuwiki.org/plugin:translation>)
 
 //custom copyright notice
-$conf["monobook_copyright"]          = true; //TRUE: use/show copyright notice
-$conf["monobook_copyright_default"]  = true; //TRUE: use default copyright notice (if copyright notice is enabled at all)
-$conf["monobook_copyright_location"] = ":wiki:copyright"; //page/article used to store a custom copyright notice
+$conf["monobook_copyright"]           = true; //TRUE: use/show copyright notice
+$conf["monobook_copyright_default"]   = true; //TRUE: use default copyright notice (if copyright notice is enabled at all)
+$conf["monobook_copyright_location"]  = ":wiki:copyright"; //page/article used to store a custom copyright notice
+$conf["monobook_copyright_translate"] = true; //TRUE: load translated copyright notice if translation plugin is available (see <http://www.dokuwiki.org/plugin:translation>)
 
 //search form
 $conf["monobook_search"] = true; //TRUE: use/show search form

@@ -38,8 +38,9 @@ $lang["monobook_discuss"]    = "Use discussion tabs/sites?";
 $lang["monobook_discuss_ns"] = "If yes, use following ':namespace:' as root for discussions:";
 
 //site notice
-$lang["monobook_sitenotice"]          = "Show site wide notice?";
-$lang["monobook_sitenotice_location"] = "If yes, use following wiki page for the site wide notice:";
+$lang["monobook_sitenotice"]           = "Show site wide notice?";
+$lang["monobook_sitenotice_location"]  = "If yes, use following wiki page for the site wide notice:";
+$lang["monobook_sitenotice_translate"] = "If yes and <a href=\"http://www.dokuwiki.org/plugin:translation\">Translation plugin</a> available: load language specific site wide notice?<br />The wiki page of the translated site notice(s) is [value of 'monobook_sitenotice_location']_[iso lang code] (e.g. ':wiki:site_notice_de').";
 
 //navigation
 $lang["monobook_navigation"]           = "Show navigation?";
@@ -47,9 +48,10 @@ $lang["monobook_navigation_location"]  = "If yes, use following wiki page as nav
 $lang["monobook_navigation_translate"] = "If yes and <a href=\"http://www.dokuwiki.org/plugin:translation\">Translation plugin</a> available: load language specific navigation?<br />The wiki page of the translated navigation(s) is [value of 'monobook_navigation_location']_[iso lang code] (e.g. ':wiki:navigation_de').";
 
 //custom copyright notice
-$lang["monobook_copyright"]          = "Show copyright notice?";
-$lang["monobook_copyright_default"]  = "If yes, use default copyright notice?";
-$lang["monobook_copyright_location"] = "If not default, use following wiki page as copyright notice:";
+$lang["monobook_copyright"]           = "Show copyright notice?";
+$lang["monobook_copyright_default"]   = "If yes, use default copyright notice?";
+$lang["monobook_copyright_location"]  = "If not default, use following wiki page as copyright notice:";
+$lang["monobook_copyright_translate"] = "If yes and <a href=\"http://www.dokuwiki.org/plugin:translation\">Translation plugin</a> available: load language specific copyright notice?<br />The wiki page of the translated copyright notice(s) is [value of 'monobook_copyright_location']_[iso lang code] (e.g. ':wiki:copyright_de').";
 
 //search form
 $lang["monobook_search"] = "Show search form?";

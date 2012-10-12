@@ -41,8 +41,9 @@ $meta["monobook_discuss"]    = array("onoff");
 $meta["monobook_discuss_ns"] = array("string", "_pattern" => "/^:.{1,}:$/");
 
 //site notice
-$meta["monobook_sitenotice"]          = array("onoff");
-$meta["monobook_sitenotice_location"] = array("string");
+$meta["monobook_sitenotice"]           = array("onoff");
+$meta["monobook_sitenotice_location"]  = array("string");
+$meta["monobook_sitenotice_translate"] = array("onoff");
 
 //navigation
 $meta["monobook_navigation"]           = array("onoff");
@@ -50,9 +51,10 @@ $meta["monobook_navigation_location"]  = array("string");
 $meta["monobook_navigation_translate"] = array("onoff");
 
 //custom copyright notice
-$meta["monobook_copyright"]          = array("onoff");
-$meta["monobook_copyright_default"]  = array("onoff");
-$meta["monobook_copyright_location"] = array("string");
+$meta["monobook_copyright"]           = array("onoff");
+$meta["monobook_copyright_default"]   = array("onoff");
+$meta["monobook_copyright_location"]  = array("string");
+$meta["monobook_copyright_translate"] = array("onoff");
 
 //search form
 $meta["monobook_search"] = array("onoff");
