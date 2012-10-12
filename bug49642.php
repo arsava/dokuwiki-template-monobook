@@ -55,10 +55,7 @@ $placeholder_names = array(//main text and background colors
                            "__existing__",
                            "__missing__",
                            //highlighting search snippets
-                           "__highlight__",
-                           //starter template css base compatibility
-                           "__site_width__",
-                           "__sidebar_width__");
+                           "__highlight__");
 $placeholder_values = array(//main text and background colors
                             "#000",
                             "#fff",
@@ -71,13 +68,10 @@ $placeholder_values = array(//main text and background colors
                             //border color
                             "#8cacbb",
                             //these are used for links
-                            "#002bb8", //use #090 for dokuwiki-green links
+                            "#002bb8",
                             "#ba0000",
                             //highlighting search snippets
-                            "#ff9",
-                            //starter template css base compatibility
-                            "64em",
-                            "16em");
+                            "#ff9");
 
 //get needed file contents: screen media CSS
 $interim =  trim(file_get_contents("./static/3rd/dokuwiki/_imgdetail.css"))."\n"
