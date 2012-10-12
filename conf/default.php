@@ -64,9 +64,8 @@ $conf["monobook_toolbox_default_print"] = true; //TRUE: if default toolbox is us
 $conf["monobook_toolbox_location"]      = ":wiki:toolbox"; //page/article used to store a custom toolbox
 
 //donation link/button
-$conf["monobook_donate"]          = true; //TRUE: use/show donation link/button
-$conf["monobook_donate_default"]  = true; //TRUE: use default donation link/button (if donation link is enabled at all)
-$conf["monobook_donate_url"]      = "http://bitkollektiv.org/donate/dokuwiki-template-monobook/"; //custom donation URL instead of the default one
+$conf["monobook_donate"]     = true; //TRUE: use/show donation link/button
+$conf["monobook_donate_url"] = "http://bitkollektiv.org/donate/dokuwiki-template-monobook/"; //custom donation URL
 
 //TOC
 $conf["monobook_toc_position"] = "article"; //article: show TOC embedded within the article; "sidebar": show TOC near the navigation, left column

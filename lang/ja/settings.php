@@ -57,7 +57,6 @@ $lang["monobook_toolbox_location"]      = "デフォルトを使用しない場�
 
 //donation link/button
 $lang["monobook_donate"]          = "寄付のリンク／ボタンを表示する";
-$lang["monobook_donate_default"]  = "表示する場合、デフォルトのターゲットURLを指定する。";
 $lang["monobook_donate_url"]      = "デフォルトを使用しない場合、下記のURLを指定する。";
 
 //other stuff

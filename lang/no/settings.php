@@ -81,8 +81,7 @@ $lang["monobook_toolbox_location"]      = "Hvis ikke standard, bruk følgende wi
 //donation link/button
 //donasjons-lenke/knapp
 $lang["monobook_donate"]          = "Vise lenke/knapp til donasjoner?";
-$lang["monobook_donate_default"]  = "Hvis ja, bruke standard lenke til donasjoner?";
-$lang["monobook_donate_url"]      = "Hvis ikke, bruk følgende lenke til donasjoner:";
+$lang["monobook_donate_url"]      = "Bruk følgende lenke til donasjoner:";
 
 //other stuff
 //annet

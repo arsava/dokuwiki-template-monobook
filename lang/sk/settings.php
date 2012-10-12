@@ -61,7 +61,6 @@ $lang["monobook_toolbox_location"]     = "Ak nie štandardné, použiť nasledov
 
 //donation link/button
 $lang["monobook_donate"]               = "Zobraziť odkaz/tlačidlo na darovanie?";                        // eng: "Show donation link/button?";
-$lang["monobook_donate_default"]       = "Ak áno, použiť štandardné cieľové URL na darovanie?";          // eng: "If yes, use default donation target URL?";
 $lang["monobook_donate_url"]           = "Ak nie štandardné, použiť nasledovné URL na darovanie";        // eng: "If not default, use following URL for donations:";
 
 //TOC

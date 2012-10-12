@@ -58,12 +58,7 @@ $_monobook_btns["mbfdw"]["nofollow"] = false;
 //donation button
 if (tpl_getConf("monobook_donate")){
     $_monobook_btns["donate"]["img"]      = DOKU_TPL."static/img/button-donate.gif";
-    $_monobook_btns["donate"]["href"]     = DOKU_BASE."feed.php";
-    if (tpl_getConf("monobook_donate_default")){
-        $_monobook_btns["donate"]["href"] = "http://bitkollektiv.org/donate/dokuwiki-template-monobook/"; //default url
-    }else{
-        $_monobook_btns["donate"]["href"] = tpl_getConf("monobook_donate_url"); //custom url
-    }
+    $_monobook_btns["donate"]["href"]     = tpl_getConf("monobook_donate_url");
     $_monobook_btns["donate"]["width"]    = 80;
     $_monobook_btns["donate"]["height"]   = 15;
     $_monobook_btns["donate"]["title"]    = $lang["monobook_donate"];

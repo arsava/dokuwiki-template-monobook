@@ -57,7 +57,6 @@ $lang["monobook_toolbox_location"]      = "Si no se usan las herramientas por de
 
 //donation link/button
 $lang["monobook_donate"]          = "¿Mostrar el enlace/botón 'Donar'?";
-$lang["monobook_donate_default"]  = "En caso afirmativo, ¿usar la URL por defecto?";
 $lang["monobook_donate_url"]      = "En caso contrario, usar la siguiente URL:";
 
 //other stuff

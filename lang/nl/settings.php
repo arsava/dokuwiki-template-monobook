@@ -58,7 +58,6 @@ $lang["monobook_toolbox_location"]      = "Indien niet de standaard gereedschapp
 
 //donation link/button
 $lang["monobook_donate"]          = "Toon donatie link/knop?";
-$lang["monobook_donate_default"]  = "Indien ja, gebruik de standaard donatie URL?";
 $lang["monobook_donate_url"]      = "Indien niet standaard, gebruik de volgende URL voor donaties:";
 
 //other stuff

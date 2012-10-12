@@ -57,7 +57,6 @@ $lang["monobook_toolbox_location"]      = "Sinon la boîte à outils standard, u
 
 //donation link/button
 $lang["monobook_donate"]          = "Afficher le lien/ le bouton 'faire un don'?";
-$lang["monobook_donate_default"]  = "Si oui, utiliser le but de don standard?";
 $lang["monobook_donate_url"]      = "Sinon le but de don standard, utiliser la url suivante pour faire un don:";
 
 //other stuff

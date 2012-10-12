@@ -57,7 +57,6 @@ $lang["monobook_toolbox_location"]      = "Se non usi il predefinito, usa la seg
 
 //donation link/button
 $lang["monobook_donate"]          = "Mostra link/pulsante per le donazioni?";
-$lang["monobook_donate_default"]  = "Se si, usa l'indirizzo URL predefinito?";
 $lang["monobook_donate_url"]      = "Se non predefinito, usa il seguente indirizzo URL per le donazioni:";
 
 //other stuff

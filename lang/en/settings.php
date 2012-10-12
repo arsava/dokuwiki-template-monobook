@@ -62,8 +62,7 @@ $lang["monobook_toolbox_location"]      = "If not default, use following wiki pa
 
 //donation link/button
 $lang["monobook_donate"]          = "Show donation link/button?";
-$lang["monobook_donate_default"]  = "If yes, use default donation target URL?";
-$lang["monobook_donate_url"]      = "If not default, use following URL for donations:";
+$lang["monobook_donate_url"]      = "Use following URL for donations:";
 
 //TOC
 $lang["monobook_toc_position"] = "Table of contents (TOC) position";

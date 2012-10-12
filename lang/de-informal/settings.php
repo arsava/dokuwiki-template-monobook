@@ -62,8 +62,7 @@ $lang["monobook_toolbox_location"]      = "Falls nicht die Standard-Toolbox, fol
 
 //donation link/button
 $lang["monobook_donate"]          = "'Spenden'-Link/button anzeigen?";
-$lang["monobook_donate_default"]  = "Falls ja, Standard-Spendenziel nutzen?";
-$lang["monobook_donate_url"]      = "Falls nicht Standard-Spendenziel, folgende URL für Spenden benutzen:";
+$lang["monobook_donate_url"]      = "Folgende URL als Spendenziel benutzen:";
 
 //TOC
 $lang["monobook_toc_position"] = "Position des Inhaltsverzeichnisses";

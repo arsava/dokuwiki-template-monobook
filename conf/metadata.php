@@ -64,9 +64,8 @@ $meta["monobook_toolbox_default_print"] = array("onoff");
 $meta["monobook_toolbox_location"]      = array("string");
 
 //donation link/button
-$meta["monobook_donate"]          = array("onoff");
-$meta["monobook_donate_default"]  = array("onoff");
-$meta["monobook_donate_url"]      = array("string", "_pattern" => "/^.{1,6}:\/{2}.+$/");
+$meta["monobook_donate"]     = array("onoff");
+$meta["monobook_donate_url"] = array("string", "_pattern" => "/^.{1,6}:\/{2}.+$/");
 
 //TOC
 $meta["monobook_toc_position"] = array("multichoice", "_choices" => array("article", "sidebar"));
