@@ -23,7 +23,7 @@
  * @link http://www.dokuwiki.org/devel:configuration
  */
 
-//Language constant, for the monobook DokuWiki template  :  
+//Language constant, for the monobook DokuWiki template  :
 
 //check if we are running within the DokuWiki environment
 if (!defined("DOKU_INC")){
