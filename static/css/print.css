@@ -13,6 +13,20 @@
   display: none;
 }
 
+/* special pages background: media/cite etc. */
+.ns-2 #content,
+.ns-2 #p-cactions li,
+.ns-2 #p-cactions li a {
+   background: transparent none;
+}
+
+/* special pages background: discussion */
+.ns-1 #content,
+.ns-1 #p-cactions li,
+.ns-1 #p-cactions li a {
+   background: transparent none;
+}
+
 /* remove interwiki link icons */
 div.dokuwiki a.interwiki {
   background: transparent none;

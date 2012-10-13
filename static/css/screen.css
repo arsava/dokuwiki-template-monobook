@@ -938,8 +938,11 @@ div#column-one .portlet .pBody a:hover {
   text-decoration: underline !important;
 }
 /* QR Code */
+div#column-one #p-qrcode .pBody {
+  padding-right: 0.3em;
+}
 div#column-one #p-qrcode img {
-  margin: 0.5em 0 0.3em 0.1em;
+  margin: 0.55em 0 0.3em 0.2em;
 }
 div#column-one #p-qrcode a,
 div#column-one #p-qrcode a:link,
@@ -1025,6 +1028,7 @@ div.dokuwiki div.toc {
   width: 200px;
   font-size: 80%;
   clear: both;
+  background-color: transparent;
 }
 
 div.dokuwiki div.toc div.tocheader {
@@ -1175,7 +1179,7 @@ html.popup {
   background-color: #fff;
 }
 html.popup body {
-  font: 13px/17px sans-serif;
+  font: 13px sans-serif;
   background-image: none;
   background-color: #fff;
 }
