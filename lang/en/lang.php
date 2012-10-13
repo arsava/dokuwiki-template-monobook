@@ -43,6 +43,7 @@ $lang["monobook_bar_views"] = "Views";
 $lang["monobook_bar_personnaltools"] = "Personal Tools";
 $lang["monobook_bar_navigation"] = "Navigation";
 $lang["monobook_bar_toolbox"] = "Toolbox";
+$lang["monobook_qrcodebox"] = "QR Code";
 $lang["monobook_bar_inotherlanguages"] = "In Other Languages";
 $lang["monobook_bar_search"] = "Search";
 
@@ -57,6 +58,11 @@ $lang["monobook_toolbxdef_siteindex"] = "Site index";
 $lang["monobook_toolbxdef_print"] = "Printable version";
 $lang["monobook_toolboxdef_permanent"] = "Permanent link";
 $lang["monobook_toolboxdef_cite"] = "Cite this article";
+
+//qr code box
+$lang["monobook_qrcodebox_qrcode"] = "QR Code";
+$lang["monobook_qrcodebox_genforcurrentpage"] = "generated for current page";
+$lang["monobook_qrcodebox_urlofcurrentpage"] = "Current page as QR Code (scan for easy mobile access)";
 
 //cite this article
 $lang["monobook_cite_bibdetailsfor"] = "Bibliographic details for";
@@ -87,5 +93,6 @@ $lang["monobook_accessdenied"] = "Access denied";
 $lang["monobook_fillplaceholder"] = "Please fill this placeholder";
 $lang["monobook_donate"] = "Donate";
 $lang["monobook_mdtemplatefordw"] = "monobook template for DokuWiki";
+$lang["monobook_qrcodebtn"] = "QR Code generator";
 $lang["monobook_recentchanges"] = "Recent changes";
 

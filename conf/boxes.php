@@ -203,6 +203,15 @@ if (empty($conf["useacl"]) || //are there any users?
         $_monobook_boxes["p-lang"]["xhtml"]    = $transplugin->_showTranslations();
     }
 
+    //QR Code of current page's URL (powered by <http://qrserver.com/api/>)
+    if (tpl_getConf("monobook_qrcodebox")){
+        //headline
+        $_monobook_boxes["p-qrcode"]["headline"] = $lang["monobook_qrcodebox"];
+
+        //content
+        $_monobook_boxes["p-qrcode"]["xhtml"] = "        <span id=\"p-qrcode\"><a href=\"http://goqr.me/".(($conf["lang"] == "de") ? "de/" : "")."\" target=\"_blank\"><img src=\"http://api.qrserver.com/v1/create-qr-code/?data=".urlencode(wl(cleanID(getId()), false, true, "&"))."&#38;size=130x130&#38;margin=0\" alt=\"".hsc($lang["monobook_qrcodebox_qrcode"])." ".hsc(tpl_pagetitle(null, true))." (".hsc($lang["monobook_qrcodebox_genforcurrentpage"]).")\" title=\"".hsc($lang["monobook_qrcodebox_urlofcurrentpage"])."\" /></a></span>";
+    }
+
 }else{
 
     //headline

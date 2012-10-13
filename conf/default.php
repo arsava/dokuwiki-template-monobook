@@ -65,6 +65,9 @@ $conf["monobook_toolbox_default"]       = true; //TRUE: use default toolbox (if 
 $conf["monobook_toolbox_default_print"] = true; //TRUE: if default toolbox is used, show printable version link?
 $conf["monobook_toolbox_location"]      = ":wiki:toolbox"; //page/article used to store a custom toolbox
 
+//qr code box
+$conf["monobook_qrcodebox"] = true; //TRUE: use/show box with QR Code of current page's URL
+
 //donation link/button
 $conf["monobook_donate"]     = true; //TRUE: use/show donation link/button
 $conf["monobook_donate_url"] = "http://bitkollektiv.org/donate/dokuwiki-template-monobook/"; //custom donation URL

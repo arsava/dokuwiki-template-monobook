@@ -51,7 +51,7 @@ $lang["monobook_navigation_translate"] = "If yes and <a href=\"http://www.dokuwi
 $lang["monobook_copyright"]           = "Show copyright notice?";
 $lang["monobook_copyright_default"]   = "If yes, use default copyright notice?";
 $lang["monobook_copyright_location"]  = "If not default, use following wiki page as copyright notice:";
-$lang["monobook_copyright_translate"] = "If yes and <a href=\"http://www.dokuwiki.org/plugin:translation\">Translation plugin</a> available: load language specific copyright notice?<br />The wiki page of the translated copyright notice(s) is [value of 'monobook_copyright_location']_[iso lang code] (e.g. ':wiki:copyright_de').";
+$lang["monobook_copyright_translate"] = "If not default and <a href=\"http://www.dokuwiki.org/plugin:translation\">Translation plugin</a> available: load language specific copyright notice?<br />The wiki page of the translated copyright notice(s) is [value of 'monobook_copyright_location']_[iso lang code] (e.g. ':wiki:copyright_de').";
 
 //search form
 $lang["monobook_search"] = "Show search form?";
@@ -61,6 +61,9 @@ $lang["monobook_toolbox"]               = "Show toolbox?";
 $lang["monobook_toolbox_default"]       = "If yes, use default toolbox?";
 $lang["monobook_toolbox_default_print"] = "If default toolbox is used, show printable version link?";
 $lang["monobook_toolbox_location"]      = "If not default, use following wiki page as toolbox location:";
+
+//qr code box
+$lang["monobook_qrcodebox"] = "Show box with QR Code of current wiki page URL (for easy URL transfer to mobile browser)?";
 
 //donation link/button
 $lang["monobook_donate"]          = "Show donation link/button?";

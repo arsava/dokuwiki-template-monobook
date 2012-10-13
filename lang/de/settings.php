@@ -47,11 +47,14 @@ $lang["monobook_navigation"]           = "Navigation anzeigen?";
 $lang["monobook_navigation_location"]  = "Falls ja, folgende wiki-Seite als Navigation verwenden:";
 $lang["monobook_navigation_translate"] = "Falls ja und <a href=\"http://www.dokuwiki.org/plugin:translation\">Translation-Plugin</a> verfügbar: sprachspezifische Navigation laden?<br />Die wiki-Seite der übersetzten Navigation(en) lautet [Wert von 'monobook_navigation_location']_[iso-sprach-code] (z.B. ':wiki:navigation_en').";
 
+//qr code box
+$lang["monobook_qrcodebox"] = "Box mit QR-Code der aktuellen Wiki-Seiten-URL anzeigen (für einfache Übertragung der URL auf Mobiltelefone)?";
+
 //custom copyright notice
 $lang["monobook_copyright"]           = "Copyright-Hinweis einblenden?";
 $lang["monobook_copyright_default"]   = "Falls ja, Standard-Copyright-Hinweis nutzen?";
 $lang["monobook_copyright_location"]  = "Falls nicht den Standard-Copyright-Hinweis, folgende wiki-Seite als Copyright-Hinweis verwenden:";
-$lang["monobook_copyright_translate"] = "Falls ja und <a href=\"http://www.dokuwiki.org/plugin:translation\">Translation-Plugin</a> verfügbar: sprachspezifische Copyright-Hinweis(e) laden?<br />Die wiki-Seite des/der übersetzten Copyright-Hinweis(e) lautet [Wert von 'monobook_copyright_location']_[iso-sprach-code] (z.B. ':wiki:copyright_en').";
+$lang["monobook_copyright_translate"] = "Falls nicht den Standard-Copyright-Hinweis und <a href=\"http://www.dokuwiki.org/plugin:translation\">Translation-Plugin</a> verfügbar: sprachspezifische Copyright-Hinweis(e) laden?<br />Die wiki-Seite des/der übersetzten Copyright-Hinweis(e) lautet [Wert von 'monobook_copyright_location']_[iso-sprach-code] (z.B. ':wiki:copyright_en').";
 
 //search form
 $lang["monobook_search"] = "Suchformular anzeigen?";

@@ -599,12 +599,12 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
                   $sitenotice_location = tpl_getConf("monobook_sitenotice_location");
               }
 
-              //we have to show a custom sitenotice
+              //we have to show a custom site notice
               if (empty($conf["useacl"]) ||
                   auth_quickaclcheck(cleanID($sitenotice_location)) >= AUTH_READ){ //current user got access?
                   echo "\n          <div id=\"siteNotice\" class=\"noprint\">\n";
                   //get the rendered content of the defined wiki article to use as
-                  //custom sitenotice.
+                  //custom site notice.
                   $interim = tpl_include_page($sitenotice_location, false);
                   if ($interim === "" ||
                       $interim === false){

@@ -62,8 +62,18 @@ if (tpl_getConf("monobook_donate")){
     $_monobook_btns["donate"]["width"]    = 80;
     $_monobook_btns["donate"]["height"]   = 15;
     $_monobook_btns["donate"]["title"]    = $lang["monobook_donate"];
-    $_monobook_btns["donate"]["nofollow"] = true;
+    $_monobook_btns["donate"]["nofollow"] = false;
 }
+
+
+//QR Code button
+//Note: You are NOT allowed to remove this button. Please respect this!
+$_monobook_btns["qrcode"]["img"]      = DOKU_TPL."static/img/button-qrcode.png";
+$_monobook_btns["qrcode"]["href"]     = "http://goqr.me/".(($conf["lang"] == "de") ? "de/" : "");
+$_monobook_btns["qrcode"]["width"]    = 80;
+$_monobook_btns["qrcode"]["height"]   = 15;
+$_monobook_btns["qrcode"]["title"]    = $lang["monobook_qrcodebtn"];
+$_monobook_btns["qrcode"]["nofollow"] = false;
 
 
 //DokuWiki button

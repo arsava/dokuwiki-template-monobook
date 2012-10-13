@@ -65,6 +65,9 @@ $meta["monobook_toolbox_default"]       = array("onoff");
 $meta["monobook_toolbox_default_print"] = array("onoff");
 $meta["monobook_toolbox_location"]      = array("string");
 
+//qr code box
+$meta["monobook_qrcodebox"] = array("onoff");
+
 //donation link/button
 $meta["monobook_donate"]     = array("onoff");
 $meta["monobook_donate_url"] = array("string", "_pattern" => "/^.{1,6}:\/{2}.+$/");
