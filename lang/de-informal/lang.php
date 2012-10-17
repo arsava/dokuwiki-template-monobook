@@ -90,7 +90,7 @@ $lang["monobook_cite_thisversion"] = "Diese Version";
 
 //other
 $lang["monobook_accessdenied"] = "Zugriff verweigert";
-$lang["monobook_fillplaceholder"] = "Diesen Platzhalter bitte füllen";
+$lang["monobook_fillplaceholder"] = "Diesen Platzhalter bitte füllen oder deaktivieren";
 $lang["monobook_donate"] = "Spenden";
 $lang["monobook_mdtemplatefordw"] = "monobook-Template für DokuWiki";
 $lang["monobook_qrcodebtn"] = "QR-Code-Generator";
