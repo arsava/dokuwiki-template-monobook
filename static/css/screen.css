@@ -944,14 +944,14 @@ div#column-one .portlet .pBody a:hover {
 div#column-one #p-qrcode .pBody {
   padding-right: 0.3em;
 }
-div#column-one #p-qrcode img {
+div#column-one #t-qrcode img {
   margin: 0.55em 0 0.3em 0.2em;
 }
-div#column-one #p-qrcode a,
-div#column-one #p-qrcode a:link,
-div#column-one #p-qrcode a:active,
-div#column-one #p-qrcode a:hover,
-div#column-one #p-qrcode a:visited {
+div#column-one #t-qrcode a,
+div#column-one #t-qrcode a:link,
+div#column-one #t-qrcode a:active,
+div#column-one #t-qrcode a:hover,
+div#column-one #t-qrcode a:visited {
   border: 0 none;
   cursor: default;
   text-decoration: none;
