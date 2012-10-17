@@ -275,6 +275,9 @@ a.wikilink2:visited,
 a.wikilink2:hover {
   color: __missing__ !important;
 }
+.dokuwiki a.wikilink2:hover {
+  text-decoration: none;
+}
 
 /* missing page red: tabs */
 #p-cactions li a.wikilink2 {
@@ -1235,8 +1238,9 @@ html.popup #media__opts br {
   padding: 3px 10px !important;
 }
 #mediamanager__page div.namespaces h2 {
+  margin-left: 0.3em;
   margin-bottom: 0;
-  border-bottom: 0;
+  border-bottom-color: __background_alt__;
 }
 #mediamanager__page div.namespaces div.panelHeader {
   padding-top: 11px;
@@ -1329,6 +1333,11 @@ div.dokuwiki ul.search_quickhits li {
 }
 
 div.dokuwiki .section_highlight {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border: 0 none;
   background-color: __background_alt__ !important;
 }
 
