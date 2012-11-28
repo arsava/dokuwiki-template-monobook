@@ -14,7 +14,7 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <ah@bitkollektiv.org>
+ * @author Andreas Haerter <ah@syn-systems.com>
  * @link http://www.dokuwiki.org/template:monobook
  * @link http://www.dokuwiki.org/devel:configuration
  */
@@ -104,7 +104,7 @@ if (!empty($conf["useacl"]) &&
 /*
 //link
 $_monobook_tabs["tab-urlexample"]["text"]  = "Creator";
-$_monobook_tabs["tab-urlexample"]["href"]  = "http://andreas-haerter.com/";
+$_monobook_tabs["tab-urlexample"]["href"]  = "http://syn-systems.com/";
 */
 
 

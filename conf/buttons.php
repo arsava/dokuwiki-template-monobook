@@ -9,7 +9,7 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <ah@bitkollektiv.org>
+ * @author Andreas Haerter <ah@syn-systems.com>
  * @link http://www.dokuwiki.org/template:monobook
  * @link http://www.dokuwiki.org/devel:configuration
  */
@@ -48,7 +48,7 @@ $_monobook_btns["rss"]["nofollow"] = true;
 //"monobook for DokuWiki" button
 //Note: You are NOT allowed to remove this button. Please respect this!
 $_monobook_btns["mbfdw"]["img"]      = DOKU_TPL."static/img/button-monobook.png";
-$_monobook_btns["mbfdw"]["href"]     = "http://andreas-haerter.com/";
+$_monobook_btns["mbfdw"]["href"]     = "http://syn-systems.com/";
 $_monobook_btns["mbfdw"]["width"]    = 80;
 $_monobook_btns["mbfdw"]["height"]   = 15;
 $_monobook_btns["mbfdw"]["title"]    = $lang["monobook_mdtemplatefordw"];
@@ -67,7 +67,6 @@ if (tpl_getConf("monobook_donate")){
 
 
 //QR Code button
-//Note: You are NOT allowed to remove this button. Please respect this!
 $_monobook_btns["qrcode"]["img"]      = DOKU_TPL."static/img/button-qrcode.png";
 $_monobook_btns["qrcode"]["href"]     = "http://goqr.me/".(($conf["lang"] == "de") ? "de/" : "");
 $_monobook_btns["qrcode"]["width"]    = 80;

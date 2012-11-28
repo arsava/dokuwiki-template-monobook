@@ -11,7 +11,7 @@
  *   menu of DokuWiki, have a look at the file
  *   "/lib/tpl/monobook/lang/<your lang>/settings.php". If it does not exists,
  *   copy and translate the English one. And don't forget to mail the
- *   translation to me, Andreas Haerter <ah@bitkollektiv.org> :-D.
+ *   translation to us, SYN Systems <dokuwiki@dev.syn-systems.com> :-D.
  * - To change the [tabs|boxes|buttons] configuration, have a look at
  *   "/user/[tabs|boxes|buttons].php".
  *
@@ -21,7 +21,7 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <ah@bitkollektiv.org>
+ * @author Andreas Haerter <ah@syn-systems.com>
  * @link http://www.dokuwiki.org/template:monobook
  * @link http://www.dokuwiki.org/devel:configuration
  */
@@ -70,7 +70,7 @@ $conf["monobook_qrcodebox"] = true; //TRUE: use/show box with QR Code of current
 
 //donation link/button
 $conf["monobook_donate"]     = true; //TRUE: use/show donation link/button
-$conf["monobook_donate_url"] = "http://bitkollektiv.org/donate/dokuwiki-template-monobook/"; //custom donation URL
+$conf["monobook_donate_url"] = "http://syn-systems.com/donate/dokuwiki-template-monobook/"; //custom donation URL
 
 //TOC
 $conf["monobook_toc_position"] = "article"; //article: show TOC embedded within the article; "sidebar": show TOC near the navigation, left column
