@@ -773,8 +773,8 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
 
   <div class="visualClear"></div>
 
-  <div id="footer">
-    <div id="footer-buttons" class="noprint">
+  <div id="footer" class="noprint">
+    <div id="footer-buttons">
     <?php
     //show buttons, see monobook/user/buttons.php to configure them
     if (!empty($_monobook_btns) &&
@@ -841,7 +841,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
           }
       }
       ?>
-      <li id="usermod" class="noprint">
+      <li id="usermod">
         <?php tpl_userinfo(); ?><br />
       </li>
     </ul>

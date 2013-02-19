@@ -8,8 +8,11 @@
 
 
 /* define the "noprint" class and hide some elements */
-.noprint,
-.toc { /* TOC */
+.noprint {
+  display: none;
+}
+.toc,
+#dw__toc {
   display: none;
 }
 
@@ -60,5 +63,10 @@ div#content .dokuwiki dl.file dt {
 }
 div#content .dokuwiki dl.file dt {
   background-color: __background_other__;
+}
+
+/* hide tag row from tag plugin */
+div.tags {
+  display: none;
 }
 

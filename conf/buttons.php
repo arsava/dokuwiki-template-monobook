@@ -46,7 +46,7 @@ $_monobook_btns["rss"]["nofollow"] = true;
 
 
 //"monobook for DokuWiki" button
-//Note: You are NOT allowed to remove this button. Please respect this!
+//Note: do NOT remove this button. Please respect this. :-)
 $_monobook_btns["mbfdw"]["img"]      = DOKU_TPL."static/img/button-monobook.png";
 $_monobook_btns["mbfdw"]["href"]     = "http://syn-systems.com/";
 $_monobook_btns["mbfdw"]["width"]    = 80;
@@ -67,8 +67,9 @@ if (tpl_getConf("monobook_donate")){
 
 
 //QR Code button
+//Note: do NOT remove this button. Please respect this. :-)
 $_monobook_btns["qrcode"]["img"]      = DOKU_TPL."static/img/button-qrcode.png";
-$_monobook_btns["qrcode"]["href"]     = "http://goqr.me/".(($conf["lang"] == "de") ? "de/" : "");
+$_monobook_btns["qrcode"]["href"]     = "http://".(($conf["lang"] !== "de") ? "goqr.me" : "qr-code-generator.de")."/";
 $_monobook_btns["qrcode"]["width"]    = 80;
 $_monobook_btns["qrcode"]["height"]   = 15;
 $_monobook_btns["qrcode"]["title"]    = $lang["monobook_qrcodebtn"];
