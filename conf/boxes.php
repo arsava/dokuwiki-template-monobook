@@ -9,7 +9,7 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <ah@syn-systems.com>
+ * @author Andreas Haerter <development@andreas-haerter.com>
  * @link http://www.dokuwiki.org/template:monobook
  * @link http://www.dokuwiki.org/devel:configuration
  */
@@ -209,7 +209,7 @@ if (empty($conf["useacl"]) || //are there any users?
         $_monobook_boxes["p-qrcode"]["headline"] = $lang["monobook_qrcodebox"];
 
         //content
-        $_monobook_boxes["p-qrcode"]["xhtml"] = "        <span id=\"t-qrcode\"><a href=\"http://".(($conf["lang"] !== "de") ? "goqr.me" : "qr-code-generator.de")."/\" target=\"_blank\"><img src=\"".((!empty($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] === "on") ? "https" : "http")."://api.qrserver.com/v1/create-qr-code/?data=".urlencode(wl(cleanID(getId()), false, true, "&"))."&#38;size=130x130&#38;margin=0\" alt=\"".hsc($lang["monobook_qrcodebox_qrcode"])." ".hsc(tpl_pagetitle(null, true))." (".hsc($lang["monobook_qrcodebox_genforcurrentpage"]).")\" title=\"".hsc($lang["monobook_qrcodebox_urlofcurrentpage"])."\" /></a></span>";
+        $_monobook_boxes["p-qrcode"]["xhtml"] = "        <span id=\"t-qrcode\">".((cleanID(getID()) === "start") ? "<a href=\"http://".(($conf["lang"] !== "de") ? "goqr.me" : "qr-code-generator.de")."/\" target=\"_blank\">" : "")."<img src=\"".((!empty($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] === "on") ? "https" : "http")."://api.qrserver.com/v1/create-qr-code/?data=".urlencode(wl(cleanID(getId()), false, true, "&"))."&#38;size=130x130&#38;margin=0\" alt=\"".hsc($lang["monobook_qrcodebox_qrcode"])." ".hsc(tpl_pagetitle(null, true))." (".hsc($lang["monobook_qrcodebox_genforcurrentpage"]).")\" title=\"".hsc($lang["monobook_qrcodebox_urlofcurrentpage"])."\" />".((cleanID(getID()) === "start") ? "</a>" : "")."</span>";
     }
 
 }else{

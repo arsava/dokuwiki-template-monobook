@@ -1,6 +1,6 @@
 ﻿base     monobook
-author   SYN Systems
-email    dokuwiki@dev.syn-systems.com
+author   Andreas Haerter
+email    development@andreas-haerter.com
 date     2013-02-20
 name     monobook template
 desc     monobook brings you the traditional MediaWiki/Wikipedia look and feel for DokuWiki.
