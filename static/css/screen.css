@@ -433,7 +433,6 @@ div.dokuwiki button.button {
   padding: 0.125em 0.4em;
   font-weight: normal;
   line-height: 1.333em;
-  #line-height: 1em; /* fix MSIE 6, 7 */
 }
 div.dokuwiki button.toolbutton {
   height: 20px;
@@ -441,7 +440,6 @@ div.dokuwiki button.toolbutton {
   padding: 1px 3px;
   line-height: 16px;
   text-align: center;
-  height: 22px\9; /* fix MSIE 6, 7, 8 */
 }
 /* nice alphatransparency background except for IE <7 */
 html>body div.dokuwiki input.button,
@@ -1189,9 +1187,6 @@ html.popup body {
 html.popup #media__manager {
   min-height: 465px;
 }
-* html.popup #media__manager {
-  height: 465px; /* fix MSIE 6 */
-}
 html.popup #media__manager h1,
 html.popup #media__manager h2,
 html.popup #media__popup h1,
@@ -1369,53 +1364,4 @@ div.dokuwiki .section_highlight {
 .dokuwiki table.diff td.diff-context {
   padding-left: 2px;
   padding-right: 2px;
-}
-
-
-/******************************************************************************
- ********************* Browser Hacks and corrections **************************
- ******************************************************************************/
-/* MSIE 7: renders the anchor in headlines in two lines?! */
-*:first-child+html div#content .dokuwiki h1 a,
-*:first-child+html div#content .dokuwiki h2 a,
-*:first-child+html div#content .dokuwiki h3 a {
-  display: inline-block;
-}
-*:first-child+html div#content .dokuwiki h1 a {
-  padding-bottom: 2px;
-}
-*:first-child+html div#content .dokuwiki h2 a,
-*:first-child+html div#content .dokuwiki h3 a {
-  padding-bottom: 1px;
-}
-/* MSIE 7: media manager */
-*:first-child+html #mediamanager__page .panelContent li {
-  list-style: none !important;
-  list-style-image: none !important;
-}
-*:first-child+html #mediamanager__page .panelContent ul.thumbs dl {
-  margin-left: 0;
-}
-/* MSIE: fix textarea in admin menu (incl. jumping bug MSIE8) */
-textarea,
-.dokuwiki #dw__editform textarea.edit {
-  /* fix scrollbar flickers in IE8 standards mode, see
-     http://j.mp/bHExde and http://j.mp/ad7Abj for details */
-  width: 450px\9;
-  max-width: 100%\9;
-  min-width: 100%\9;
-  /* overwrite original monobook with fixes for IE6/7 */
-  #width: 100% !important;
-  border: auto;
-}
-/* MSIE 6/7: admin menu icons  */
-.dokuwiki ul.admin_tasks li div.li {
-  #font-weight: bold;
-  #border-left: 1px dashed __background__; /* invisible border triggers IE to render the stuff */
-}
-/* MSIE 6/7: take care about hiding the bottom border when tab is selected */
-#p-cactions .selected,
-#p-cactions .selected a,
-#p-cactions .selected span {
-  #padding-bottom: 0.17em;
 }

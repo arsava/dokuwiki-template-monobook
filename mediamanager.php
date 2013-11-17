@@ -82,6 +82,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
   }
 }
 ?>
+<!--[if lte IE 8]><link rel="stylesheet" media="all" type="text/css" href="<?php echo DOKU_TPL; ?>static/css/screen_iehacks.css" /><![endif]-->
 <!--[if lt IE 5.5000]><link rel="stylesheet" media="all" type="text/css" href="<?php echo DOKU_TPL; ?>static/3rd/monobook/IE50Fixes.css" /><![endif]-->
 <!--[if IE 5.5000]><link rel="stylesheet" media="all" type="text/css" href="<?php echo DOKU_TPL; ?>static/3rd/monobook/IE55Fixes.css" /><![endif]-->
 <!--[if IE 6]><link rel="stylesheet" media="all" type="text/css" href="<?php echo DOKU_TPL; ?>static/3rd/monobook/IE60Fixes.css" /><![endif]-->

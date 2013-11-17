@@ -1,0 +1,70 @@
+/******************************************************************************
+ ********************************  ATTENTION  *********************************
+         DO NOT MODIFY THIS FILE, IT WILL NOT BE PRESERVED ON UPDATES!
+ ******************************************************************************
+  If you want to add some own screen CSS, have a look at the README of this
+  template and "/user/screen.css". You have been warned!
+ *****************************************************************************/
+
+/* This file get loaded by a conditional comment. The style.ini is not used as
+   DokuWiki's internal CSS handling stumbles upon most of these Internet
+   Explorer specific browser hacks and corrections. */
+
+/* buttons */
+div.dokuwiki input.button,
+div.dokuwiki button.button {
+  #line-height: 1em; /* fix MSIE 6, 7 */
+}
+
+div.dokuwiki button.toolbutton {
+  height: 22px\9; /* fix MSIE 6, 7, 8 */
+}
+/* media manager popup */
+* html.popup #media__manager {
+  height: 465px; /* fix MSIE 6 */
+}
+/* MSIE 7: renders the anchor in headlines in two lines?! */
+*:first-child+html div#content .dokuwiki h1 a,
+*:first-child+html div#content .dokuwiki h2 a,
+*:first-child+html div#content .dokuwiki h3 a {
+  display: inline-block;
+}
+*:first-child+html div#content .dokuwiki h1 a {
+  padding-bottom: 2px;
+}
+*:first-child+html div#content .dokuwiki h2 a,
+*:first-child+html div#content .dokuwiki h3 a {
+  padding-bottom: 1px;
+}
+/* MSIE 7: media manager */
+*:first-child+html #mediamanager__page .panelContent li {
+  list-style: none !important;
+  list-style-image: none !important;
+}
+*:first-child+html #mediamanager__page .panelContent ul.thumbs dl {
+  margin-left: 0;
+}
+/* MSIE: fix textarea in admin menu (incl. jumping bug MSIE8) */
+textarea,
+.dokuwiki #dw__editform textarea.edit {
+  /* fix scrollbar flickers in IE8 standards mode, see
+     http://j.mp/bHExde and http://j.mp/ad7Abj for details */
+  width: 450px\9;
+  max-width: 100%\9;
+  min-width: 100%\9;
+  /* overwrite original monobook with fixes for IE6/7 */
+  #width: 100% !important;
+  border: auto;
+}
+/* MSIE 6/7: admin menu icons  */
+.dokuwiki ul.admin_tasks li div.li {
+  #font-weight: bold;
+  #border-left: 1px dashed __background__; /* invisible border triggers IE to render the stuff */
+}
+/* MSIE 6/7: take care about hiding the bottom border when tab is selected */
+#p-cactions .selected,
+#p-cactions .selected a,
+#p-cactions .selected span {
+  #padding-bottom: 0.17em;
+}
+
