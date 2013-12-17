@@ -58,10 +58,10 @@ $lang["monobook_copyright_translate"] = "If not default and <a href=\"https://ww
 $lang["monobook_search"] = "Show search form?";
 
 //toolbox
-$lang["monobook_toolbox"]               = "Show toolbox?";
-$lang["monobook_toolbox_default"]       = "If yes, use default toolbox?";
-$lang["monobook_toolbox_default_print"] = "If default toolbox is used, show printable version link?";
-$lang["monobook_toolbox_location"]      = "If not default, use following wiki page as toolbox location:";
+$lang["monobook_toolbox"]               = "Show tools?";
+$lang["monobook_toolbox_default"]       = "If yes, use default tools?";
+$lang["monobook_toolbox_default_print"] = "If default tools is used, show printable version link?";
+$lang["monobook_toolbox_location"]      = "If not default, use following wiki page as tools location:";
 
 //qr code box
 $lang["monobook_qrcodebox"] = "Show box with QR Code of current wiki page URL (for easy URL transfer to mobile browser)?";

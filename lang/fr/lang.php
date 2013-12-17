@@ -43,7 +43,7 @@ $lang["monobook_tab_exportpdf"] = "Export: PDF";
 $lang["monobook_bar_views"] = "Affichages";
 $lang["monobook_bar_personnaltools"] = "Propres outils";
 $lang["monobook_bar_navigation"] = "Navigation";
-$lang["monobook_bar_toolbox"] = "Boîte à outils";
+$lang["monobook_bar_toolbox"] = "Outils";
 $lang["monobook_bar_inotherlanguages"] = "Autres langues";
 $lang["monobook_bar_search"] = "Recherche";
 

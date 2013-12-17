@@ -44,20 +44,20 @@ $lang["monobook_tab_exportpdf"] = "내보내기: PDF";
 $lang["monobook_bar_views"] = "보기";
 $lang["monobook_bar_personnaltools"] = "개인 도구";
 $lang["monobook_bar_navigation"] = "둘러보기";
-$lang["monobook_bar_toolbox"] = "도구모음";
+$lang["monobook_bar_toolbox"] = "도구";
 $lang["monobook_qrcodebox"] = "QR 코드";
 $lang["monobook_bar_inotherlanguages"] = "다른 언어";
-$lang["monobook_bar_search"] = "찾기";
+$lang["monobook_bar_search"] = "검색";
 
 //buttons
 $lang["monobook_btn_go"] = "보기";
-$lang["monobook_btn_search"] = "찾기";
+$lang["monobook_btn_search"] = "검색";
 
 //default toolbox
 $lang["monobook_toolbxdef_whatlinkshere"] = "여기를 가리키는 문서";
 $lang["monobook_toolbxdef_upload"] = "파일 올리기";
 $lang["monobook_toolbxdef_siteindex"] = "사이트맵";
-$lang["monobook_toolbxdef_print"] = "인쇄용 문서";
+$lang["monobook_toolbxdef_print"] = "인쇄용 판";
 $lang["monobook_toolboxdef_permanent"] = "고유 링크";
 $lang["monobook_toolboxdef_cite"] = "이 문서 인용하기";
 

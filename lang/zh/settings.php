@@ -58,10 +58,10 @@ $lang["monobook_copyright_translate"] = "如果开启了翻译插件,版权声�
 $lang["monobook_search"] = "显示查找栏么?";
 
 //toolbox
-$lang["monobook_toolbox"]               = "显示'工具箱'么?";
-$lang["monobook_toolbox_default"]       = "如果显示,使用预设工具箱页面么?";
-$lang["monobook_toolbox_default_print"] = "如果使用预设工具箱页面,要显示'可打印版本'的链接么?";
-$lang["monobook_toolbox_location"]      = "如果不适用预设, 使用以下页面作为工具箱页面:";
+$lang["monobook_toolbox"]               = "显示'工具'么?";
+$lang["monobook_toolbox_default"]       = "如果显示,使用预设工具页面么?";
+$lang["monobook_toolbox_default_print"] = "如果使用预设工具页面,要显示'可打印版本'的链接么?";
+$lang["monobook_toolbox_location"]      = "如果不适用预设, 使用以下页面作为工具页面:";
 
 //qr code box
 $lang["monobook_qrcodebox"] = "显示当前页面URL生成的二维码么(对于手机浏览更方便)?";

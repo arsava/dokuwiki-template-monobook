@@ -43,7 +43,7 @@ $lang["monobook_tab_exportpdf"] = "Export: PDF";
 $lang["monobook_bar_views"] = "Views";
 $lang["monobook_bar_personnaltools"] = "Personal Tools";
 $lang["monobook_bar_navigation"] = "Navigation";
-$lang["monobook_bar_toolbox"] = "Toolbox";
+$lang["monobook_bar_toolbox"] = "Tools";
 $lang["monobook_qrcodebox"] = "QR Code";
 $lang["monobook_bar_inotherlanguages"] = "In Other Languages";
 $lang["monobook_bar_search"] = "Search";
@@ -55,7 +55,7 @@ $lang["monobook_btn_search"] = "Search";
 //default toolbox
 $lang["monobook_toolbxdef_whatlinkshere"] = "What links here";
 $lang["monobook_toolbxdef_upload"] = "Upload file";
-$lang["monobook_toolbxdef_siteindex"] = "Site index";
+$lang["monobook_toolbxdef_siteindex"] = "Sitemap";
 $lang["monobook_toolbxdef_print"] = "Printable version";
 $lang["monobook_toolboxdef_permanent"] = "Permanent link";
 $lang["monobook_toolboxdef_cite"] = "Cite this article";

@@ -43,7 +43,7 @@ $lang["monobook_tab_exportpdf"] = "書き出し: PDF";
 $lang["monobook_bar_views"] = "表示";
 $lang["monobook_bar_personnaltools"] = "個人ツール";
 $lang["monobook_bar_navigation"] = "ナビゲーション";
-$lang["monobook_bar_toolbox"] = "ツールボックス";
+$lang["monobook_bar_toolbox"] = "ツール";
 $lang["monobook_bar_inotherlanguages"] = "言語選択";
 $lang["monobook_bar_search"] = "検索";
 
@@ -54,7 +54,7 @@ $lang["monobook_btn_search"] = "検索";
 //default toolbox
 $lang["monobook_toolbxdef_whatlinkshere"] = "被リンク";
 $lang["monobook_toolbxdef_upload"] = "アップロード";
-$lang["monobook_toolbxdef_siteindex"] = "索引";
+$lang["monobook_toolbxdef_siteindex"] = "サイトマップ";
 $lang["monobook_toolbxdef_print"] = "印刷用";
 $lang["monobook_toolboxdef_permanent"] = "固定リンク";
 $lang["monobook_toolboxdef_cite"] = "項目の引用";
