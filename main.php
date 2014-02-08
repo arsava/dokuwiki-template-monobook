@@ -140,8 +140,8 @@ if (file_exists(DOKU_TPLINC."/user/buttons.php")){
  * NOTE: This function is heavily inspired by "writeMBPortlet(), context.php" of
  *       the "Monobook for Dokuwiki" template by Terence J. Grant.
  *
- * @param array The tab data to render within the snippet. Each element
- *        is represented through a subarray:
+ * @param array The tab data to render within the snippet. Each element is
+ *        represented by a subarray:
  *        $array = array("tab1" => array("text"     => "hello world!",
  *                                       "href"     => "http://www.example.com"
  *                                       "nofollow" => true),
@@ -281,7 +281,7 @@ function _monobook_renderTabs($arr)
  *       the "Monobook for Dokuwiki" template by Terence J. Grant.
  *
  * @param array The box data to render within the snippet. Each box is
- *        represented through a subarray:
+ *        represented by a subarray:
  *        $array = array("box-id1" => array("headline" => "hello world!",
  *                                          "xhtml"    => "I am <i>here</i>."));
  *        Available keys within the subarrays:
@@ -361,8 +361,8 @@ function _monobook_renderBoxes($arr)
 /**
  * Helper to render the footer buttons (like a dynamic XHTML snippet)
  *
- * @param array The button data to render within the snippet. Each element
- *        is represented through a subarray:
+ * @param array The button data to render within the snippet. Each element is
+ *        represented by a subarray:
  *        $array = array("btn1" => array("img"      => DOKU_TPL."static/img/button-monobook.png",
  *                                       "href"     => "https://andreashaerter.com/",
  *                                       "width"    => 80,
@@ -472,15 +472,6 @@ if ($ACT === "edit" &&
 //show meta-tags
 tpl_metaheaders();
 echo "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />";
-
-//manually load needed CSS? this is a workaround for PHP Bug #49642. In some
-//version/os combinations PHP is not able to parse INI-file entries if there
-//are slashes "/" used for the keynames (see bugreport for more information:
-//<http://bugs.php.net/bug.php?id=49692>). to trigger this workaround, simply
-//delete/rename monobook's style.ini.
-if (!file_exists(DOKU_TPLINC."style.ini")){
-    echo  "<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."bug49642.php".((!empty($lang["direction"]) && $lang["direction"] === "rtl") ? "?langdir=rtl" : "")."\" />\n"; //var comes from DokuWiki core
-}
 
 //include default or userdefined favicon
 //
