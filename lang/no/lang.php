@@ -5,13 +5,12 @@
  *
  * If your language is not/only partially translated or you found an error/typo,
  * have a look at the following files:
- * - "/lib/tpl/monobook/lang/<your lang>/lang.php"
- * - "/lib/tpl/monobook/lang/<your lang>/settings.php"
+ * - /lib/tpl/monobook/lang/<your lang>/lang.php
+ * - /lib/tpl/monobook/lang/<your lang>/settings.php
  * If they are not existing, copy and translate the English ones.
  *
- * Don't forget to mail your translation to
- *   Andreas Haerter <development@andreas-haerter.com>
- * Thanks :-D.
+ * Don't forget to mail your translation to ARSAVA <dokuwiki@dev.arsava.com>.
+ * Thanks! :-D
  *
  *
  * LICENSE: This file is open source software (OSS) and may be copied under
@@ -23,8 +22,8 @@
  *
  * Hvis ditt språk ikke er her eller bare delvis er oversatt, ta en titt på
  * følgende filer:
- * - "/lib/tpl/monobook/lang/<your lang>/lang.php"
- * - "/lib/tpl/monobook/lang/<your lang>/settings.php"
+ * - /lib/tpl/monobook/lang/<your lang>/lang.php
+ * - /lib/tpl/monobook/lang/<your lang>/settings.php
  * Hvis de ikke fins, kopier og oversett de engelske versjonene.
  *
  *
@@ -34,9 +33,9 @@
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
  * @author Henrik Karlstrøm <henrik.karlstrom@ntnu.no>
- * @link http://www.dokuwiki.org/template:monobook
- * @link http://www.dokuwiki.org/config:lang
- * @link http://www.dokuwiki.org/devel:configuration
+ * @link https://www.dokuwiki.org/template:monobook
+ * @link https://www.dokuwiki.org/config:lang
+ * @link https://www.dokuwiki.org/devel:configuration
  */
 
 

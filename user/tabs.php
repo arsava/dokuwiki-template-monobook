@@ -14,9 +14,9 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <development@andreas-haerter.com>
- * @link http://www.dokuwiki.org/template:monobook
- * @link http://www.dokuwiki.org/devel:configuration
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
+ * @link https://www.dokuwiki.org/template:monobook
+ * @link https://www.dokuwiki.org/devel:configuration
  */
 
 
@@ -31,7 +31,7 @@ if (!defined("DOKU_INC")){
 
 
 //ODT plugin: export tab
-//see <http://www.dokuwiki.org/plugin:odt> for info
+//see <https://www.dokuwiki.org/plugin:odt> for info
 if (file_exists(DOKU_PLUGIN."odt/syntax.php") &&
     !plugin_isdisabled("odt")){
     $_monobook_tabs["tab-export-odt"]["text"]     = $lang["monobook_tab_exportodt"];
@@ -41,7 +41,7 @@ if (file_exists(DOKU_PLUGIN."odt/syntax.php") &&
 
 
 //html2pdf plugin: export tab (thanks to Luigi Micco <l.micco@tiscali.it>)
-//see <http://www.dokuwiki.org/plugin:html2pdf> for info
+//see <https://www.dokuwiki.org/plugin:html2pdf> for info
 if (file_exists(DOKU_PLUGIN."html2pdf/action.php") &&
     !plugin_isdisabled("html2pdf")){
     $_monobook_tabs["tab-export-pdf"]["text"]     = $lang["monobook_tab_exportpdf"];
@@ -103,15 +103,16 @@ if (!empty($conf["useacl"]) &&
 
 /*
 //link
-$_monobook_tabs["tab-urlexample"]["text"]  = "Creator";
-$_monobook_tabs["tab-urlexample"]["href"]  = "http://andreas-haerter.com/";
+$_monobook_tabs["tab-urlexample"]["text"]     = "Creator";
+$_monobook_tabs["tab-urlexample"]["href"]     = "https://andreashaerter.com/";
+$_monobook_tabs["tab-urlexample"]["nofollow"] = true;
 */
 
 
 /*
 //link with rel="nofollow", see http://www.wikipedia.org/wiki/Nofollow for info
 $_monobook_tabs["tab-urlexample2"]["text"]     = "Search the web";
-$_monobook_tabs["tab-urlexample2"]["href"]     = "http://www.google.com/search?q=dokuwiki";
+$_monobook_tabs["tab-urlexample2"]["href"]     = "https://www.google.com/search?q=dokuwiki";
 $_monobook_tabs["tab-urlexample2"]["nofollow"] = true;
 */
 

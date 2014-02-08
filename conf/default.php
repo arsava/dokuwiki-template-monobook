@@ -9,11 +9,9 @@
  *   the same directory as this file.
  * - To change/translate the descriptions showed in the admin/configuration
  *   menu of DokuWiki, have a look at the file
- *   "/lib/tpl/monobook/lang/<your lang>/settings.php". If it does not exists,
+ *   /lib/tpl/monobook/lang/<your lang>/settings.php. If it does not exists,
  *   copy and translate the English one. Don't forget to mail your translation
- *   to
- *     Andreas Haerter <development@andreas-haerter.com>
- *   Thanks :-D.
+ *   to ARSAVA <dokuwiki@dev.arsava.com>. Thanks! :-D
  * - To change the [tabs|boxes|buttons] configuration, have a look at
  *   "/user/[tabs|boxes|buttons].php".
  *
@@ -23,9 +21,9 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <development@andreas-haerter.com>
- * @link http://www.dokuwiki.org/template:monobook
- * @link http://www.dokuwiki.org/devel:configuration
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
+ * @link https://www.dokuwiki.org/template:monobook
+ * @link https://www.dokuwiki.org/devel:configuration
  */
 
 
@@ -45,18 +43,18 @@ $conf["monobook_discuss_ns"] = ":talk:"; //namespace to use for discussion page 
 //site notice
 $conf["monobook_sitenotice"]           = true; //TRUE: use/show sitenotice
 $conf["monobook_sitenotice_location"]  = ":wiki:site_notice"; //page/article used to store the sitenotice
-$conf["monobook_sitenotice_translate"] = true; //TRUE: load translated sitenotice if translation plugin is available (see <http://www.dokuwiki.org/plugin:translation>)
+$conf["monobook_sitenotice_translate"] = true; //TRUE: load translated sitenotice if translation plugin is available (see <https://www.dokuwiki.org/plugin:translation>)
 
 //navigation
 $conf["monobook_navigation"]           = true; //TRUE: use/show navigation
 $conf["monobook_navigation_location"]  = ":wiki:navigation"; //page/article used to store the navigation
-$conf["monobook_navigation_translate"] = true; //TRUE: load translated navigation if translation plugin is available (see <http://www.dokuwiki.org/plugin:translation>)
+$conf["monobook_navigation_translate"] = true; //TRUE: load translated navigation if translation plugin is available (see <https://www.dokuwiki.org/plugin:translation>)
 
 //custom copyright notice
 $conf["monobook_copyright"]           = true; //TRUE: use/show copyright notice
 $conf["monobook_copyright_default"]   = true; //TRUE: use default copyright notice (if copyright notice is enabled at all)
 $conf["monobook_copyright_location"]  = ":wiki:copyright"; //page/article used to store a custom copyright notice
-$conf["monobook_copyright_translate"] = true; //TRUE: load translated copyright notice if translation plugin is available (see <http://www.dokuwiki.org/plugin:translation>)
+$conf["monobook_copyright_translate"] = true; //TRUE: load translated copyright notice if translation plugin is available (see <https://www.dokuwiki.org/plugin:translation>)
 
 //search form
 $conf["monobook_search"] = true; //TRUE: use/show search form
@@ -71,8 +69,8 @@ $conf["monobook_toolbox_location"]      = ":wiki:toolbox"; //page/article used t
 $conf["monobook_qrcodebox"] = true; //TRUE: use/show box with QR Code of current page's URL
 
 //donation link/button
-$conf["monobook_donate"]     = true; //TRUE: use/show donation link/button
-$conf["monobook_donate_url"] = "http://donate.andreas-haerter.com/dokuwiki-template-monobook/"; //custom donation URL
+$conf["monobook_donate"]     = false; //TRUE: use/show donation link/button
+$conf["monobook_donate_url"] = "https://donate.arsava.com/dokuwiki-template-monobook/"; //custom donation URL
 
 //TOC
 $conf["monobook_toc_position"] = "article"; //article: show TOC embedded within the article; "sidebar": show TOC near the navigation, left column

@@ -9,12 +9,12 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <development@andreas-haerter.com>
- * @link http://www.dokuwiki.org/template:monobook
- * @link http://www.dokuwiki.org/devel:templates
- * @link http://www.dokuwiki.org/devel:coding_style
- * @link http://www.dokuwiki.org/devel:environment
- * @link http://www.dokuwiki.org/devel:action_modes
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
+ * @link https://www.dokuwiki.org/template:monobook
+ * @link https://www.dokuwiki.org/devel:templates
+ * @link https://www.dokuwiki.org/devel:coding_style
+ * @link https://www.dokuwiki.org/devel:environment
+ * @link https://www.dokuwiki.org/devel:action_modes
  */
 
 
@@ -35,13 +35,13 @@ if (!defined("DOKU_INC")){
  * influencing the var's value.
  *
  * @var string
- * @author Andreas Haerter <development@andreas-haerter.com>
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
  */
 $monobook_action = "article";
 //note: I used $_REQUEST before (cause DokuWiki controls and fills it. Normally,
 //      using $_REQUEST is a possible security threat. For details, see
 //      <http://www.suspekt.org/2008/10/01/php-53-and-delayed-cross-site-request-forgerieshijacking/>
-//      and <http://forum.dokuwiki.org/post/16524>), but it did not work as
+//      and <https://forum.dokuwiki.org/post/16524>), but it did not work as
 //      expected by me (maybe it is a reference and setting $monobook_action
 //      also changed the contents of $_REQUEST?!). That is why I switched back,
 //      checking $_GET and $_POST like I did it before.
@@ -69,7 +69,7 @@ if (!empty($monobook_action) &&
  * page or not.
  *
  * @var string
- * @author Andreas Haerter <development@andreas-haerter.com>
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
  */
 $monobook_context = "article";
 if (preg_match("/^".tpl_getConf("monobook_discuss_ns")."?$|^".tpl_getConf("monobook_discuss_ns").".*?$/i", ":".getNS(getID()))){
@@ -81,7 +81,7 @@ if (preg_match("/^".tpl_getConf("monobook_discuss_ns")."?$|^".tpl_getConf("monob
  * Stores the name the current client used to login
  *
  * @var string
- * @author Andreas Haerter <development@andreas-haerter.com>
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
  */
 $loginname = "";
 if (!empty($conf["useacl"])){
@@ -175,13 +175,13 @@ if (file_exists(DOKU_TPLINC."/user/buttons.php")){
  *        - "accesskey" (optional)
  *          accesskey="<value>" will be added to the link if "href" is set
  *          (otherwise this option will do nothing).
- * @author Andreas Haerter <development@andreas-haerter.com>
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
  * @see _monobook_renderButtons()
  * @see _monobook_renderBoxes()
  * @link http://www.wikipedia.org/wiki/Nofollow
  * @link http://de.selfhtml.org/html/verweise/tastatur.htm#kuerzel
- * @link http://www.dokuwiki.org/devel:environment
- * @link http://www.dokuwiki.org/devel:coding_style
+ * @link https://www.dokuwiki.org/devel:environment
+ * @link https://www.dokuwiki.org/devel:coding_style
  */
 function _monobook_renderTabs($arr)
 {
@@ -291,12 +291,12 @@ function _monobook_renderTabs($arr)
  *          aware of XSS and stuff.
  *        - "headline" (optional)
  *          Headline to show above the box. Leave empty/do not set for none.
- * @author Andreas Haerter <development@andreas-haerter.com>
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
  * @see _monobook_renderButtons()
  * @see _monobook_renderTabs()
  * @link http://www.wikipedia.org/wiki/Nofollow
  * @link http://www.wikipedia.org/wiki/Cross-site_scripting
- * @link http://www.dokuwiki.org/devel:coding_style
+ * @link https://www.dokuwiki.org/devel:coding_style
  */
 function _monobook_renderBoxes($arr)
 {
@@ -364,11 +364,11 @@ function _monobook_renderBoxes($arr)
  * @param array The button data to render within the snippet. Each element
  *        is represented through a subarray:
  *        $array = array("btn1" => array("img"      => DOKU_TPL."static/img/button-monobook.png",
- *                                       "href"     => "http://andreas-haerter.com/",
+ *                                       "href"     => "https://andreashaerter.com/",
  *                                       "width"    => 80,
  *                                       "height"   => 15,
- *                                       "title"    => "monobook for DokuWiki",
- *                                       "nofollow" => false),
+ *                                       "title"    => "Andreas Haerters's website",
+ *                                       "nofollow" => true),
  *                       "btn2" => array("img"   => DOKU_TPL."user/mybutton1.png",
  *                                       "href"  => wl("start", false, false, "&")),
  *                       "btn3" => array("img"   => DOKU_TPL."user/mybutton2.png",
@@ -392,11 +392,11 @@ function _monobook_renderBoxes($arr)
  *        - "title" (optional)
  *          title="<value>"  will be added to the link and image if "title"
  *          is set + alt="<value>".
- * @author Andreas Haerter <development@andreas-haerter.com>
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
  * @see _monobook_renderButtons()
  * @see _monobook_renderBoxes()
  * @link http://www.wikipedia.org/wiki/Nofollow
- * @link http://www.dokuwiki.org/devel:coding_style
+ * @link https://www.dokuwiki.org/devel:coding_style
  */
 function _monobook_renderButtons($arr)
 {

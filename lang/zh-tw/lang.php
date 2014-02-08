@@ -5,13 +5,12 @@
  *
  * If your language is not/only partially translated or you found an error/typo,
  * have a look at the following files:
- * - "/lib/tpl/monobook/lang/<your lang>/lang.php"
- * - "/lib/tpl/monobook/lang/<your lang>/settings.php"
+ * - /lib/tpl/monobook/lang/<your lang>/lang.php
+ * - /lib/tpl/monobook/lang/<your lang>/settings.php
  * If they are not existing, copy and translate the English ones.
  *
- * Don't forget to mail your translation to
- *   Andreas Haerter <development@andreas-haerter.com>
- * Thanks :-D.
+ * Don't forget to mail your translation to ARSAVA <dokuwiki@dev.arsava.com>.
+ * Thanks! :-D
  *
  *
  * LICENSE: This file is open source software (OSS) and may be copied under
@@ -20,9 +19,9 @@
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
  * @author 呂理群
- * @link http://www.dokuwiki.org/template:monobook
- * @link http://www.dokuwiki.org/config:lang
- * @link http://www.dokuwiki.org/devel:configuration
+ * @link https://www.dokuwiki.org/template:monobook
+ * @link https://www.dokuwiki.org/config:lang
+ * @link https://www.dokuwiki.org/devel:configuration
  */
 
 
@@ -95,6 +94,5 @@ $lang["monobook_accessdenied"] = "拒絕存取";
 $lang["monobook_fillplaceholder"] = "請填寫或不啟用";
 $lang["monobook_donate"] = "捐助";
 $lang["monobook_mdtemplatefordw"] = "monobook template for DokuWiki";
-$lang["monobook_qrcodebtn"] = "QR Code 產生器";
 $lang["monobook_recentchanges"] = "最新更新";
 

@@ -9,9 +9,9 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <development@andreas-haerter.com>
- * @link http://www.dokuwiki.org/template:monobook
- * @link http://www.dokuwiki.org/devel:configuration
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
+ * @link https://www.dokuwiki.org/template:monobook
+ * @link https://www.dokuwiki.org/devel:configuration
  */
 
 
@@ -46,9 +46,8 @@ $_monobook_btns["rss"]["nofollow"] = true;
 
 
 //"monobook for DokuWiki" button
-//Note: please do NOT remove this button. Thank you. :-)
 $_monobook_btns["mbfdw"]["img"]      = DOKU_TPL."static/img/button-monobook.png";
-$_monobook_btns["mbfdw"]["href"]     = "http://andreas-haerter.com/";
+$_monobook_btns["mbfdw"]["href"]     = "https://www.dokuwiki.org/template:monobook";
 $_monobook_btns["mbfdw"]["width"]    = 80;
 $_monobook_btns["mbfdw"]["height"]   = 15;
 $_monobook_btns["mbfdw"]["title"]    = $lang["monobook_mdtemplatefordw"];
@@ -62,27 +61,17 @@ if (tpl_getConf("monobook_donate")){
     $_monobook_btns["donate"]["width"]    = 80;
     $_monobook_btns["donate"]["height"]   = 15;
     $_monobook_btns["donate"]["title"]    = $lang["monobook_donate"];
-    $_monobook_btns["donate"]["nofollow"] = !(cleanID(getID()) === "start");
+    $_monobook_btns["donate"]["nofollow"] = true;
 }
-
-
-//QR Code button
-//Note: please do NOT remove this button. Thank you. :-)
-$_monobook_btns["qrcode"]["img"]      = DOKU_TPL."static/img/button-qrcode.png";
-$_monobook_btns["qrcode"]["href"]     = "http://".(($conf["lang"] !== "de") ? "goqr.me" : "qr-code-generator.de")."/";
-$_monobook_btns["qrcode"]["width"]    = 80;
-$_monobook_btns["qrcode"]["height"]   = 15;
-$_monobook_btns["qrcode"]["title"]    = $lang["monobook_qrcodebtn"];
-$_monobook_btns["qrcode"]["nofollow"] = !(cleanID(getID()) === "start");
 
 
 //DokuWiki button
 $_monobook_btns["dw"]["img"]      = DOKU_TPL."static/img/button-dw.png";
-$_monobook_btns["dw"]["href"]     = "http://www.dokuwiki.org";
+$_monobook_btns["dw"]["href"]     = "https://www.dokuwiki.org/";
 $_monobook_btns["dw"]["width"]    = 80;
 $_monobook_btns["dw"]["height"]   = 15;
 $_monobook_btns["dw"]["title"]    = "DokuWiki";
-$_monobook_btns["dw"]["nofollow"] = false;
+$_monobook_btns["dw"]["nofollow"] = !(cleanID(getID()) === "start");
 
 
 

@@ -9,9 +9,9 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <development@andreas-haerter.com>
- * @link http://www.dokuwiki.org/template:monobook
- * @link http://www.dokuwiki.org/devel:configuration
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
+ * @link https://www.dokuwiki.org/template:monobook
+ * @link https://www.dokuwiki.org/devel:configuration
  */
 
 
@@ -41,7 +41,7 @@ if (empty($conf["useacl"]) || //are there any users?
     !tpl_getConf("monobook_closedwiki")){
 
     //Languages/translations provided by Andreas Gohr's translation plugin,
-    //see <http://www.dokuwiki.org/plugin:translation>. Create plugin object if
+    //see <https://www.dokuwiki.org/plugin:translation>. Create plugin object if
     //needed.
     if (file_exists(DOKU_PLUGIN."translation/syntax.php") &&
         !plugin_isdisabled("translation")){
@@ -196,20 +196,20 @@ if (empty($conf["useacl"]) || //are there any users?
     }
 
     //Languages/translations provided by Andreas Gohr's translation plugin,
-    //see <http://www.dokuwiki.org/plugin:translation>
+    //see <https://www.dokuwiki.org/plugin:translation>
     if (!empty($transplugin) &&
         is_object($transplugin)){
         $_monobook_boxes["p-lang"]["headline"] = $lang["monobook_bar_inotherlanguages"];
         $_monobook_boxes["p-lang"]["xhtml"]    = $transplugin->_showTranslations();
     }
 
-    //QR Code of current page's URL (powered by <http://qrserver.com/api/>)
+    //QR Code of current page's URL (powered by <http://goqr.me/api/>)
     if (tpl_getConf("monobook_qrcodebox")){
         //headline
         $_monobook_boxes["p-qrcode"]["headline"] = $lang["monobook_qrcodebox"];
 
         //content
-        $_monobook_boxes["p-qrcode"]["xhtml"] = "        <span id=\"t-qrcode\">".((cleanID(getID()) === "start") ? "<a href=\"http://".(($conf["lang"] !== "de") ? "goqr.me" : "qr-code-generator.de")."/\" target=\"_blank\">" : "")."<img src=\"".((!empty($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] === "on") ? "https" : "http")."://api.qrserver.com/v1/create-qr-code/?data=".urlencode(wl(cleanID(getId()), false, true, "&"))."&#38;size=130x130&#38;margin=0\" alt=\"".hsc($lang["monobook_qrcodebox_qrcode"])." ".hsc(tpl_pagetitle(null, true))." (".hsc($lang["monobook_qrcodebox_genforcurrentpage"]).")\" title=\"".hsc($lang["monobook_qrcodebox_urlofcurrentpage"])."\" />".((cleanID(getID()) === "start") ? "</a>" : "")."</span>";
+        $_monobook_boxes["p-qrcode"]["xhtml"] = "        <span id=\"t-qrcode\">".((cleanID(getID()) === "start") ? "<a href=\"http://".(($conf["lang"] !== "de") ? "goqr.me" : "goqr.me/de")."/\" target=\"_blank\" rel=\"nofollow\">" : "")."<img src=\"".((!empty($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] === "on") ? "https" : "http")."://api.qrserver.com/v1/create-qr-code/?data=".urlencode(wl(cleanID(getId()), false, true, "&"))."&#38;size=130x130&#38;margin=0\" alt=\"".hsc($lang["monobook_qrcodebox_qrcode"])." ".hsc(tpl_pagetitle(null, true))." (".hsc($lang["monobook_qrcodebox_genforcurrentpage"]).")\" title=\"".hsc($lang["monobook_qrcodebox_urlofcurrentpage"])."\" />".((cleanID(getID()) === "start") ? "</a>" : "")."</span>";
     }
 
 }else{

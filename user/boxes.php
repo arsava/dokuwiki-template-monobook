@@ -14,9 +14,9 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <development@andreas-haerter.com>
- * @link http://www.dokuwiki.org/template:monobook
- * @link http://www.dokuwiki.org/devel:configuration
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
+ * @link https://www.dokuwiki.org/template:monobook
+ * @link https://www.dokuwiki.org/devel:configuration
  */
 
 
@@ -52,7 +52,7 @@ $_monobook_boxes["example2"]["xhtml"] =  "<ul>\n"
 
 /*
 $_monobook_boxes["example3"]["headline"] = "Buttons";
-$_monobook_boxes["example3"]["xhtml"] = "<a href=\"http://donate.andreas-haerter.com/dokuwiki-template-monobook/\" title=\"Donate\" target=\"_blank\"><img src=\"".DOKU_TPL."static/img/button-donate.gif\" width=\"80\" height=\"15\" alt=\"Donate\" border=\"0\" /></a>";
+$_monobook_boxes["example3"]["xhtml"] = "<a href=\"https://donate.arsava.com/dokuwiki-template-monobook/\" title=\"Donate\" target=\"_blank\"><img src=\"".DOKU_TPL."static/img/button-donate.gif\" width=\"80\" height=\"15\" alt=\"Donate\" border=\"0\" /></a>";
 */
 
 
