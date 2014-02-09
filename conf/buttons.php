@@ -74,6 +74,15 @@ $_monobook_btns["dw"]["title"]    = "DokuWiki";
 $_monobook_btns["dw"]["nofollow"] = !(cleanID(getID()) === "start");
 
 
+//W3C (X)HTML validator button
+$_monobook_btns["valid_xhtml"]["img"]      = DOKU_TPL."static/img/button-xhtml.png";
+$_monobook_btns["valid_xhtml"]["href"]     = "http://validator.w3.org/check/referer";
+$_monobook_btns["valid_xhtml"]["width"]    = 80;
+$_monobook_btns["valid_xhtml"]["height"]   = 15;
+$_monobook_btns["valid_xhtml"]["title"]    = "Valid XHTML";
+$_monobook_btns["valid_xhtml"]["nofollow"] = true;
+
+
 
 /******************************************************************************
  ********************************  ATTENTION  *********************************

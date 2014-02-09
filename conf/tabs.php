@@ -131,6 +131,39 @@ if (empty($conf["useacl"]) || //are there any users?
         }
     }
 
+
+    //ODT plugin: export tab
+    //see <https://www.dokuwiki.org/plugin:odt> for info
+    if (file_exists(DOKU_PLUGIN."odt/syntax.php") &&
+        !plugin_isdisabled("odt")){
+        $_monobook_tabs["tab-export-odt"]["text"]     = $lang["monobook_tab_exportodt"];
+        $_monobook_tabs["tab-export-odt"]["href"]     = wl(cleanID(getId()), array("do" => "export_odt"), false, "&");
+        $_monobook_tabs["tab-export-odt"]["nofollow"] = true;
+    }
+
+
+    //html2pdf plugin: export tab (thanks to Luigi Micco <l.micco@tiscali.it>)
+    //see <https://www.dokuwiki.org/plugin:html2pdf> for info
+    if (file_exists(DOKU_PLUGIN."html2pdf/action.php") &&
+        !plugin_isdisabled("html2pdf")){
+        $_monobook_tabs["tab-export-pdf"]["text"]     = $lang["monobook_tab_exportpdf"];
+        $_monobook_tabs["tab-export-pdf"]["href"]     = wl(cleanID(getId()), array("do" => "export_pdf"), false, "&");
+        $_monobook_tabs["tab-export-pdf"]["nofollow"] = true;
+    }
+
+    //(un)subscribe namespace tab
+    if (!empty($conf["useacl"]) &&
+        !empty($conf["subscribers"]) &&
+        !empty($loginname)){ //$loginname was defined within main.php
+        if (empty($INFO["subscribedns"])){ //$INFO comes from DokuWiki core
+            $_monobook_tabs["ca-watchns"]["href"] = wl(cleanID(getId()), array("do" => "subscribens"), false, "&");
+            $_monobook_tabs["ca-watchns"]["text"] = $lang["btn_subscribens"]; //language comes from DokuWiki core
+        }else{
+            $_monobook_tabs["ca-watchns"]["href"] = wl(cleanID(getId()), array("do" => "unsubscribens"), false, "&");
+            $_monobook_tabs["ca-watchns"]["text"] = $lang["btn_unsubscribens"]; //language comes from DokuWiki core
+        }
+    }
+
 }
 
 

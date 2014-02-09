@@ -176,6 +176,7 @@ if (file_exists(DOKU_TPLINC."/user/buttons.php")){
  *          accesskey="<value>" will be added to the link if "href" is set
  *          (otherwise this option will do nothing).
  * @author ARSAVA <dokuwiki@dev.arsava.com>
+ * @return bool
  * @see _monobook_renderButtons()
  * @see _monobook_renderBoxes()
  * @link http://www.wikipedia.org/wiki/Nofollow
@@ -292,6 +293,7 @@ function _monobook_renderTabs($arr)
  *        - "headline" (optional)
  *          Headline to show above the box. Leave empty/do not set for none.
  * @author ARSAVA <dokuwiki@dev.arsava.com>
+ * @return bool
  * @see _monobook_renderButtons()
  * @see _monobook_renderTabs()
  * @link http://www.wikipedia.org/wiki/Nofollow
@@ -393,6 +395,7 @@ function _monobook_renderBoxes($arr)
  *          title="<value>"  will be added to the link and image if "title"
  *          is set + alt="<value>".
  * @author ARSAVA <dokuwiki@dev.arsava.com>
+ * @return bool
  * @see _monobook_renderButtons()
  * @see _monobook_renderBoxes()
  * @link http://www.wikipedia.org/wiki/Nofollow
@@ -501,7 +504,7 @@ if (file_exists(DOKU_TPLINC."user/apple-touch-icon.png")){
 }
 
 //load userdefined js?
-if (tpl_getConf("monobook_loaduserjs")){
+if (tpl_getConf("monobook_loaduserjs") && file_exists(DOKU_TPL."user/user.js")){
     echo "<script type=\"text/javascript\" charset=\"utf-8\" src=\"".DOKU_TPL."user/user.js\"></script>\n";
 }
 
@@ -511,8 +514,10 @@ if ($monobook_action === "print"){
   //      don't forget to update the styles.ini, this is the really important
   //      thing! BTW: good text about this: http://is.gd/5MyG5
   echo  "<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."static/css/print.css\" />\n"
-       ."<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."static/3rd/wikipedia/commonPrint.css\" />\n"
-       ."<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."user/print.css\" />\n";
+       ."<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."static/3rd/wikipedia/commonPrint.css\" />\n";
+  if (file_exists(DOKU_TPL."user/print.css")){
+      echo "<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."user/print.css\" />\n";
+  }
 }
 
 //load language specific css hacks?
