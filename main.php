@@ -515,7 +515,7 @@ if ($monobook_action === "print"){
   //      thing! BTW: good text about this: http://is.gd/5MyG5
   echo  "<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."static/css/print.css\" />\n"
        ."<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."static/3rd/wikipedia/commonPrint.css\" />\n";
-  if (file_exists(DOKU_TPL."user/print.css")){
+  if (file_exists(DOKU_TPLINC."user/print.css")){
       echo "<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."user/print.css\" />\n";
   }
 }
