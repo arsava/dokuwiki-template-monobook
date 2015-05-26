@@ -842,6 +842,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
         <?php tpl_userinfo(); ?><br />
       </li>
     </ul>
+    <?php tpl_includeFile('user/footer.html'); ?>
   </div>
 
 </div>  <!-- end of global wrap -->
