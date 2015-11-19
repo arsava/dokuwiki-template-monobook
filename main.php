@@ -703,8 +703,16 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
       <?php
       //include default or userdefined logo
       echo "<a href=\"".wl()."\" ";
-      if (file_exists(DOKU_TPLINC."user/logo.png")){
+      if (file_exists(DOKU_TPLINC."user/logo-".$INFO['namespace'].".png")){
           //user defined PNG
+          echo "style=\"background-image:url(".DOKU_TPL."user/logo-".$INFO['namespace'].".png);\"";
+      }elseif (file_exists(DOKU_TPLINC."user/logo.gif")){
+          //user defined GIF
+          echo "style=\"background-image:url(".DOKU_TPL."user/logo-".$INFO['namespace'].".gif);\"";
+      }elseif (file_exists(DOKU_TPLINC."user/logo.jpg")){
+          //user defined JPG
+          echo "style=\"background-image:url(".DOKU_TPL."user/logo-".$INFO['namespace'].".jpg);\"";
+      }elseif (file_exists(DOKU_TPLINC."user/logo.png")){
           echo "style=\"background-image:url(".DOKU_TPL."user/logo.png);\"";
       }elseif (file_exists(DOKU_TPLINC."user/logo.gif")){
           //user defined GIF
