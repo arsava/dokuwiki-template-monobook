@@ -142,10 +142,10 @@ if (empty($conf["useacl"]) || //are there any users?
     }
 
 
-    //html2pdf plugin: export tab (thanks to Luigi Micco <l.micco@tiscali.it>)
-    //see <https://www.dokuwiki.org/plugin:html2pdf> for info
-    if (file_exists(DOKU_PLUGIN."html2pdf/action.php") &&
-        !plugin_isdisabled("html2pdf")){
+    //dw2pdf plugin: export tab (thanks to Luigi Micco <l.micco@tiscali.it>)
+    //see <https://www.dokuwiki.org/plugin:dw2pdf> for info
+    if (file_exists(DOKU_PLUGIN."dw2pdf/action.php") &&
+        !plugin_isdisabled("dw2pdf")){
         $_monobook_tabs["tab-export-pdf"]["text"]     = $lang["monobook_tab_exportpdf"];
         $_monobook_tabs["tab-export-pdf"]["href"]     = wl(cleanID(getId()), array("do" => "export_pdf"), false, "&");
         $_monobook_tabs["tab-export-pdf"]["nofollow"] = true;
