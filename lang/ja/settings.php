@@ -51,10 +51,10 @@ $lang["monobook_copyright_location"] = "デフォルトを使用しない場合�
 $lang["monobook_search"] = "検索窓を使用する";
 
 //toolbox
-$lang["monobook_toolbox"]               = "ツールボックスを使用する";
-$lang["monobook_toolbox_default"]       = "使用する場合、デフォルトのツールボックスを使用する";
-$lang["monobook_toolbox_default_print"] = "デフォルトのツールボックスを使う場合、印刷用リンクを表示する。";
-$lang["monobook_toolbox_location"]      = "デフォルトを使用しない場合、ツールボックスを下記のページに指定する:";
+$lang["monobook_toolbox"]               = "ツールを使用する";
+$lang["monobook_toolbox_default"]       = "使用する場合、デフォルトのツールを使用する";
+$lang["monobook_toolbox_default_print"] = "デフォルトのツールを使う場合、印刷用リンクを表示する。";
+$lang["monobook_toolbox_location"]      = "デフォルトを使用しない場合、ツールを下記のページに指定する:";
 
 //donation link/button
 $lang["monobook_donate"]          = "寄付のリンク／ボタンを表示する";

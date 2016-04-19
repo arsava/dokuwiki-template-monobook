@@ -51,10 +51,10 @@ $lang["monobook_copyright_location"] = "Sinon la note standard de copyright, uti
 $lang["monobook_search"] = "Afficher le formulaire de recherche?";
 
 //toolbox
-$lang["monobook_toolbox"]               = "Afficher boîte à outils/ outils?";
-$lang["monobook_toolbox_default"]       = "Si oui, utiliser la boîte à outils standard?";
-$lang["monobook_toolbox_default_print"] = "Si la boîte à outils est utilisée, afficher la lien de version imprimée supplémentaire?";
-$lang["monobook_toolbox_location"]      = "Sinon la boîte à outils standard, utiliser la page wiki suivante comme boîte à outils:";
+$lang["monobook_toolbox"]               = "Afficher outils/ outils?";
+$lang["monobook_toolbox_default"]       = "Si oui, utiliser la outils standard?";
+$lang["monobook_toolbox_default_print"] = "Si la outils est utilisée, afficher la lien de version imprimée supplémentaire?";
+$lang["monobook_toolbox_location"]      = "Sinon la outils standard, utiliser la page wiki suivante comme outils:";
 
 //donation link/button
 $lang["monobook_donate"]          = "Afficher le lien/ le bouton 'faire un don'?";

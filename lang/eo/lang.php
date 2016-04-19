@@ -44,7 +44,7 @@ $lang["monobook_tab_exportpdf"] = "Eksport: PDF";
 $lang['monobook_bar_views'] = 'Views';
 $lang['monobook_bar_personnaltools'] = 'Personalaj iloj';
 $lang['monobook_bar_navigation'] = 'Navigado';
-$lang['monobook_bar_toolbox'] = 'Ilaro';
+$lang['monobook_bar_toolbox'] = 'Iloj';
 $lang['monobook_bar_inotherlanguages'] = 'En aliaj lingvoj';
 $lang['monobook_bar_search'] = 'Serĉo';
 

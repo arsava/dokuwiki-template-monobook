@@ -58,10 +58,10 @@ $lang["monobook_copyright_translate"] = "If not default and <a href=\"https://ww
 $lang["monobook_search"] = "顯示從哪搜尋嗎?";
 
 //toolbox
-$lang["monobook_toolbox"]               = "顯示「工具箱」嗎?";
-$lang["monobook_toolbox_default"]       = "如果要, 使用「預設工具箱」?";
-$lang["monobook_toolbox_default_print"] = "如果「預設工具箱」已使用中, 則顯示「可列印版本的連結」?";
-$lang["monobook_toolbox_location"]      = "如果不是預設值, 使用以下頁面當成「工具箱位置」:";
+$lang["monobook_toolbox"]               = "顯示「工具」嗎?";
+$lang["monobook_toolbox_default"]       = "如果要, 使用「預設工具」?";
+$lang["monobook_toolbox_default_print"] = "如果「預設工具」已使用中, 則顯示「可列印版本的連結」?";
+$lang["monobook_toolbox_location"]      = "如果不是預設值, 使用以下頁面當成「工具位置」:";
 
 //qr code box
 $lang["monobook_qrcodebox"] = "Show box with QR Code of current wiki page URL (for easy URL transfer to mobile browser)?";
